@@ -40,6 +40,7 @@ deltachat-time = { path = "./deltachat-time" }
 deltachat-contact-tools = { workspace = true }
 format-flowed = { path = "./format-flowed" }
 ratelimit = { path = "./deltachat-ratelimit" }
+epsilon-merkle = { path = "./epsilon-merkle" }
 
 anyhow = { workspace = true }
 async-broadcast = "0.7.2"
@@ -137,6 +138,7 @@ members = [
   "format-flowed",
   "deltachat-contact-tools",
   "fuzz",
+  "epsilon-merkle",
 ]
 
 [[bench]]

@@ -5,7 +5,7 @@ edition = "2021"
 description = "Mesh-stored Merkle tree for Solana ZK Compression (EpsilonChat)"
 license = "MIT"
 
-[workspace]
+# epsilon-merkle is part of the main deltachat workspace
 
 [dependencies]
 # Iroh P2P transport

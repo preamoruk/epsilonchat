@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="exo_controls_playback_speeds">
+    <item>0.25x</item>
+    <item>0.5x</item>
+    <item>0.75x</item>
+    <item>Normal</item>
+    <item>1.25x</item>
+    <item>1.5x</item>
+    <item>2x</item>
+  </string-array>
+    <plurals name="chat_archived">
+        <item quantity="one">%d çat arxiv olundu</item>
+        <item quantity="other">%d chats archived</item>
+    </plurals>
+    <plurals name="chat_n_new_messages">
+        <item quantity="one">%d yeni messaj</item>
+        <item quantity="other">%d yeni messaj</item>
+    </plurals>
+    <plurals name="chat_unarchived">
+        <item quantity="one">%d çat arxivdən çıxarıldı</item>
+        <item quantity="other">%d chats unarchived</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+    <item quantity="one">%d saniyə irəli çəkin</item>
+    <item quantity="other">%d saniyə irəli çəkin</item>
+  </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+    <item quantity="one">%d saniyə geri çəkin</item>
+    <item quantity="other">%d saniyə geri çəkin</item>
+  </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d yeni bildiriş</item>
+    <item quantity="other">%d yeni bildiriş</item>
+  </plurals>
+    <plurals name="n_chats">
+        <item quantity="one">%d çat</item>
+        <item quantity="other">%d çat</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="one">%d kontakt</item>
+        <item quantity="other">%d kontakt</item>
+    </plurals>
+    <plurals name="n_hours">
+        <item quantity="one">%d saat</item>
+        <item quantity="other">%d saat</item>
+    </plurals>
+    <plurals name="n_members">
+        <item quantity="one">%d üzv</item>
+        <item quantity="other">%d üzv</item>
+    </plurals>
+    <plurals name="n_messages">
+        <item quantity="one">%d mesaj</item>
+        <item quantity="other">%d mesaj</item>
+    </plurals>
+    <plurals name="n_minutes">
+        <item quantity="one">%d dəqiqə</item>
+        <item quantity="other">%d dəqiqə</item>
+    </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Əsas səhifəyə keçin"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Yuxarı keçin"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Digər seçimlər"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Hazırdır"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Hamısına baxın"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Tətbiq seçin"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"DEAKTİV"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AKTİV"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"silin"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"daxil olun"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Funksiya+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menyu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Axtarış..."</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Sorğunu silin"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Axtarış sorğusu"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Axtarın"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Sorğunu göndərin"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Səsli axtarış"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Paylaşın"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ilə paylaşın"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Yığcamlaşdırın"</string>
+    <string name="add_member_by_other">Üzv %1$s əlavə olundu ilə %2$s.</string>
+    <string name="add_member_by_you">Üzv %1$s əlavə olundu məndən. </string>
+    <string name="app_name">Delta Chat</string>
+    <string name="archive">Arxivləşmə</string>
+    <string name="ask_block_contact">Bu kontaktı bloklamaq? Bu kontaktdan artıq mesaj qəbul etməyəcəksiniz.</string>
+    <string name="ask_delete_contacts">Kontaktları silmək? Bu əməliyyat seçilmiş kontaktları daimi olaraq silməyəcək. \n\n Sistem kontakt kitabından davam edən söhbətlər və kontaktlar ilə əlaqə saxlanıla bilməz.</string>
+    <string name="ask_export_attachment">Faylı ixrac etmək? Faylların ixracı cihazınızdakı hər hansı digər tətbiqlərə daxil olmağa imkan verəcəkdir. \n\n Razısan?</string>
+    <string name="ask_forward">Mesajları yönləndirin %1$sə-?</string>
+    <string name="ask_remove_members">%1$s qrupdan silmək? </string>
+    <string name="ask_start_chat_with">%1$s ilə çat? </string>
+    <string name="ask_unblock_contact">Bu kontaktı blokdan çıxarmaq istəyirsiniz? Nəticədə kontaktdan mesajlar ala bilərsiniz.</string>
+    <string name="attachment">Fayllar</string>
+    <string name="audio">Audio</string>
+    <string name="automatic">Avtomatik</string>
+    <string name="back">Geri</string>
+    <string name="bad_email_address">Səhv e-mail ünvanı.</string>
+    <string name="blue">Mavi</string>
+    <string name="bottomsheet_action_collapse">Aşağıdakı vərəqi yığcamlaşdırın</string>
+    <string name="bottomsheet_action_expand">Aşağıdakı vərəqi genişləndirin</string>
+    <string name="bottomsheet_action_expand_halfway">Tam genişləndirin</string>
+    <string name="bottomsheet_drag_handle_clicked">Dəstəyə iki dəfə toxunun</string>
+    <string name="bottomsheet_drag_handle_content_description">Dəstək</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Cavab verin"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"İmtina edin"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Dəstəyi asın"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Gələn zəng"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Davam edən zəng"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Gələn zəng göstərilir"</string>
+    <string msgid="4519059065203201851" name="callendpoint_name_earpiece">"Qulaqlıq"</string>
+    <string msgid="623806810712383295" name="callendpoint_name_speaker">"Dinamik"</string>
+    <string msgid="6723516311603411573" name="callendpoint_name_wiredheadset">"Simli qulaqlıq"</string>
+    <string name="camera">Kamera</string>
+    <string name="cancel">Imtina</string>
+    <string name="character_counter_content_description">%1$d/%2$d simvol daxil edilib</string>
+    <string name="character_counter_overflowed_content_description">Simvol limiti %1$d/%2$d dəyərini keçdi</string>
+    <string name="chat">Çat</string>
+    <string name="chat_all_archived">Bütün çatlar saxlanıldı.\nYeni çata başlamaq üçün \"+\" işarəsinə toxunun. </string>
+    <string name="chat_archived_chats_title">Çatlar saxlanıldı</string>
+    <string name="chat_archived_label">Xəzinələndi</string>
+    <string name="chat_camera_unavailable">Camera əlçatmazdır.</string>
+    <string name="chat_input_placeholder">Mesaj</string>
+    <string name="chat_new_group_hint">Başqalarının bu qrup daxilində cavab verməsinə imkan verən ilk mesajı yaradın. \n\n• Bütün üzvlər Delta Chat istifadə etsələr daha yaxşıdır. \n\n• İlk mesajı çatdırmaq bir müddət ala bilər.</string>
+    <string name="chat_no_chats_yet_title">Qutu boşdur.\nYeni çata başlamaq üçün \"+\" işarəsinə toxunun. </string>
+    <string name="chat_no_messages">Mesaj yoxdur</string>
+    <string name="chat_please_enter_message">Mesajı daxıl edin</string>
+    <string name="chat_record_explain">Bir səsli mesajı yazmaq üçün toxunun və saxlayın, göndərmək üçün buraxın</string>
+    <string name="chat_record_slide_to_cancel">Ləğv etmək üçün sürüşdürün</string>
+    <string name="chat_self_talk_subtitle">Özümə göndərdiyim mesajlar</string>
+    <string name="chat_share_with_title">Göndər </string>
+    <string name="chat_unable_to_record_audio">Səs yaza bilmir.</string>
+    <string name="clear_text_end_icon_content_description">Mətni silin</string>
+    <string name="close">Bağla</string>
+    <string name="contact">Kontakt</string>
+    <string name="contact_verified">%1$s yoxlanıldı.</string>
+    <string name="contacts_headline">Kontaktlar</string>
+    <string name="contacts_title">Kontaktlar</string>
+    <string name="contacts_type_email_above">E-poçt ünvanını yazın</string>
+    <string name="copied_to_clipboard">Panoya kopyalandı.</string>
+    <string msgid="6083905920877235314" name="copy">"Kopyalayın"</string>
+    <string name="custom">Xüsusi</string>
+    <string name="cyan">Sian</string>
+    <string name="def">Cari olan</string>
+    <string name="default_notification_channel_name">İndi oxudulur</string>
+    <string name="delete">Sil</string>
+    <string name="delete_message_desktop">Mesajı sil</string>
+    <string name="documents">Sənədlər</string>
+    <string name="done">Hazır</string>
+    <string name="draft">Laihə</string>
+    <string name="edit_contact">Kontakta dəyişiklik</string>
+    <string name="email_address">Email ünvanı</string>
+    <string name="emoji">Emojilər</string>
+    <string msgid="5055290162204827523" name="emoji_bidirectional_switcher_clicked_desc">"emoji istiqaməti dəyişdirildi"</string>
+    <string msgid="5084600168354220605" name="emoji_bidirectional_switcher_content_desc">"ikitərəfli emoji dəyişdirici"</string>
+    <string msgid="4381135114947330911" name="emoji_category_activity">"FƏALİYYƏTLƏR VƏ TƏDBİRLƏR"</string>
+    <string msgid="4640771324837307541" name="emoji_category_animals_nature">"HEYVANLAR VƏ TƏBİƏT"</string>
+    <string msgid="1570830970240985537" name="emoji_category_emotions">"SMAYLİK VƏ EMOSİYALAR"</string>
+    <string msgid="6185639503532784871" name="emoji_category_flags">"BAYRAQLAR"</string>
+    <string msgid="1189971856721244395" name="emoji_category_food_drink">"QİDA VƏ İÇKİ"</string>
+    <string msgid="6106115586332708067" name="emoji_category_objects">"OBYEKTLƏR"</string>
+    <string msgid="7968173366822927025" name="emoji_category_people">"ADAMLAR"</string>
+    <string msgid="7142376595414250279" name="emoji_category_recent">"SON İSTİFADƏ EDİLƏN"</string>
+    <string msgid="5626171724310261787" name="emoji_category_symbols">"SİMVOLLAR"</string>
+    <string msgid="8105712773237012672" name="emoji_category_travel_places">"SƏYAHƏT VƏ MƏKANLAR"</string>
+    <string msgid="288822832574892625" name="emoji_empty_non_recent_category">"Əlçatan emoji yoxdur"</string>
+    <string msgid="7863877827879290200" name="emoji_empty_recent_category">"Hələ heç bir emojidən istifadə etməməsiniz"</string>
+    <string msgid="943874297162865134" name="emoji_skin_tone_dark_content_desc">"tünd dəri rəngi"</string>
+    <string msgid="1052239040923092881" name="emoji_skin_tone_light_content_desc">"açıq dəri rəngi"</string>
+    <string msgid="8880212664699697283" name="emoji_skin_tone_medium_content_desc">"orta dəri rəngi"</string>
+    <string msgid="5500271767005002413" name="emoji_skin_tone_medium_dark_content_desc">"orta tünd dəri rəngi"</string>
+    <string msgid="3968357909948619626" name="emoji_skin_tone_medium_light_content_desc">"orta açıq dəri rəngi"</string>
+    <string msgid="1759906883307507376" name="emoji_skin_tone_shadow_content_desc">"kölgə"</string>
+    <string msgid="6381933050671041489" name="emoji_variant_content_desc_template">"%1$s və %2$s"</string>
+    <string msgid="2898934883418401376" name="emoji_variant_selector_content_desc">"emoji variant seçicisi"</string>
+    <string name="encryption_info_title_desktop">Şifrələmə məlumatları</string>
+    <string name="ephemeral_messages">Yox olan mesajlar</string>
+    <string name="error">Xəta</string>
+    <string name="error_a11y_label">Xəta: yanlışdır</string>
+    <string name="error_icon_content_description">Xəta</string>
+    <string name="error_message_authentication_expired">Bu tətbiqi istifadə etmək üçün daxil olun</string>
+    <string name="error_message_bad_value">Səhv daxiletmə datası</string>
+    <string name="error_message_concurrent_stream_limit">Bir çox cihazda dinlənilir</string>
+    <string name="error_message_content_already_playing">Həmin kontent artıq işə salınıb</string>
+    <string name="error_message_disconnected">Media tətbiqindən ayrıldı</string>
+    <string name="error_message_end_of_playlist">Növbədə heç nə yoxdur</string>
+    <string name="error_message_fallback">Xəta baş verdi. Sonra cəhd edin.</string>
+    <string name="error_message_info_cancelled">Bitirmək mümkün olmadı. Yenidən cəhd edin.</string>
+    <string name="error_message_invalid_state">Hazırda etmək olmur</string>
+    <string name="error_message_io">Daxiletmə/çıxış xətası</string>
+    <string name="error_message_not_available_in_region">Həmin kontenti burada əldə etmək mümkün deyil</string>
+    <string name="error_message_not_supported">Bu tətbiq edə bilmir</string>
+    <string name="error_message_parental_control_restricted">Həmin kontent bloklanıb</string>
+    <string name="error_message_permission_denied">Giriş rədd edildi</string>
+    <string name="error_message_premium_account_required">Premium giriş tələb olunur</string>
+    <string name="error_message_setup_required">Ayarlama tələb olunur</string>
+    <string name="error_message_skip_limit_reached">Başqa trek ötürmək mümkün deyil</string>
+    <string name="error_x">Xəta: %1$s</string>
+    <string name="exo_controls_cc_disabled_description">Subtitrləri aktiv edin</string>
+    <string name="exo_controls_cc_enabled_description">Subtitrləri deaktiv edin</string>
+    <string name="exo_controls_fastforward_description">İrəli çəkin</string>
+    <string name="exo_controls_fullscreen_enter_description">Tam ekrana daxil olun</string>
+    <string name="exo_controls_fullscreen_exit_description">Tam ekrandan çıxın</string>
+    <string name="exo_controls_hide">Oyunçu nəzarətlərini gizlədin</string>
+    <string name="exo_controls_next_description">Sonra</string>
+    <string name="exo_controls_overflow_hide_description">Əlavə ayarları gizlədin</string>
+    <string name="exo_controls_overflow_show_description">Əlavə ayarları göstərin</string>
+    <string name="exo_controls_pause_description">Pauza</string>
+    <string name="exo_controls_play_description">Oxudun</string>
+    <string name="exo_controls_playback_speed">Sürət</string>
+    <string name="exo_controls_previous_description">Əvvəl</string>
+    <string name="exo_controls_repeat_all_description">Cari rejim: Hamısını təkrarlayın. Təkrarlanma rejimini keçirin.</string>
+    <string name="exo_controls_repeat_off_description">Cari rejim: Heç birini təkrarlamayın. Təkrarlanma rejimini keçirin.</string>
+    <string name="exo_controls_repeat_one_description">Cari rejim: Birini təkrarlayın. Təkrarlanma rejimini keçirin.</string>
+    <string name="exo_controls_rewind_description">Geri çəkin</string>
+    <string name="exo_controls_seek_bar_description">Oxutmanın gedişatı</string>
+    <string name="exo_controls_settings_description">Ayarlar</string>
+    <string name="exo_controls_show">Oyunçu nəzarətlərini göstərin</string>
+    <string name="exo_controls_shuffle_off_description">Qarışdırma rejimini aktiv edin</string>
+    <string name="exo_controls_shuffle_on_description">Qarışdırma rejimini deaktiv edin</string>
+    <string name="exo_controls_stop_description">Dayandırın</string>
+    <string name="exo_controls_vr_description">VR rejimi</string>
+    <string name="exo_download_completed">Endirmə tamamlandı</string>
+    <string name="exo_download_description">Endirin</string>
+    <string name="exo_download_downloading">Endirilir</string>
+    <string name="exo_download_failed">Endirmə alınmadı</string>
+    <string name="exo_download_notification_channel_name">Endirmələr</string>
+    <string name="exo_download_paused">Endirmə durdurulub</string>
+    <string name="exo_download_paused_for_network">Endirmələr şəbəkəni gözləyir</string>
+    <string name="exo_download_paused_for_wifi">Endirmələr WiFi şəbəkəsini gözləyir</string>
+    <string name="exo_download_removing">Endirilənlər silinir</string>
+    <string name="exo_item_list">%1$s, %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f Mbps</string>
+    <string name="exo_track_mono">Mono</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_role_alternate">Alternativ</string>
+    <string name="exo_track_role_closed_captions">Nüsxəni alan</string>
+    <string name="exo_track_role_commentary">Şərh</string>
+    <string name="exo_track_role_supplementary">Əlavə</string>
+    <string name="exo_track_selection_auto">Avtomatik</string>
+    <string name="exo_track_selection_none">Yoxdur</string>
+    <string name="exo_track_selection_title_audio">Audio</string>
+    <string name="exo_track_selection_title_text">Mətn</string>
+    <string name="exo_track_selection_title_video">Video</string>
+    <string name="exo_track_stereo">Stereo</string>
+    <string name="exo_track_surround">Yüksək səs</string>
+    <string name="exo_track_surround_5_point_1">5.1 yüksək səs</string>
+    <string name="exo_track_surround_7_point_1">7.1 yüksək səs</string>
+    <string name="exo_track_unknown">Naməlum</string>
+    <string name="exo_track_unknown_name">Naməlum (%1$s)</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Əlavə"</string>
+    <string name="export_backup_desktop">Ehtiyat nüsxəsinin ixracı</string>
+    <string name="exposed_dropdown_menu_content_description">Açılan menyunu göstərin</string>
+    <string name="extra_large">Çox böyük</string>
+    <string name="fast">Sürətli</string>
+    <string name="file">Fayl</string>
+    <string name="file_not_found">Tapa bilmədim %1$s.</string>
+    <string name="forward">Başqasına göndərmə</string>
+    <string name="forward_to">İrəli ...</string>
+    <string name="forwarded_message">Köçürülmüş mesaj</string>
+    <string name="gallery">Qalereya</string>
+    <string name="gif">Gif</string>
+    <string name="global_menu_edit_copy_desktop">Kopyala</string>
+    <string name="global_menu_edit_cut_desktop">Kəs</string>
+    <string name="global_menu_edit_desktop">Düzəliş et</string>
+    <string name="global_menu_edit_paste_desktop">Əlavə et</string>
+    <string name="global_menu_edit_redo_desktop">Hazır</string>
+    <string name="global_menu_edit_undo_desktop">Geri qaytar</string>
+    <string name="global_menu_file_desktop">Fayl</string>
+    <string name="global_menu_file_quit_desktop">Çıxış</string>
+    <string name="global_menu_help_desktop">Kömək</string>
+    <string name="global_menu_help_report_desktop">Problemi bildirin</string>
+    <string name="global_menu_preferences_language_desktop">Dil səç</string>
+    <string name="global_menu_view_desktop">Baxmaq</string>
+    <string name="global_menu_view_developer_desktop">İnkişaf etdirici</string>
+    <string name="global_menu_view_developer_tools_desktop">İnkişaf etdirici alətləri</string>
+    <string name="global_menu_view_floatontop_desktop">Üstə çıxın</string>
+    <string name="green">Yaşıl</string>
+    <string name="group_add_members">Üzv elavə et</string>
+    <string name="group_avatar">Qrupun şəkili</string>
+    <string name="group_create_button">Qrup yarat</string>
+    <string name="group_image_changed_by_other">Qrup şəkili dəyişildi ilə %1$s.</string>
+    <string name="group_image_changed_by_you">Qrup şəkili dəyişildi məndən. </string>
+    <string name="group_image_deleted_by_other">Qrupun şəkili silindi ilə %1$s.</string>
+    <string name="group_image_deleted_by_you">Qrupun şəkili silindi məndən. </string>
+    <string name="group_name">Qrup adı</string>
+    <string name="group_name_changed_by_other">Qrupun adı \"%1$s\" - dən \"%2$s\" - yə deyişildi ilə %3$s.</string>
+    <string name="group_name_changed_by_you">Qrupun adı \"%1$s\" - dən \"%2$s\" - yə deyişildi məndən. </string>
+    <string name="group_please_enter_group_name">Xahiş edirik qrup üçün bir ad daxil et.</string>
+    <string name="group_self_not_in_group">Bunu etmək üçün qrupun üzvü olmalısan.</string>
+    <string name="icon_content_description">Dialoq ikonası</string>
+    <string name="image">Şəkil</string>
+    <string name="images">Şəkillər</string>
+    <string name="import_backup_ask">\"%1$s\" - də ehtiyat nüsxəsi tapıldı.\n\nİndi bütün məlumatları və parametrləri idxal etmək və istifadə etmək istəyirsiniz?</string>
+    <string name="import_backup_title">Nüsxənin importu</string>
+    <string name="info">məlumat</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="large">Böyük</string>
+    <string name="last_month">Keçən ay</string>
+    <string name="last_week">Keçən həftə</string>
+    <string name="location">Yer</string>
+    <string name="login_certificate_checks">Sertifikat yoxlanmaları</string>
+    <string name="login_error_cannot_login"> \"%1$s\" kimi giriş alınmadı. E-poçt ünvanı və parolun düzgün olub olmadığını yoxlayın.</string>
+    <string name="login_error_mail">Xahiş edirik düzgün bir e-poçt ünvanı daxil et</string>
+    <string name="login_error_port">Xahiş edirik, düzgün bir port (1-65535) daxil et</string>
+    <string name="login_error_required_fields">Xahiş edirik düzgün bir e-poçt ünvanı və parol daxil et</string>
+    <string name="login_error_server">Xahiş edirik, düzgün bir server / IP ünvanı daxil et</string>
+    <string name="login_imap_login">IMAP logini</string>
+    <string name="login_imap_port">IMAP port</string>
+    <string name="login_imap_security">IMAP təhlükəsizliyi</string>
+    <string name="login_imap_server">IMAP server</string>
+    <string name="login_inbox">Gələn</string>
+    <string name="login_outbox">Çıxan</string>
+    <string name="login_smtp_login">SMTP login</string>
+    <string name="login_smtp_password">SMTP parolu</string>
+    <string name="login_smtp_port">SMTP port</string>
+    <string name="login_smtp_security">SMTP təhlükəsizliyi</string>
+    <string name="login_smtp_server">SMTP server</string>
+    <string name="login_title">Daxil ol</string>
+    <string name="magenta">Açıq fırfır</string>
+    <string name="main_menu">Əsas menyu</string>
+    <string name="material_clock_toggle_content_description">Gündüz və ya axşam seçin</string>
+    <string name="material_hour_24h_suffix">%1$s saat</string>
+    <string name="material_hour_selection">Saatı seçin</string>
+    <string name="material_hour_suffix">Saat %1$s</string>
+    <string name="material_minute_selection">Dəqiqə seçin</string>
+    <string name="material_minute_suffix">%1$s dəqiqə</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Zamanı daxil etmək üçün saat rejiminə keçin</string>
+    <string name="material_timepicker_hour">Saat</string>
+    <string name="material_timepicker_minute">Dəqiqə</string>
+    <string name="material_timepicker_pm">GƏ</string>
+    <string name="material_timepicker_select_time">Vaxt seçin</string>
+    <string name="material_timepicker_text_input_mode_description">Zamanı daxil etmək üçün mətnlə daxiletmə rejiminə keçin</string>
+    <string name="media">Mediafayllar</string>
+    <string name="media3_controls_pause_description">Durdurun</string>
+    <string name="media3_controls_play_description">Oxudun</string>
+    <string name="media3_controls_seek_back_description">Geri keçin</string>
+    <string name="media3_controls_seek_forward_description">İrəli keçin</string>
+    <string name="media3_controls_seek_to_next_description">Növbəti elementə keçin</string>
+    <string name="media3_controls_seek_to_previous_description">Əvvəlki elementə keçin</string>
+    <string name="media_preview">Fayllara baxmaq</string>
+    <string name="menu.view.developer.open.current.log.file">Loq-faylı açın</string>
+    <string name="menu.view.developer.open.log.folder">Loq mələfini açın</string>
+    <string name="menu_add_attachment">Fayl əlavə et</string>
+    <string name="menu_advanced">Ətraflı</string>
+    <string name="menu_all_media">Bütün fayllar</string>
+    <string name="menu_archive_chat">Çatın xəzinəsi</string>
+    <string name="menu_block_contact">Kontaktı blokla</string>
+    <string name="menu_copy_to_clipboard">Panoya kopyalamaq</string>
+    <string name="menu_delete_chat">Çatı sil</string>
+    <string name="menu_delete_location">Bu yerləşməni silmək? </string>
+    <string name="menu_edit_group">Qrupu dəyiş</string>
+    <string name="menu_edit_name">Adı dəyişdir</string>
+    <string name="menu_export_attachment">Fayl exportu</string>
+    <string name="menu_forward">Növbəti mesaj</string>
+    <string name="menu_group_name_and_image">Qrupun adı və şəkili</string>
+    <string name="menu_help">Kömək</string>
+    <string name="menu_leave_group">Qrupu tərk et</string>
+    <string name="menu_message_details">Mesaj məlumatları</string>
+    <string name="menu_mute">Bildirişləri söndürmək</string>
+    <string name="menu_new_chat">Yeni çat</string>
+    <string name="menu_new_contact">Yeni kontakt</string>
+    <string name="menu_new_group">Yeni qrup</string>
+    <string name="menu_pause">Dayandır</string>
+    <string name="menu_play">İşə sal</string>
+    <string name="menu_reply">Mesaja cavab</string>
+    <string name="menu_save_log">Loqu saxlamaq</string>
+    <string name="menu_scroll_to_bottom">Altına keçin</string>
+    <string name="menu_scroll_to_top">Yuxarı qalxmaq</string>
+    <string name="menu_select_all">Hamısını səç</string>
+    <string name="menu_send">Göndər</string>
+    <string name="menu_settings">Tənzimləmə</string>
+    <string name="menu_share">Göndər</string>
+    <string name="menu_show_global_map">Bütün yerləşmə yerləri göstər</string>
+    <string name="menu_toggle_keyboard">Emoji klaviatura keçidi</string>
+    <string name="menu_unarchive_chat">Çat xəzinəsini aç</string>
+    <string name="menu_unblock_contact">Kontaktı blokdan aç</string>
+    <string name="menu_unmute">Səs vermək</string>
+    <string name="menu_view_profile">Profilə bax</string>
+    <string name="menu_zoom_in">Yaxınlaşdırmaq</string>
+    <string name="menu_zoom_out">Uzaqlaşdırmaq</string>
+    <string name="message_detail_received_desktop">qəbul olundu</string>
+    <string name="message_detail_sent_desktop">Göndər</string>
+    <string name="more_info_desktop">Daha çox məlumat</string>
+    <string name="mtrl_badge_numberless_content_description">Yeni bildiriş</string>
+    <string name="mtrl_checkbox_state_description_checked">İşarələnib</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">Qismən işarələnib</string>
+    <string name="mtrl_checkbox_state_description_unchecked">İşarələnməyib</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s silin</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Minimum %1$d yeni bildiriş</string>
+    <string name="mtrl_picker_a11y_next_month">Növbəti aya dəyişin</string>
+    <string name="mtrl_picker_a11y_prev_month">Əvvəlki aya dəyişin</string>
+    <string name="mtrl_picker_announce_current_range_selection">Başlama tarixi seçimi: %1$s – Bitmə tarixi seçimi: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Cari seçim: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">yoxdur</string>
+    <string name="mtrl_picker_cancel">Ləğv edin</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Tarix seçin</string>
+    <string name="mtrl_picker_date_header_unselected">Seçilmiş tarix</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
+    <string name="mtrl_picker_end_date_description">Bitmə tarixi: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Yanlış format.</string>
+    <string name="mtrl_picker_invalid_format_example">Nümunə: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">%1$s istifadə edin</string>
+    <string name="mtrl_picker_invalid_range">Yanlış diapazon.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Cari ilə keçin: %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">%1$d ilinə keçin</string>
+    <string name="mtrl_picker_out_of_range">Əhatə dairəsindən kənar: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Başlama tarixi – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Bitmə tarixi</string>
+    <string name="mtrl_picker_range_header_selected">%1$s: %2$s</string>
+    <string name="mtrl_picker_range_header_title">Aralıq seçin</string>
+    <string name="mtrl_picker_range_header_unselected">Başlama tarixi - Bitmə tarixi</string>
+    <string name="mtrl_picker_save">Saxlayın</string>
+    <string name="mtrl_picker_start_date_description">Başlama tarixi: %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Tarix</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Bitmə tarixi</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Başlama tarixi</string>
+    <string name="mtrl_picker_text_input_day_abbr">gün</string>
+    <string name="mtrl_picker_text_input_month_abbr">ay</string>
+    <string name="mtrl_picker_text_input_year_abbr">il</string>
+    <string name="mtrl_picker_today_description">Bugün: %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Təqvim daxiletmə rejiminə keçin</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Təqvim görünüşünə keçirmək üçün toxunun</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Mətn daxiletmə rejiminə keçin</string>
+    <string name="mtrl_picker_toggle_to_year_selection">İl görünüşünə keçirmək üçün toxunun</string>
+    <string name="mtrl_timepicker_cancel">Ləğv edin</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string name="mute">Səssiz</string>
+    <string name="mute_for_eight_hours">8 saatlıq söndür</string>
+    <string name="mute_for_one_day">1 günlük söndür</string>
+    <string name="mute_for_one_hour">1 saatlıq söndür</string>
+    <string name="mute_for_seven_days">7 günlük söndür</string>
+    <string name="mute_forever">Həmişə səssiz</string>
+    <string name="name_desktop">Ad</string>
+    <string name="never">Heç vaxt</string>
+    <string name="no">Xeyir</string>
+    <string name="no_app_to_handle_data">Bu tip məlumatları idarə etmək üçün bir tətbiq tapılmadı.</string>
+    <string name="no_browser_installed">Heç bir brauzer quraşdırılıb.</string>
+    <string name="no_chat_selected_suggestion_desktop">Bir çat seçin və ya yeni bir çat yaradın</string>
+    <string name="none">Yoxdur</string>
+    <string name="normal">Normal</string>
+    <string name="not_now">İndi deyil</string>
+    <string msgid="6573031135582639649" name="not_set">"Ayarlanmayıb"</string>
+    <string name="notify_background_connection_enabled">Arxa fon əlaqəsi aktivdir</string>
+    <string name="notify_name_and_message">Ad və mesaj</string>
+    <string name="notify_name_only">Ancaq ad</string>
+    <string name="notify_new_message">Yeni mesaj</string>
+    <string name="notify_no_name_or_message">Adı və ya mesaj yoxdur</string>
+    <string name="notify_priority_high">Yüksək</string>
+    <string name="notify_priority_max">Maksimal</string>
+    <string name="notify_reply_button">Cavab ver</string>
+    <string name="now">Indi</string>
+    <string name="off">Bağlı</string>
+    <string name="ok">OK</string>
+    <string name="on">Açıq</string>
+    <string name="one_moment">Gözləyin...</string>
+    <string name="open">Açıq</string>
+    <string name="orange">Narıncı</string>
+    <string name="password">Parol</string>
+    <string name="password_toggle_content_description">Parolu göstərin</string>
+    <string name="perm_continue">Davam edin</string>
+    <string name="perm_enable_bg_reminder_title">Delta Chat arxa fonda mesajları almaq üçün bura toxunun.</string>
+    <string name="perm_explain_access_to_camera_denied">Delta Chat şəkillər və ya video çəkmək üçün kamera icazə tələb edir, lakin bu, əbədi imtina edilmişdir. Proqramın sistem ayarlarına gedib \"İcazələr\"-i seçin və \"kamera\" izni verin.</string>
+    <string name="perm_explain_access_to_location_denied">Delta Chat yer əlavə etmək üçün yer icazə tələb edir, lakin daimi olaraq rədd edilmişdir. \"İcazələr\"-i seçin və\"Yerləşmə\" izni verin. </string>
+    <string name="perm_explain_access_to_mic_denied">Delta Chat yer əlavə etmək üçün yer icazə tələb edir, lakin daimi olaraq rədd edilmişdir. \"İcazələr\"-i seçin və\"Yerləşmə\" izni verin. </string>
+    <string name="perm_explain_access_to_storage_denied">Delta Chat, fotoşəkilləri, videoları və ya səsləri əlavə etmək və ya ixrac etmək üçün saxlama icazəsini tələb edir, lakin bu daimi olaraq rədd edildi. Xahiş edirik tətbiq ayarları menyusuna davam edin, \"İzinlər\" seçin və \"Yaddaş\" funksiyasını aktivləşdirin.</string>
+    <string name="perm_required_title">İzin tələb olunur</string>
+    <string name="pref_appearance">Görünüş</string>
+    <string name="pref_auto_folder_moves">DeltaChat qovluğuna avtomatik keçid</string>
+    <string name="pref_background">Fon</string>
+    <string name="pref_background_btn_default">Hal hazırdaki şəkili istifadə edin</string>
+    <string name="pref_background_btn_gallery">Fotoalbomdan götürün</string>
+    <string name="pref_background_custom_color">Rəng</string>
+    <string name="pref_background_custom_image">Şəkil</string>
+    <string name="pref_background_default">Özünəməxsus arxa fon</string>
+    <string name="pref_background_default_color">Özünəməxsus rəng</string>
+    <string name="pref_backup">Nüsxə</string>
+    <string name="pref_backup_explain">Daxili yaddaşa mesaj nüsxəsi</string>
+    <string name="pref_backup_export_explain">Ehtiyat nüsxəsi bu və ya digər bir cihazda yeni bir quraşdırma qurmağa kömək edir. \n\nNüsxədə bütün mesajlar, kontaktlar, çatlar və son ucdan uca avtoşifrələmə quraşdırmaınız olacaq. Nüsxə faylını təhlükəsiz yerdə saxlayın və ya mümkün qədər tez silin.</string>
+    <string name="pref_backup_export_start_button">Nüsxəyə başla</string>
+    <string name="pref_backup_written_to_x">Ehtiyat nüsxə %1$s- ə uğurla yazılmışdır</string>
+    <string name="pref_blocked_contacts">Bloklanmış kontaktlar</string>
+    <string name="pref_chats">Çatlar</string>
+    <string name="pref_dark_theme">Tünd</string>
+    <string name="pref_default_status_label">Yazını mətni</string>
+    <string name="pref_enter_sends">Enter açarı ilə göndərmək</string>
+    <string name="pref_enter_sends_explain">Enter düyməsini basaraq mətn mesajları göndərəcək</string>
+    <string name="pref_imap_folder_warn_disable_defaults">Bu seçimi ləğv etsəniz, serverinizin və digər müştərilərinizin müvafiq olaraq konfiqurasiya olunduğundan əmin olun. \n\nAyrıca şeylər işləməyəcəkdir.</string>
+    <string name="pref_in_chat_sounds">Çatda olan səslər</string>
+    <string name="pref_incognito_keyboard">Məxfi klaviatura</string>
+    <string name="pref_incognito_keyboard_explain">Klaviaturanın personal öyrənməyini söndürmək</string>
+    <string name="pref_language">Dillər</string>
+    <string name="pref_led_color">LED rəng</string>
+    <string name="pref_light_theme">Açıq</string>
+    <string name="pref_log_header">Loq</string>
+    <string name="pref_manage_keys">Açar edarəetməsi</string>
+    <string name="pref_notifications">Bildirişlər</string>
+    <string name="pref_notifications_priority">Öndəmdə olan</string>
+    <string name="pref_notifications_show">Göstərmək</string>
+    <string name="pref_other">Başqa</string>
+    <string name="pref_outgoing_balanced">Balanslıdır</string>
+    <string name="pref_outgoing_media_quality">Göndərilən medianın keyfiyyatı</string>
+    <string name="pref_outgoing_worse">Daha pis keyfiyyət, kiçik ölçülü</string>
+    <string name="pref_privacy">Gizlilik</string>
+    <string name="pref_profile_info_headline">Profil məlumatınız</string>
+    <string name="pref_profile_photo">Profil şəkili</string>
+    <string name="pref_read_receipts">Qəbul olunanları oxuyun</string>
+    <string name="pref_read_receipts_explain">Bildirişlər aradan qaldırılırsa, başqalarının oxuduğu bildirişləri görə bilməyəcəksiniz.</string>
+    <string name="pref_save_log_failed">Loqu saxlaya bilmədi</string>
+    <string name="pref_saved_log">Loqi Yükləmələr qovluğuna saxlanıldı</string>
+    <string name="pref_screen_security">Ekran təhlükəsizliyi</string>
+    <string name="pref_screen_security_explain">Son proqramlar siyahısında və proqramın daxilində ekran çəkməyi qadağan etmə</string>
+    <string name="pref_screen_security_please_restart_hint">Ekranın təhlükəsizlik tənzimləmələrini tətbiq etmək üçün proqramı yenidən başladın.</string>
+    <string name="pref_show_emails">Klassik e-poçtları göstər</string>
+    <string name="pref_show_emails_accepted_contacts">Qəbul edilən kontaktlar üçün</string>
+    <string name="pref_show_emails_all">Hamısı</string>
+    <string name="pref_show_emails_no">Xeyir, ancaq çatlar</string>
+    <string name="pref_silent">Səssiz</string>
+    <string name="pref_sound">Səs</string>
+    <string name="pref_theme">Tema</string>
+    <string name="pref_vibrate">Vibrasiya</string>
+    <string name="pref_view_log">Log-a bax</string>
+    <string name="pref_who_can_see_profile_explain">Digər istifadəçilərlə ünsiyyət qurarkən profil şəkliniz və adınız mesajlarınızla birlikdə göstərilir. Zatən göndərilən məlumat silinməyəcək. </string>
+    <string name="pref_your_name">Adın</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" buferə kopyalandı."</string>
+    <string name="profile_encryption">Şifrələmə</string>
+    <string name="profile_shared_chats">Çatlar göndərildi</string>
+    <string name="purple">Purpur</string>
+    <string name="qrscan_ask_join_group">\"%1$s\" qrupa qoşulmaq istəyirsinizmi?</string>
+    <string name="qrscan_contains_text">QR kod mətni skan olundu:\n\n%1$s</string>
+    <string name="qrscan_contains_url">QR kod linki skan olundu:\n\n%1$s</string>
+    <string name="qrscan_fingerprint_label">İz</string>
+    <string name="qrscan_fingerprint_mismatch">%1$süçün skan olunan barmaq izi son görüldüyü barmaq izinə uyğun deyil</string>
+    <string name="qrscan_hint">QR kodu kamera ilə izləyin</string>
+    <string name="qrscan_no_addr_found">QR kodu iz ehtiva edir, lakin heç bir e-poçt ünvanı yoxdur.\n\nƏlaqə qurmaq üçün əvvəlcə abonentlə şifrəli bir əlaqə qurun.</string>
+    <string name="qrscan_title">Qr kodu skan edin</string>
+    <string name="qrshow_join_contact_hint">%1$silə əlaqə qurmaq üçün bunu skan edin</string>
+    <string name="qrshow_join_contact_no_connection_toast">İnternet bağlantısı yoxdur, QR kodunu qura bilmir.</string>
+    <string name="qrshow_join_contact_title">Dəvət QR-kodu</string>
+    <string name="qrshow_join_group_hint"> \"%1$s\" qrupuna qoşulmaq üçün bunu skan edin. </string>
+    <string name="qrshow_join_group_title">Dəvət QR-kodu</string>
+    <string name="qrshow_title">QR dəvət kodu</string>
+    <string name="qrshow_x_has_joined_group">%1$s qrupa qoşuldu.</string>
+    <string name="qrshow_x_joining">%1$s qoşulur.</string>
+    <string name="qrshow_x_verified">%1$s yoxlanıldı.</string>
+    <string name="red">Qırmızı</string>
+    <string name="remove_desktop">Sil</string>
+    <string name="remove_member_by_other">%1$s üzv silindi ilə %2$s.</string>
+    <string name="remove_member_by_you">%1$s üzv silindi məndən. </string>
+    <string name="retry_send">Mesaji yenidən göndərməyə cəht et</string>
+    <string name="save">Saxla</string>
+    <string name="save_desktop">Saxla</string>
+    <string name="save_message">Saxla</string>
+    <string name="saved_messages">Saxlanılmış mesajlar</string>
+    <string name="search">Axtarış</string>
+    <string name="search_explain">Çatlar, kontaktlar və mesajlar axtar</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Axtarın"</string>
+    <string name="search_no_result_for_x">\"%s\" üçün heç bir nəticə tapılmadı</string>
+    <string name="searchview_clear_text_content_description">Mətni təmizləyin</string>
+    <string name="searchview_navigation_content_description">Geri</string>
+    <string name="select_group_image_desktop">Qrup şəklini seç</string>
+    <string name="self">Mənə</string>
+    <string name="share_abort">İcazə olmadığına görə göndərmə kəsildi</string>
+    <string name="share_location_for_30_minutes">30 qəqiqə üçün</string>
+    <string name="share_location_for_5_minutes">5 dəqiqə üçün</string>
+    <string name="share_location_for_one_hour">1 saat üçün</string>
+    <string name="share_location_for_six_hours">6 saat üçün</string>
+    <string name="share_location_for_two_hours">2 saat üçün </string>
+    <string name="side_sheet_accessibility_pane_title">Yan Vərəq</string>
+    <string name="slow">Ləng</string>
+    <string name="small">Kiçik</string>
+    <string name="start_chat">Çata başla</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="strict">Mıtin</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="tab_contact">Kontakt</string>
+    <string name="tab_docs">Sənədlər</string>
+    <string name="tab_docs_empty_hint">Bu söhbətdə paylaşılan sənədlər, musiqi və digər fayllar burada göstəriləcək.</string>
+    <string name="tab_gallery">Şəkillər</string>
+    <string name="tab_gallery_empty_hint">Bu çatda paylaşılan şəkillər və videolar burada nümayiş olunacaq.</string>
+    <string name="tab_group">Qrup</string>
+    <string name="tab_links">Linklər</string>
+    <string name="tab_map">Xəritə</string>
+    <string name="this_month">Bu ay</string>
+    <string name="this_week">Bu həftə</string>
+    <string name="timestamp_format_m_desktop">MMM D</string>
+    <string name="title_share_location">Qrup üzvlərinə yerləşdiyin yerini göndər</string>
+    <string name="today">Bugün</string>
+    <string name="unarchive">Arxivdən çıxarma</string>
+    <string name="undo">Geri qaytar</string>
+    <string name="unknown">Naməlum</string>
+    <string name="update">Yeniləmə</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"DEAKTİV"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"AKTİV"</string>
+    <string name="video">Video</string>
+    <string name="voice_message">Səsli mesaj</string>
+    <string name="white">Ağ</string>
+    <string name="write_message_desktop">Bir mesaj yazın</string>
+    <string name="yes">Bəli</string>
+    <string name="yesterday">Dünən</string>
+</resources>

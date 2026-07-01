@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "org.thoughtcrime.securesms-mergeFossReleaseResources-64:/values-v29/values-v29.xml",
+            "map": [
+                {
+                    "source": "/Users/Apple/epsilonchat/android-dc/src/main/res/values-v29/arrays.xml",
+                    "from": {
+                        "startLines": "3,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "103,359",
+                        "endLines": "9,18",
+                        "endColumns": "19,19",
+                        "endOffsets": "353,578"
+                    },
+                    "to": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,337",
+                        "endLines": "6,11",
+                        "endColumns": "19,19",
+                        "endOffsets": "332,530"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/epsilon_background">
+
+    <LinearLayout
+        android:id="@+id/mesh_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="24dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/app_name"
+            android:textColor="@color/epsilon_accent"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="P2P mesh messenger — no email servers needed."
+            android:textColor="@color/epsilon_text_secondary"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/epsilon_accent"
+            android:textColor="@color/white"
+            android:text="Start EpsilonChat"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_scan_invite"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/epsilon_surface"
+            android:textColor="@color/epsilon_accent"
+            android:text="Scan Invite QR"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_show_invite"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/epsilon_surface"
+            android:textColor="@color/epsilon_accent"
+            android:text="Show My Invite"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_invite_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:text="Your invite code:"
+            android:textColor="@color/epsilon_text_secondary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_my_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:background="@color/epsilon_surface"
+            android:textColor="@color/epsilon_accent"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            android:fontFamily="monospace" />
+
+        <EditText
+            android:id="@+id/et_invite_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:hint="Paste an invite code (epsilon://...)"
+            android:textColor="@color/epsilon_text_primary"
+            android:textColorHint="@color/epsilon_text_secondary"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:backgroundTint="@color/epsilon_accent"
+            android:inputType="text"
+            android:autofillHints=""
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/epsilon_accent"
+            android:textColor="@color/white"
+            android:text="Connect"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

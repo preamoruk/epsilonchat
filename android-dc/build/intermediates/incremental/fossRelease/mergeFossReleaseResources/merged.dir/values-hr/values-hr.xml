@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="exo_controls_playback_speeds">
+    <item>0,25 x</item>
+    <item>0,5 x</item>
+    <item>0,75 x</item>
+    <item>Uobičajeno</item>
+    <item>1,25 x</item>
+    <item>1,5 x</item>
+    <item>2 x</item>
+  </string-array>
+    <plurals name="chat_n_new_messages">
+        <item quantity="one">%d nova poruka</item>
+        <item quantity="few">%d nove poruke</item>
+        <item quantity="other">%d novih poruka</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+    <item quantity="one">Premotavanje unaprijed za %d sekundu</item>
+    <item quantity="few">Premotavanje unaprijed za %d sekunde</item>
+    <item quantity="other">Premotavanje unaprijed za %d sekundi</item>
+  </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+    <item quantity="one">Premotavanje unatrag za %d sekundu</item>
+    <item quantity="few">Premotavanje unatrag za %d sekunde</item>
+    <item quantity="other">Premotavanje unatrag za %d sekundi</item>
+  </plurals>
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d nova obavijest</item>
+    <item quantity="few">%d nove obavijesti</item>
+    <item quantity="other">%d novih obavijesti</item>
+  </plurals>
+    <plurals name="n_contacts">
+        <item quantity="one">%d kontakt</item>
+        <item quantity="few">%d kontakta</item>
+        <item quantity="other">%d kontakata</item>
+    </plurals>
+    <plurals name="n_hours">
+        <item quantity="one">%d sat</item>
+        <item quantity="few">%d sata</item>
+        <item quantity="other">%d sati</item>
+    </plurals>
+    <plurals name="n_members">
+        <item quantity="one">%d član</item>
+        <item quantity="few">%d člana</item>
+        <item quantity="other">%d članova</item>
+    </plurals>
+    <plurals name="n_messages">
+        <item quantity="one">%d poruka</item>
+        <item quantity="few">%d poruke</item>
+        <item quantity="other">%d poruka</item>
+    </plurals>
+    <plurals name="n_minutes">
+        <item quantity="one">%d min</item>
+        <item quantity="few">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Idi na početnu"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Natrag"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Više opcija"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Gotovo"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Prikaži sve"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Odabir aplikacije"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ISKLJUČENO"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"UKLJUČENO"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"svemir"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Pretražite…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Izbriši upit"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Upit za pretraživanje"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Pretraži"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Pošalji upit"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Glasovno pretraživanje"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Dijeli s"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Dijeli putem aplikacije <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Sažmi"</string>
+    <string name="app_name">Delta Chat</string>
+    <string name="archive">Arhiviraj</string>
+    <string name="attachment">Privitak</string>
+    <string name="automatic">Automatski</string>
+    <string name="back">Nazad</string>
+    <string name="blue">Plavo</string>
+    <string name="bottomsheet_action_collapse">Sažmite donju tablicu</string>
+    <string name="bottomsheet_action_expand">Proširite donju tablicu</string>
+    <string name="bottomsheet_action_expand_halfway">Proširi donju polovicu</string>
+    <string name="bottomsheet_drag_handle_clicked">Dvaput dodirnut marker za povlačenje</string>
+    <string name="bottomsheet_drag_handle_content_description">Marker za povlačenje</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Odgovori"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Videozapis"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Odbij"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Prekini"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Dolazni poziv"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Poziv u tijeku"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Filtriranje dolaznog poziva"</string>
+    <string msgid="4519059065203201851" name="callendpoint_name_earpiece">"Zvučnik"</string>
+    <string msgid="623806810712383295" name="callendpoint_name_speaker">"Zvučnik"</string>
+    <string msgid="6723516311603411573" name="callendpoint_name_wiredheadset">"Žičane slušalice"</string>
+    <string name="camera">Kamera</string>
+    <string name="cancel">Otkaži</string>
+    <string name="character_counter_content_description">Uneseno znakova: %1$d od %2$d</string>
+    <string name="character_counter_overflowed_content_description">Premašeno je ograničenje broja znakova: %1$d od %2$d</string>
+    <string name="chat_archived_label">Arhivirano</string>
+    <string name="chat_camera_unavailable">Kamera nije dostupna.</string>
+    <string name="chat_input_placeholder">Poruka</string>
+    <string name="chat_no_messages">Nema poruka.</string>
+    <string name="chat_please_enter_message">Molimo unesite poruku.</string>
+    <string name="chat_record_explain">Pritisnite i držite kako biste snimili glasovnu poruku, pustite za slanje</string>
+    <string name="chat_record_slide_to_cancel">Kliznite za otkazivanje</string>
+    <string name="chat_share_with_title">Podijeli sa</string>
+    <string name="clear_text_end_icon_content_description">Brisanje teksta</string>
+    <string name="close">Zatvori</string>
+    <string name="contact">Kontakt</string>
+    <string name="contacts_headline">Kontakti</string>
+    <string name="contacts_title">Kontakti</string>
+    <string name="copied_to_clipboard">Kopirano u međuspremnik.</string>
+    <string msgid="6083905920877235314" name="copy">"Kopiraj"</string>
+    <string name="custom">Prilagođeno</string>
+    <string name="cyan">Cijan</string>
+    <string name="danger">Oprez</string>
+    <string name="def">Zadano</string>
+    <string name="default_notification_channel_name">Upravo svira</string>
+    <string name="delete">Obriši</string>
+    <string name="delete_account">Obriši račun</string>
+    <string name="delete_message_desktop">Obriši poruku</string>
+    <string name="documents">Dokumenti</string>
+    <string name="draft">Skica</string>
+    <string msgid="5055290162204827523" name="emoji_bidirectional_switcher_clicked_desc">"promijenjen je smjer emojija"</string>
+    <string msgid="5084600168354220605" name="emoji_bidirectional_switcher_content_desc">"dvosmjerni izmjenjivač emojija"</string>
+    <string msgid="4381135114947330911" name="emoji_category_activity">"AKTIVNOSTI I DOGAĐAJI"</string>
+    <string msgid="4640771324837307541" name="emoji_category_animals_nature">"ŽIVOTINJE I PRIRODA"</string>
+    <string msgid="1570830970240985537" name="emoji_category_emotions">"SMAJLIĆI I EMOCIJE"</string>
+    <string msgid="6185639503532784871" name="emoji_category_flags">"ZASTAVE"</string>
+    <string msgid="1189971856721244395" name="emoji_category_food_drink">"HRANA I PIĆE"</string>
+    <string msgid="6106115586332708067" name="emoji_category_objects">"OBJEKTI"</string>
+    <string msgid="7968173366822927025" name="emoji_category_people">"OSOBE"</string>
+    <string msgid="7142376595414250279" name="emoji_category_recent">"NEDAVNO KORIŠTENO"</string>
+    <string msgid="5626171724310261787" name="emoji_category_symbols">"SIMBOLI"</string>
+    <string msgid="8105712773237012672" name="emoji_category_travel_places">"PUTOVANJA I MJESTA"</string>
+    <string msgid="288822832574892625" name="emoji_empty_non_recent_category">"Nije dostupan nijedan emoji"</string>
+    <string msgid="7863877827879290200" name="emoji_empty_recent_category">"Još niste upotrijebili emojije"</string>
+    <string msgid="943874297162865134" name="emoji_skin_tone_dark_content_desc">"tamna boja kože"</string>
+    <string msgid="1052239040923092881" name="emoji_skin_tone_light_content_desc">"svijetla boja kože"</string>
+    <string msgid="8880212664699697283" name="emoji_skin_tone_medium_content_desc">"srednja boja kože"</string>
+    <string msgid="5500271767005002413" name="emoji_skin_tone_medium_dark_content_desc">"srednje tamna boja kože"</string>
+    <string msgid="3968357909948619626" name="emoji_skin_tone_medium_light_content_desc">"srednje svijetla boja kože"</string>
+    <string msgid="1759906883307507376" name="emoji_skin_tone_shadow_content_desc">"sjena"</string>
+    <string msgid="6381933050671041489" name="emoji_variant_content_desc_template">"%1$s i %2$s"</string>
+    <string msgid="2898934883418401376" name="emoji_variant_selector_content_desc">"alat za odabir varijante emojija"</string>
+    <string name="ephemeral_messages">Nestajuće poruke</string>
+    <string name="error">Greška</string>
+    <string name="error_a11y_label">Pogreška: nije važeće</string>
+    <string name="error_icon_content_description">Pogreška</string>
+    <string name="error_message_authentication_expired">Prijavite se za upotrebu te aplikacije</string>
+    <string name="error_message_bad_value">Netočni ulazni podaci</string>
+    <string name="error_message_concurrent_stream_limit">Slušate na previše uređaja</string>
+    <string name="error_message_content_already_playing">Taj se sadržaj već reproducira</string>
+    <string name="error_message_disconnected">Prekinuta je veza s aplikacijom za medijske sadržaje</string>
+    <string name="error_message_end_of_playlist">Nema više ničeg u redu čekanja</string>
+    <string name="error_message_fallback">Nešto nije u redu. Pokušajte kasnije.</string>
+    <string name="error_message_info_cancelled">Završavanje nije uspjelo. Pokušajte ponovo.</string>
+    <string name="error_message_invalid_state">Trenutačno to ne možemo učiniti</string>
+    <string name="error_message_io">Pogreška unosa/rezultata obrade</string>
+    <string name="error_message_not_available_in_region">Taj sadržaj nije dostupan ovdje</string>
+    <string name="error_message_not_supported">Ova aplikacija nema tu mogućnost</string>
+    <string name="error_message_parental_control_restricted">Taj je sadržaj blokiran</string>
+    <string name="error_message_permission_denied">Pristup je odbijen</string>
+    <string name="error_message_premium_account_required">Potreban je pristup uz dodatnu naplatu</string>
+    <string name="error_message_setup_required">Potrebno je postavljanje</string>
+    <string name="error_message_skip_limit_reached">Ne možete više preskakati pjesme</string>
+    <string name="error_x">Greška: %1$s</string>
+    <string name="exo_controls_cc_disabled_description">Omogući titlove</string>
+    <string name="exo_controls_cc_enabled_description">Onemogući titlove</string>
+    <string name="exo_controls_fastforward_description">Brzo unaprijed</string>
+    <string name="exo_controls_fullscreen_enter_description">Otvaranje prikaza na cijelom zaslonu</string>
+    <string name="exo_controls_fullscreen_exit_description">Zatvaranje prikaza na cijelom zaslonu</string>
+    <string name="exo_controls_hide">Sakrij kontrole playera</string>
+    <string name="exo_controls_next_description">Sljedeće</string>
+    <string name="exo_controls_overflow_hide_description">Sakrij dodatne postavke</string>
+    <string name="exo_controls_overflow_show_description">Prikaži dodatne postavke</string>
+    <string name="exo_controls_pause_description">Pauza</string>
+    <string name="exo_controls_play_description">Reproduciraj</string>
+    <string name="exo_controls_playback_speed">Brzina</string>
+    <string name="exo_controls_previous_description">Prethodno</string>
+    <string name="exo_controls_repeat_all_description">Trenutačno: Ponovi sve. Promijenite način ponavljanja.</string>
+    <string name="exo_controls_repeat_off_description">Trenutačno: Bez ponavljanja. Promijenite način ponavljanja.</string>
+    <string name="exo_controls_repeat_one_description">Trenutačno: Ponovi jedno. Promijenite način ponavljanja.</string>
+    <string name="exo_controls_rewind_description">Unatrag</string>
+    <string name="exo_controls_seek_bar_description">Napredak reprodukcije</string>
+    <string name="exo_controls_settings_description">Postavke</string>
+    <string name="exo_controls_show">Prikaži kontrole playera</string>
+    <string name="exo_controls_shuffle_off_description">Omogućite način nasumične reprodukcije</string>
+    <string name="exo_controls_shuffle_on_description">Onemogućite način nasumične reprodukcije</string>
+    <string name="exo_controls_stop_description">Zaustavi</string>
+    <string name="exo_controls_vr_description">VR način</string>
+    <string name="exo_download_completed">Preuzimanje je dovršeno</string>
+    <string name="exo_download_description">Preuzmi</string>
+    <string name="exo_download_downloading">Preuzimanje</string>
+    <string name="exo_download_failed">Preuzimanje nije uspjelo</string>
+    <string name="exo_download_notification_channel_name">Preuzimanja</string>
+    <string name="exo_download_paused">Preuzimanja su pauzirana</string>
+    <string name="exo_download_paused_for_network">Preuzimanja čekaju mrežu</string>
+    <string name="exo_download_paused_for_wifi">Preuzimanja čekaju Wi-Fi</string>
+    <string name="exo_download_removing">Uklanjanje preuzimanja</string>
+    <string name="exo_item_list">%1$s, %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f Mbps</string>
+    <string name="exo_track_mono">Mono</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_role_alternate">Alternativna verzija</string>
+    <string name="exo_track_role_closed_captions">Verzija s titlovima</string>
+    <string name="exo_track_role_commentary">Verzija s komentarima</string>
+    <string name="exo_track_role_supplementary">Dopunska verzija</string>
+    <string name="exo_track_selection_auto">Automatski</string>
+    <string name="exo_track_selection_none">Ništa</string>
+    <string name="exo_track_selection_title_audio">Audiozapis</string>
+    <string name="exo_track_selection_title_text">Tekst</string>
+    <string name="exo_track_selection_title_video">Videozapis</string>
+    <string name="exo_track_stereo">Stereo</string>
+    <string name="exo_track_surround">Okružujući zvuk</string>
+    <string name="exo_track_surround_5_point_1">5.1-kanalni okružujući zvuk</string>
+    <string name="exo_track_surround_7_point_1">7.1-kanalni okružujući zvuk</string>
+    <string name="exo_track_unknown">Nepoznato</string>
+    <string name="exo_track_unknown_name">Nepoznato (%1$s)</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Napredno"</string>
+    <string name="exposed_dropdown_menu_content_description">Prikaži padajući izbornik</string>
+    <string name="extra_large">Ekstra velika</string>
+    <string name="fast">Brzo</string>
+    <string name="file">Datoteka</string>
+    <string name="file_not_found">%1$s nije pronađeno.</string>
+    <string name="forward">Proslijedi</string>
+    <string name="forward_to">Proslijedi do...</string>
+    <string name="gallery">Galerija</string>
+    <string name="gif">Gif</string>
+    <string name="global_menu_edit_copy_desktop">Kopiraj</string>
+    <string name="global_menu_edit_desktop">Uredi</string>
+    <string name="global_menu_edit_paste_desktop">Zalijepi</string>
+    <string name="global_menu_edit_undo_desktop">Vrati</string>
+    <string name="global_menu_file_desktop">Datoteka</string>
+    <string name="global_menu_file_quit_desktop">Izlaz</string>
+    <string name="global_menu_help_desktop">Pomoć</string>
+    <string name="global_menu_help_report_desktop">Prijavite problem</string>
+    <string name="global_menu_preferences_language_desktop">Jezik</string>
+    <string name="global_menu_view_desktop">Pogledaj</string>
+    <string name="green">Zeleno</string>
+    <string name="group_add_members">Dodaj članove</string>
+    <string name="group_avatar">Grupni avatar</string>
+    <string name="group_name">Naziv grupe</string>
+    <string name="icon_content_description">Ikona dijaloga</string>
+    <string name="image">Slika</string>
+    <string name="images">Slike</string>
+    <string name="info">Info</string>
+    <string name="item_view_role_description">Kartica</string>
+    <string name="large">Velika</string>
+    <string name="last_month">Prošlog mjeseca</string>
+    <string name="last_week">Prošli tjedan</string>
+    <string name="location">Lokacija</string>
+    <string name="login_error_server">Molimo unesite valjan server / IP adresu</string>
+    <string name="login_imap_server">IMAP server</string>
+    <string name="login_smtp_password">SMTP lozinka</string>
+    <string name="login_smtp_server">SMTP server</string>
+    <string name="magenta">Magenta</string>
+    <string name="main_menu">Glavni izbornik</string>
+    <string name="material_clock_toggle_content_description">Odaberite prijepodne ili poslijepodne</string>
+    <string name="material_hour_24h_suffix">%1$s h</string>
+    <string name="material_hour_selection">Odaberite sat</string>
+    <string name="material_hour_suffix">%1$s h</string>
+    <string name="material_minute_selection">Odaberite minute</string>
+    <string name="material_minute_suffix">%1$s min</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Prijeđite na način rada sata da biste unijeli vrijeme.</string>
+    <string name="material_timepicker_hour">Sat</string>
+    <string name="material_timepicker_minute">Minuta</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Odabir vremena</string>
+    <string name="material_timepicker_text_input_mode_description">Prijeđite na način unosa teksta da biste unijeli vrijeme.</string>
+    <string name="media">Medij</string>
+    <string name="media3_controls_pause_description">Pauziraj</string>
+    <string name="media3_controls_play_description">Reproduciraj</string>
+    <string name="media3_controls_seek_back_description">Skok unatrag</string>
+    <string name="media3_controls_seek_forward_description">Skok prema naprijed</string>
+    <string name="media3_controls_seek_to_next_description">Idi na sljedeću stavku</string>
+    <string name="media3_controls_seek_to_previous_description">Idi na prethodnu stavku</string>
+    <string name="media_preview">Prikaz medija</string>
+    <string name="member_x_removed">Član %1$s uklonjen.</string>
+    <string name="menu_add_attachment">Dodaj privitak</string>
+    <string name="menu_advanced">Napredno</string>
+    <string name="menu_all_media">Svi mediji</string>
+    <string name="menu_copy_to_clipboard">Kopiraj u međuspremnik</string>
+    <string name="menu_delete_location">Obrisati ovu lokaciju?</string>
+    <string name="menu_edit_group">Uredi grupu</string>
+    <string name="menu_forward">Proslijedi poruku</string>
+    <string name="menu_help">Pomoć</string>
+    <string name="menu_leave_group">Napusti grupu</string>
+    <string name="menu_message_details">Detalji poruke</string>
+    <string name="menu_mute">Utišaj obavijesti</string>
+    <string name="menu_new_contact">Novi kontakt</string>
+    <string name="menu_new_group">Nova grupa</string>
+    <string name="menu_reply">Odgovori na poruku</string>
+    <string name="menu_select_all">Označi sve</string>
+    <string name="menu_send">Pošalji</string>
+    <string name="menu_settings">Postavke</string>
+    <string name="menu_share">Podijeli</string>
+    <string name="menu_show_global_map">Prikaži sve lokacije</string>
+    <string name="menu_unmute">Ukloni utišanje</string>
+    <string name="message_detail_received_desktop">primljeno</string>
+    <string name="message_detail_sent_desktop">poslano</string>
+    <string name="more_info_desktop">Više informacija</string>
+    <string name="mtrl_badge_numberless_content_description">Nova obavijest</string>
+    <string name="mtrl_checkbox_state_description_checked">Potvrđeno</string>
+    <string name="mtrl_checkbox_state_description_indeterminate">Djelomično potvrđeno</string>
+    <string name="mtrl_checkbox_state_description_unchecked">Nije potvrđeno</string>
+    <string name="mtrl_chip_close_icon_content_description">Ukloni %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Više od %1$d novih obavijesti</string>
+    <string name="mtrl_picker_a11y_next_month">Prijelaz na sljedeći mjesec</string>
+    <string name="mtrl_picker_a11y_prev_month">Pomicanje na prethodni mjesec</string>
+    <string name="mtrl_picker_announce_current_range_selection">Odabir datuma početka: %1$s – odabir datuma završetka: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Trenutačan odabir: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">ništa</string>
+    <string name="mtrl_picker_cancel">Odustani</string>
+    <string name="mtrl_picker_confirm">U redu</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Odaberite datum</string>
+    <string name="mtrl_picker_date_header_unselected">Odabrani datum</string>
+    <string name="mtrl_picker_day_of_week_column_header">%1$s</string>
+    <string name="mtrl_picker_end_date_description">Datum završetka %1$s</string>
+    <string name="mtrl_picker_invalid_format">Nevažeći format.</string>
+    <string name="mtrl_picker_invalid_format_example">Primjer: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Koristi format: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Raspon nije važeći.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Idi na trenutačnu godinu %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Prijelaz na godinu %1$d</string>
+    <string name="mtrl_picker_out_of_range">Izvan raspona: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Datum početka – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – datum završetka</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Odaberite raspon</string>
+    <string name="mtrl_picker_range_header_unselected">Datum početka – datum završetka</string>
+    <string name="mtrl_picker_save">Spremi</string>
+    <string name="mtrl_picker_start_date_description">Datum početka %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Datum</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Datum završetka</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Datum početka</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">g</string>
+    <string name="mtrl_picker_today_description">Danas: %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Prijelaz na način unosa u Kalendaru</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Dodirnite da biste se prebacili na prikaz kalendara</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Prijelaz na način unosa teksta</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Dodirnite da biste se prebacili na prikaz godine</string>
+    <string name="mtrl_timepicker_cancel">Odustani</string>
+    <string name="mtrl_timepicker_confirm">U redu</string>
+    <string name="mute">Prigušiti</string>
+    <string name="mute_for_eight_hours">Utišaj na 8 sata</string>
+    <string name="mute_for_one_day">Utišaj na 1 dan</string>
+    <string name="mute_for_one_hour">Utišaj na 1 sat</string>
+    <string name="mute_for_seven_days">Utišaj na 7 dana</string>
+    <string name="name_desktop">Ime</string>
+    <string name="never">Nikada</string>
+    <string name="next">Dalje</string>
+    <string name="no">Ne</string>
+    <string name="none">Ništa</string>
+    <string name="normal">Normalna</string>
+    <string name="not_now">Ne sada</string>
+    <string msgid="6573031135582639649" name="not_set">"Nije postavljeno"</string>
+    <string name="notify_name_and_message">Ime i poruka</string>
+    <string name="notify_name_only">Samo ime</string>
+    <string name="notify_new_message">Nova poruka</string>
+    <string name="notify_no_name_or_message">Bez imena ili poruke</string>
+    <string name="notify_priority_high">Visoko</string>
+    <string name="notify_priority_max">Maks</string>
+    <string name="notify_reply_button">Odgovori</string>
+    <string name="now">Sada</string>
+    <string name="off">Isključeno</string>
+    <string name="ok">OK</string>
+    <string name="on">Uključeno</string>
+    <string name="one_moment">Samo trenutak...</string>
+    <string name="open">Otvori</string>
+    <string name="orange">Narančasta</string>
+    <string name="password">Lozinka</string>
+    <string name="password_toggle_content_description">Prikaži zaporku</string>
+    <string name="perm_continue">Nastavi</string>
+    <string name="perm_required_title">Potrebna je dozvola</string>
+    <string name="pref_appearance">Izgled</string>
+    <string name="pref_background">Pozadina</string>
+    <string name="pref_background_btn_gallery">Odaberi iz galerije</string>
+    <string name="pref_background_default">Zadana pozadina</string>
+    <string name="pref_background_default_color">Zadana boja</string>
+    <string name="pref_backup">Sigurnosna kopija</string>
+    <string name="pref_blocked_contacts">Blokirani kontakti</string>
+    <string name="pref_chats">Razgovori</string>
+    <string name="pref_dark_theme">Tamno</string>
+    <string name="pref_enter_sends">Enter šalje poruku</string>
+    <string name="pref_enter_sends_explain">Pritisak na Enter će poslati tekst poruku</string>
+    <string name="pref_in_chat_sounds">Zvuk unutar razgovora</string>
+    <string name="pref_incognito_keyboard">Inkognito tipkovnica</string>
+    <string name="pref_incognito_keyboard_explain">Zahtijevaj od tipkovnice da onemogući personalizirano učenje</string>
+    <string name="pref_language">Jezik</string>
+    <string name="pref_led_color">Boja LED</string>
+    <string name="pref_light_theme">Svijetlo</string>
+    <string name="pref_notifications">Obavijesti</string>
+    <string name="pref_notifications_priority">Prioritet</string>
+    <string name="pref_notifications_show">Prikaži</string>
+    <string name="pref_other">Ostalo</string>
+    <string name="pref_privacy">Privatnost</string>
+    <string name="pref_profile_photo">Profilna slika</string>
+    <string name="pref_read_receipts">Potvrde čitanja</string>
+    <string name="pref_read_receipts_explain">Ukoliko ste onemogućili potvrdu čitanja kod sebe, nećete moći vidjeti potvrde čitanja od drugih.</string>
+    <string name="pref_screen_security">Sigurnost ekrana</string>
+    <string name="pref_screen_security_explain">Onemogući snimanje ekrana na popisu nedavnih i unutar aplikacije</string>
+    <string name="pref_show_emails_all">Sve</string>
+    <string name="pref_silent">Tiho</string>
+    <string name="pref_sound">Zvuk</string>
+    <string name="pref_system_default">Sustavno zadano</string>
+    <string name="pref_theme">Tema</string>
+    <string name="pref_vibrate">Vibracija</string>
+    <string name="pref_your_name">Vaše ime</string>
+    <string msgid="6685851473431805375" name="preference_copied">"Sažetak \"<ns1:g id="SUMMARY">%1$s</ns1:g>\" kopiran je u međuspremnik."</string>
+    <string name="profile_encryption">Šifriranje</string>
+    <string name="qr_code">QR kod</string>
+    <string name="qrscan_fingerprint_label">Otisak prsta</string>
+    <string name="red">Crveno</string>
+    <string name="remove_desktop">Ukloni</string>
+    <string name="save">Spremi</string>
+    <string name="save_desktop">Spremi</string>
+    <string name="save_message">Spremi</string>
+    <string name="saved_messages">Sačuvane poruke</string>
+    <string name="search">Traži</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Pretraži"</string>
+    <string name="search_no_result_for_x">Nema pronađenih rezultata za \"%s\"</string>
+    <string name="searchview_clear_text_content_description">Ukloni tekst</string>
+    <string name="searchview_navigation_content_description">Natrag</string>
+    <string name="self">Ja</string>
+    <string name="side_sheet_accessibility_pane_title">Bočni list</string>
+    <string name="slow">Sporo</string>
+    <string name="small">Mala</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="strict">Strog</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="tab_contact">Kontakt</string>
+    <string name="tab_gallery">Galerija</string>
+    <string name="tab_group">Grupa</string>
+    <string name="tab_map">Mapa</string>
+    <string name="this_month">Ovog mjeseca</string>
+    <string name="this_week">Ovaj tjedan</string>
+    <string name="timestamp_format_m_desktop">MMM D</string>
+    <string name="today">Danas</string>
+    <string name="unarchive">Dearhiviraj</string>
+    <string name="unknown">Nepoznato</string>
+    <string name="update">Ažuriranje</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"ISKLJUČENO"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"UKLJUČENO"</string>
+    <string name="video">Video</string>
+    <string name="welcome_desktop">Dobro došli u Delta Chat</string>
+    <string name="white">Bijelo</string>
+    <string name="yes">Da</string>
+    <string name="yesterday">Jučer</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.11.1" type="incidents">
+
+    <incident
+        id="LintError"
+        severity="ignore"
+        message="The markup in the document following the root element must be well-formed.">
+        <location
+            file="${:*fossRelease*MAIN*sourceProvider*0*resDir*0}/layout/activity_registration_2nd_device_qr.xml"/>
+    </incident>
+
+</incidents>

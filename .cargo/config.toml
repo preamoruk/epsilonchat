@@ -1,3 +1,7 @@
+[target.aarch64-linux-android]
+linker = "/Users/Apple/Library/Android/sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang"
+ar = "/Users/Apple/Library/Android/sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
+
 [env]
 # In unoptimised builds tokio tends to use a lot of stack space when
 # creating some complicated futures, tokio has an open issue for this:

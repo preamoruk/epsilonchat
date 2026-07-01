@@ -1,0 +1,3046 @@
+[
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_rotate_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_rotate_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_header.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_header.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_location_off_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_location_off_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_launch_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_launch_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_volume_up_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_volume_up_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_movie_creation_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_movie_creation_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_launch_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_launch_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_help_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_help_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_account_item_context.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/account_item_context.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_crop_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_crop_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_forum_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_forum_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_person_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_person_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_help_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_help_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_profile_common.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/profile_common.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_volume_up_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_volume_up_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_list_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_list_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_relay_item_context.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/relay_item_context.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_delivery_status_read.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_delivery_status_read.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_cast.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_cast.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_scribble_select_sticker_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/scribble_select_sticker_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_badge_divider.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/badge_divider.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_mic_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_mic_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_keyboard_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_keyboard_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_attach_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_attach_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_forum_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_forum_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_swap_vert_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_swap_vert_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_background_hd.jpg.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/background_hd.jpg"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_mic_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_mic_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_clear_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_clear_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_create_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_create_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_keyboard_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_keyboard_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_delivery_status_sending.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_delivery_status_sending.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_advanced_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_advanced_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_delete_account_item_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/delete_account_item_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_lock_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_lock_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_received_document.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_received_document.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_account_box_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_account_box_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_flip_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_flip_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_emoji_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_emoji_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_create_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_create_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_attach_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_attach_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_group_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_group_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_play_to_pause_animation.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/play_to_pause_animation.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_dialog_share_invite_link.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/dialog_share_invite_link.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_web_view_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/web_view_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_close_white_18dp.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_close_white_18dp.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_send_push_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_send_push_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_quick_camera_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/quick_camera_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_send_sms_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_send_sms_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_last_seen.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_last_seen.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_group_create_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/group_create_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_search_toolbar.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/search_toolbar.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_item_sent_indicator_text_shape_dark.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_item_sent_indicator_text_shape_dark.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_crop_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_crop_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_unpin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_unpin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_reactions_pill.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/reactions_pill.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_blur_on_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_blur_on_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_mic_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_mic_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_unarchive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_unarchive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_divider.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_divider.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_search_toolbar_shadow.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/search_toolbar_shadow.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_attach_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_attach_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_lock_white_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_lock_white_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/xml_preferences_appearance.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/xml/preferences_appearance.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_undo_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_undo_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_wb_sunny_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_wb_sunny_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_local_dining_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_local_dining_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_account_box_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_account_box_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_notification_permanent.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/notification_permanent.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_search_down.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_search_down.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_circle_universal_overlay.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/circle_universal_overlay.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_undo_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_undo_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-ldrtl_message_bubble_background_sent_alone_with_border.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-ldrtl/message_bubble_background_sent_alone_with_border.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_lock_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_lock_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_keyboard_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_keyboard_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_volume_off_grey600_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_volume_off_grey600_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_list_item_background_dark.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_list_item_background_dark.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_mood_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_mood_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_text_item_button.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_text_item_button.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_scribble_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/scribble_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_attachment_close_circle.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_attachment_close_circle.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_reply.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_reply.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_footer.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_footer.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_notifications_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_notifications_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_trash_filled_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_trash_filled_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_person_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_person_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_reply_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_reply_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_pause_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_pause_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_mic_on.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_mic_on.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_forum_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_forum_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_brush_highlight_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_brush_highlight_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_new_contact.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/new_contact.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_info_outline_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_info_outline_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_media_view_edit_button.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/media_view_edit_button.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_notifications_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_notifications_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_keyboard_arrow_down_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_keyboard_arrow_down_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_text_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_text_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_contact_picture.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_contact_picture.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_pause_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_pause_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_preference_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/preference_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_dialog_with_checkbox.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/dialog_with_checkbox.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_photo_camera_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_photo_camera_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-ldrtl-mdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-ldrtl-mdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_emoji_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_emoji_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_person_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_person_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_keyboard_arrow_down_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_keyboard_arrow_down_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_create_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_create_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_media_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/media_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_brightness_6_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_brightness_6_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_send_push_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_send_push_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_share_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/share_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_local_help.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/local_help.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_info_outline_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_info_outline_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_person_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_person_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_recent_photo_view_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/recent_photo_view_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_stop_circle.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_stop_circle.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_flip_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_flip_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_warning_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_warning_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_volume_up.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_volume_up.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_emoji_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_emoji_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_backup_transfer_menu.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/backup_transfer_menu.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_contact_picture.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_contact_picture.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_notification_permanent.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/notification_permanent.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_notifications_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_notifications_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_insert_drive_file_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_insert_drive_file_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_brightness_6_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_brightness_6_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_qr_show_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/qr_show_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_check.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/check.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_camera_alt_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_camera_alt_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_profile_context.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/profile_context.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_camera_alt_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_camera_alt_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_mood_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_mood_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_delete_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_delete_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-ldrtl-xxhdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-ldrtl-xxhdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_create_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_create_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_trash_filled_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_trash_filled_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_notification_permanent.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/notification_permanent.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_call_end.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_call_end.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_trash_filled_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_trash_filled_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_forward_white_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_forward_white_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_camera_alt_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_camera_alt_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_volume_off_grey600_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_volume_off_grey600_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_forum_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_forum_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_rotate_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_rotate_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_status_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_status_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_brush_highlight_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_brush_highlight_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_forum_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_forum_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_select_chat_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_select_chat_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_documents_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_documents_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_content_copy_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_content_copy_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_location_on_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_location_on_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_attachment_selector_shadow.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/attachment_selector_shadow.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_play_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_play_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_send_push_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_send_push_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_brush_highlight_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_brush_highlight_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_contact_list_divider_dark.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/contact_list_divider_dark.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_lock_white_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_lock_white_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_reply_white_36dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_reply_white_36dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_quick_camera_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/quick_camera_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_notifications_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_notifications_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_launch_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_launch_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/raw_sound_in.wav.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/raw/sound_in.wav"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_contact_list.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/contact_list.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_message_bubble_background_received_alone.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/message_bubble_background_received_alone.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_apps_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_apps_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_volume_off_grey600_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_volume_off_grey600_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/animator_rotate_90_animation.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/animator/rotate_90_animation.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_application_preferences.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_application_preferences.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_brightness_6_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_brightness_6_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_proxy_disabled_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_proxy_disabled_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_check.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/check.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_list_item_inbox_zero.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_list_item_inbox_zero.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_send_sms_insecure_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_send_sms_insecure_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_swap_vert_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_swap_vert_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_delete_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_delete_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_add_members.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/add_members.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_quote_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/quote_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/xml_shortcuts.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/xml/shortcuts.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_close_white_18dp.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_close_white_18dp.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_wb_sunny_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_wb_sunny_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_reaction_picker.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/reaction_picker.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_volume_up_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_volume_up_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_text_item_small.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_text_item_small.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_reaction_recipient_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/reaction_recipient_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_info_outline_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_info_outline_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_brightness_6_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_brightness_6_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_check_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_check_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_new_contact_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/new_contact_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_vcard.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_vcard.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_close_white_18dp.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_close_white_18dp.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_info_outline_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_info_outline_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_permissions_rationale_dialog.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/permissions_rationale_dialog.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_sticker_missing_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/sticker_missing_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_item_sent_indicator_text_shape.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_item_sent_indicator_text_shape.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_volume_up_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_volume_up_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_sent.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_sent.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_delivery_status_sent.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_delivery_status_sent.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_volume_off_white_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_volume_off_white_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_unarchive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_unarchive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_archive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_archive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_info_outline_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_info_outline_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_search_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_search_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_image_editor_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/image_editor_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_movie_creation_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_movie_creation_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_work_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_work_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_brush_marker_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_brush_marker_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_reactions_details_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/reactions_details_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_help_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_help_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/xml_file_provider_paths.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/xml/file_provider_paths.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_image_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_image_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_registration_qr_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/registration_qr_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_circle_white.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/circle_white.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_check.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/check.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_gallery_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_gallery_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_add_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_add_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_emoji_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_emoji_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_single_line_input.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/single_line_input.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_swap_vert_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_swap_vert_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_volume_up_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_volume_up_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_close_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_close_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-night_button_secondary_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-night/button_secondary_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_qr_code_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_qr_code_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/xml_preferences_advanced.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/xml/preferences_advanced.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_video_player.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/video_player.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_mic_off.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_mic_off.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_send_push.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_send_push.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/raw_webxdc.js.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/raw/webxdc.js"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_delete_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_delete_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_avatar_selector.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/avatar_selector.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_location_off_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_location_off_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_media_preview_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/media_preview_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_icon_notification.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/icon_notification.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_tag_faces_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_tag_faces_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_button_secondary_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/button_secondary_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_keyboard_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_keyboard_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_clear_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_clear_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_document_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/document_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-ldrtl-hdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-ldrtl-hdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_text_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_text_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_tag_faces_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_tag_faces_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_brush_highlight_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_brush_highlight_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_mood_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_mood_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_advanced_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_advanced_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_photo_camera_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_photo_camera_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_pets_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_pets_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_baseline_eye.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_baseline_eye.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_image_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_image_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_group_create.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/group_create.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_scribble_sticker_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/scribble_sticker_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_mood_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_mood_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_photo_camera_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_photo_camera_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/color_text_color_secondary_dark_theme.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/color/text_color_secondary_dark_theme.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_pin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_pin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_item_update_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_item_update_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_forwarding_menu.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/forwarding_menu.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_send_sms_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_send_sms_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_delivery_status_sent.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_delivery_status_sent.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_group_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_group_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_info_outline_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_info_outline_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_media_view_page.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/media_view_page.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_reply.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_reply.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_mesh_setup_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/mesh_setup_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/animator_bottom_play_to_pause_animation.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/animator/bottom_play_to_pause_animation.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-ldrtl-xxxhdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-ldrtl-xxxhdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/xml__generated_res_locale_config.xml.flat",
+        "source": "org.thoughtcrime.securesms-foss-60:/xml/_generated_res_locale_config.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_mic_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_mic_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_crop_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_crop_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_blur_on_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_blur_on_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-night_button_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-night/button_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_search_up.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_search_up.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_account_selection_list_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/account_selection_list_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_recent_photo_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/recent_photo_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_lock_white_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_lock_white_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_reply_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_reply_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_fragment_view_log.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/fragment_view_log.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_webxdc.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_webxdc.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_send_push_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_send_push_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_preferences_create_profile_menu.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/preferences_create_profile_menu.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_send_button_bg_dark.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/send_button_bg_dark.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_contact_selection_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/contact_selection_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_check_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_check_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_activity_attachment_editor_stub.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_activity_attachment_editor_stub.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_mic_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_mic_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_account_box_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_account_box_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_delivery_status_sending.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_delivery_status_sending.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_item_background_animated.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_item_background_animated.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_call.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_call.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_proxy_list_header.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/proxy_list_header.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_qr_code_scanner_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_qr_code_scanner_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/anim_animation_toggle_out.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/anim/animation_toggle_out.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_text_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_text_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_wb_sunny_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_wb_sunny_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_audio_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/audio_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_advanced_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_advanced_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_mic_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_mic_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_content_copy_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_content_copy_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_thumbnail_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/thumbnail_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_delivery_status_failed.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_delivery_status_failed.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_send_sms_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_send_sms_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_play_icon.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/play_icon.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_warning_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_warning_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_pets_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_pets_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_location_on_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_location_on_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_qr_scan_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/qr_scan_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_trash_filled_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_trash_filled_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_conversation_list.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/conversation_list.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_flip_32.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_flip_32.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_delivery_status_sending.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_delivery_status_sending.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_floating_mini_bg_dark.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/floating_mini_bg_dark.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_attach_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_attach_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_mic_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_mic_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_clear_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_clear_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_attach_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_attach_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_blur_on_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_blur_on_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_warning_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_warning_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_delivery_status_read.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_delivery_status_read.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_baseline_bookmark_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/baseline_bookmark_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_add_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_add_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_notifications_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_notifications_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_unpin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_unpin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_dialog_audio_device_picker.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/dialog_audio_device_picker.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_brush_marker_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_brush_marker_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_delivery_status_sending.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_delivery_status_sending.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_photo_camera_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_photo_camera_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_qr_show.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_qr_show.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_pinned_chatlist.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_pinned_chatlist.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_account_box_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_account_box_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_touch_highlight_background_strong.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/touch_highlight_background_strong.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_movie_creation_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_movie_creation_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_scribble_select_sticker_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/scribble_select_sticker_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_insert_drive_file_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_insert_drive_file_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_reaction_pill_background_selected.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/reaction_pill_background_selected.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_advanced_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_advanced_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_location_off_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_location_off_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_button_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/button_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_sent_audio.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_sent_audio.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_share_white_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_share_white_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_pref_dialog_with_hint.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/pref_dialog_with_hint.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_person.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_pinned_list_item_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/pinned_list_item_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_headset.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_headset.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_local_dining_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_local_dining_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_attach_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_attach_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_list_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_list_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_attach_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_attach_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_rotate_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_rotate_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_archive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_archive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_help_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_help_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_warning_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_warning_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/raw_sandboxed_iframe_rtcpeerconnection_check.html.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/raw/sandboxed_iframe_rtcpeerconnection_check.html"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_contact_selection_list_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/contact_selection_list_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_delete_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_delete_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_swap_vert_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_swap_vert_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_quick_camera_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/quick_camera_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_document_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_document_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_mood_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_mood_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_blur_on_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_blur_on_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_blocked_contacts.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_blocked_contacts.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_play_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_play_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_info_outline_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_info_outline_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_tag_faces_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_tag_faces_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_send_sms_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_send_sms_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_videocam_off.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_videocam_off.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_image_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_image_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_baseline_bookmark_border_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/baseline_bookmark_border_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-ldrtl-xhdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-ldrtl-xhdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_dialog_extended_options.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/dialog_extended_options.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_message_bubble_background_sent_alone.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/message_bubble_background_sent_alone.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_advanced_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_advanced_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_lock.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_call.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_call.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_check_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_check_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/anim_fade_scale_in.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/anim/fade_scale_in.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_delivery_status_sent.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_delivery_status_sent.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_reply_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_reply_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_verified.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_verified.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_blur_on_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_blur_on_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_switch_compat_preference.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/switch_compat_preference.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_unlocked_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_unlocked_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_quick_camera_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/quick_camera_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_photo_camera_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_photo_camera_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_check.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_check.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_warning_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_warning_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_volume_off_white_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_volume_off_white_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_received_thumbnail.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_received_thumbnail.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_mic_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_mic_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_media_preview.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/media_preview.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_recording_layout.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/recording_layout.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/anim_slide_to_right.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/anim/slide_to_right.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_delivery_status_read.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_delivery_status_read.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_baseline_call_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/baseline_call_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_full_msg.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/full_msg.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_proxy_list_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/proxy_list_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_icon_notification.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/icon_notification.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_send_sms_insecure.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_send_sms_insecure.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_text_secure_normal.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/text_secure_normal.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-land_background_hd.jpg.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-land/background_hd.jpg"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_sent_thumbnail.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_sent_thumbnail.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/color_text_color_dark_theme.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/color/text_color_dark_theme.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_bluetooth_audio.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_bluetooth_audio.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_pause_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_pause_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_slidearrow.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/slidearrow.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_pets_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_pets_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_unlocked_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_unlocked_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_image_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_image_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_view_log.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/view_log.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_send_sms_insecure_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_send_sms_insecure_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_photo_camera_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_photo_camera_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_reply.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_reply.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-ldrtl_message_bubble_background_received_alone.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-ldrtl/message_bubble_background_received_alone.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_avatar_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/avatar_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/raw_sound_out.wav.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/raw/sound_out.wav"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_contact_picture.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_contact_picture.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_image_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_image_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_item_audio_device.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/item_audio_device.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_contact_picture.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_contact_picture.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_reply_white_36dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_reply_white_36dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_delivery_status_read.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_delivery_status_read.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_keyboard_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_keyboard_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_volume_off_grey600_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_volume_off_grey600_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_backup_provider_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/backup_provider_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_reply_white_36dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_reply_white_36dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_close_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_close_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/animator_bottom_pause_to_play_animation.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/animator/bottom_pause_to_play_animation.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_brush_marker_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_brush_marker_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_recording_lock_background_light.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/recording_lock_background_light.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_content_copy_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_content_copy_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_close_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_close_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_sticky_date_header_background_dark.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/sticky_date_header_background_dark.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_send_sms_insecure.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_send_sms_insecure.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_wb_sunny_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_wb_sunny_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_media_view_video.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/media_view_video.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_media_view_remove_button.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/media_view_remove_button.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_timer_gray_18dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_timer_gray_18dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_profile_title_context.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/profile_title_context.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_play_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_play_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_image_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_image_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_local_dining_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_local_dining_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_info_outline_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_info_outline_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_launcher_foreground_monochrome.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_launcher_foreground_monochrome.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_list_divider_shape_dark.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_list_divider_shape_dark.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/anim_animation_toggle_in.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/anim/animation_toggle_in.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_volume_up_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_volume_up_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_transport_selection_list_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/transport_selection_list_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_photo_camera_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_photo_camera_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_camera_alt_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_camera_alt_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_chat_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/chat_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_location_off_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_location_off_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_chevron_up.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_chevron_up.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_image_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_image_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_send_sms_insecure.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_send_sms_insecure.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_dialog_delete_profile.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/dialog_delete_profile.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_sticker_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/sticker_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_check_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_check_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_attach_record_video.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/attach_record_video.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_brightness_6_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_brightness_6_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_image_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_image_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_phone_in_talk.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_phone_in_talk.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_movie_creation_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_movie_creation_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_text_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_text_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_send_push.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_send_push.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_intro1.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/intro1.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_add_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_add_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_sticker_picker_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/sticker_picker_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_image_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_image_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_close_white_18dp.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_close_white_18dp.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_send_sms_insecure_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_send_sms_insecure_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_call_item_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/call_item_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_warning_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_warning_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_baseline_bookmark_remove_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/baseline_bookmark_remove_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_outline_email.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_outline_email.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_text_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_text_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/xml_preferences.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/xml/preferences.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_check.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/check.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_attachment_edit.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_attachment_edit.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_location_msg.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_location_msg.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_backup_provider_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/backup_provider_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_gallery_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_gallery_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_mic_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_mic_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_pause_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_pause_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_conversation.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/conversation.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_add_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_add_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_work_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_work_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_volume_up_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_volume_up_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_unlocked_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_unlocked_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_quick_camera_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/quick_camera_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_contact_blocked_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/contact_blocked_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_circle_tintable.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/circle_tintable.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_thumbnail.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_thumbnail.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_archived_list.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/archived_list.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_photo_camera_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_photo_camera_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_crop_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_crop_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_reply_white_36dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_reply_white_36dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_unarchive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_unarchive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_pin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_pin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_list_divider_shape.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_list_divider_shape.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/xml_preferences_chats.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/xml/preferences_chats.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_insert_drive_file_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_insert_drive_file_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_pets_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_pets_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/xml_preferences_notifications.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/xml/preferences_notifications.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_map_white_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_map_white_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_play_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_play_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_group_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_group_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_touch_highlight_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/touch_highlight_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_contact_photo_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/contact_photo_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_conversation_list_search.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/conversation_list_search.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_icon_notification.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/icon_notification.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_circle_alpha.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/circle_alpha.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_archived_indicator_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/archived_indicator_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_keyboard_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_keyboard_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_call.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_call.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_notification_permanent.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/notification_permanent.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_image_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_image_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_relay_list_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/relay_list_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_zooming_image_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/zooming_image_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_unlocked_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_unlocked_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_unpin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_unpin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_location_on_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_location_on_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_compose_divider_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/compose_divider_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_attachment_type_selector.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/attachment_type_selector.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_pets_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_pets_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_pin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_pin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_signup_options_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/signup_options_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_registration_qr.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_registration_qr.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_list_item_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_list_item_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_account_selection_list_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/account_selection_list_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_location_on_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_location_on_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_webxdc.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/webxdc.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_image_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_image_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_send_button_bg_light.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/send_button_bg_light.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_brush_highlight_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_brush_highlight_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_movie_creation_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_movie_creation_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_quick_camera_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/quick_camera_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_dismiss_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/dismiss_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_archive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_archive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_conversation_list_archive.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_conversation_list_archive.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_proxy_list_footer.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/proxy_list_footer.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_volume_off_grey600_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_volume_off_grey600_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_unarchive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_unarchive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_reply_white_36dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_reply_white_36dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_message_request_bottom_bar.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/message_request_bottom_bar.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-night_jumpto_btn_bg.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-night/jumpto_btn_bg.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_sticky_date_header_background_light.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/sticky_date_header_background_light.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_mood_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_mood_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_info_outline_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_info_outline_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_jumpto_btn_bg.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/jumpto_btn_bg.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_insert_drive_file_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_insert_drive_file_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_keyboard_arrow_down_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_keyboard_arrow_down_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_lock_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_lock_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_content_copy_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_content_copy_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_keyboard_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_keyboard_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_mic_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_mic_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_forum_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_forum_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_content_copy_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_content_copy_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_photo_camera_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_photo_camera_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_background_hd_dark.jpg.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/background_hd_dark.jpg"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_unarchive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_unarchive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_message_details_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/message_details_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_rotate_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_rotate_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_registration_2nd_device_qr.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_registration_2nd_device_qr.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_welcome_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/welcome_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_item_color.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/item_color.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_webxdc_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/webxdc_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_lock_white_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_lock_white_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_flip_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_flip_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/animator_upper_pause_to_play_animation.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/animator/upper_pause_to_play_animation.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_tag_faces_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_tag_faces_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_group_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_group_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_contact_list_divider_light.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/contact_list_divider_light.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_send_sms_insecure.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_send_sms_insecure.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_all_media_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/all_media_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_help_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_help_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_emoji_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_emoji_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_account_box_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_account_box_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_swap_vert_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_swap_vert_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_preference_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_preference_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_attach_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_attach_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_insert_drive_file_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_insert_drive_file_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_warning_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_warning_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_status_bar_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/status_bar_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_volume_up_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_volume_up_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_mic_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_mic_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_person_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_person_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_conversation_context.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/conversation_context.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_blur_on_white_24.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_blur_on_white_24.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_received.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_received.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_send_push_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_send_push_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_proxy_settings_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/proxy_settings_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_conversation_item_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/conversation_item_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_clear_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_clear_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_rounded_arrow_forward_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/rounded_arrow_forward_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/raw_webxdc_wrapper.html.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/raw/webxdc_wrapper.html"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_pause_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_pause_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_unpin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_unpin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_undo_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_undo_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_circle_status_online.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_circle_status_online.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_text_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_text_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_trash_filled_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_trash_filled_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_close_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_close_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_mic_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_mic_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_location_on_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_location_on_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_work_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_work_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_list_item_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_list_item_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_login_options_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/login_options_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_flip_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_flip_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_notifications_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_notifications_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/animator_rotate_minus_90_animation.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/animator/rotate_minus_90_animation.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_undo_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_undo_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_brush_marker_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_brush_marker_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_volume_off_white_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_volume_off_white_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/anim_slide_from_right.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/anim/slide_from_right.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_delivery_status_sent.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_delivery_status_sent.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_person_large.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_person_large.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_pin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_pin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_pin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_pin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_registration.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/registration.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_movie_creation_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_movie_creation_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_account_box_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_account_box_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_location_chatlist.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_location_chatlist.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_mic_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_mic_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_instant_onboarding_menu.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/instant_onboarding_menu.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_keyboard_arrow_down_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_keyboard_arrow_down_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_movie_creation_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_movie_creation_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_pause_icon.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/pause_icon.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_work_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_work_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_switch_camera.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_switch_camera.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_undo_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_undo_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_sticker.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_sticker.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_instant_onboarding_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/instant_onboarding_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_send_push.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_send_push.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_microphone_recorder_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/microphone_recorder_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_mood_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_mood_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_send_push.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_send_push.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_activity_emojidrawer_stub.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_activity_emojidrawer_stub.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_mic_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_mic_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_circle_touch_highlight_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/circle_touch_highlight_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_arrow_back_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_reply_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_reply_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_profile_avatar_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/profile_avatar_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_selected_contact_list_item.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/selected_contact_list_item.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_quick_camera_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/quick_camera_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-land_background_hd_dark.jpg.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-land/background_hd_dark.jpg"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_camera_alt_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_camera_alt_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_launch_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_launch_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_close_white_18dp.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_close_white_18dp.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_brightness_6_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_brightness_6_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_icon_notification.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/icon_notification.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_unpin_white.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_unpin_white.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_swap_vert_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_swap_vert_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_edittransport.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_edittransport.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_contact_selection_list_divider.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/contact_selection_list_divider.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_mic_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_mic_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_backup_receiver_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/backup_receiver_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_fragment_search.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_movie_creation_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_movie_creation_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_proxy_enabled_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_proxy_enabled_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_archive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_archive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_sent_document.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_sent_document.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_input_panel.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_input_panel.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_update.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_update.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_launch_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_launch_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_info_outline_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_info_outline_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_recording_lock_background_dark.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/recording_lock_background_dark.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout-land_reaction_picker.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout-land/reaction_picker.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_crop_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_crop_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_photo_camera_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_photo_camera_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_image_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_image_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_contact_filter_toolbar.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/contact_filter_toolbar.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_info_outline_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_info_outline_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_image_editor_hud.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/image_editor_hud.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_help_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_help_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_sticker_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_sticker_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/animator_upper_play_to_pause_animation.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/animator/upper_play_to_pause_animation.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_vcard_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/vcard_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/xml-v29_preferences_appearance.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/xml-v29/preferences_appearance.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_videocam_on.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_videocam_on.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_reply_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_reply_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_delivery_status_sent.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_delivery_status_sent.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_local_dining_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_local_dining_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_title_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_title_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_pause_to_play_animation.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/pause_to_play_animation.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_account_box_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_account_box_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_contact_selection_list_fragment.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/contact_selection_list_fragment.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_account_box_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_account_box_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_pinned_list_item_background_dark.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/pinned_list_item_background_dark.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_advanced_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_advanced_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_webxdc_compact_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/webxdc_compact_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_dialog_share_proxy.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/dialog_share_proxy.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_lock_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_lock_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_relay_list.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_relay_list.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_archive_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_archive_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_attach_camera.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/attach_camera.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_rotate_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_rotate_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/anim_fade_scale_out.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/anim/fade_scale_out.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_volume_off_white_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_volume_off_white_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_wb_sunny_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_wb_sunny_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_floating_mini_bg_light.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/floating_mini_bg_light.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_activity_qr.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/activity_qr.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_image_shade.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/image_shade.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_qr_show.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/qr_show.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_tag_faces_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_tag_faces_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_create_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_create_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_link_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_link_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_quick_camera_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/quick_camera_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/menu_web_view.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/menu/web_view.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_send_sms_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_send_sms_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_delete_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_delete_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_dialog_progress.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/dialog_progress.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_reaction_pill_background.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/reaction_pill_background.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_info_outline_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_info_outline_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_log_view_activity.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/log_view_activity.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_delivery_status_sending.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_delivery_status_sending.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_image_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_image_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxxhdpi_ic_work_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxxhdpi/ic_work_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_check_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_check_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_delivery_status_read.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_delivery_status_read.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_close_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_close_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/layout_conversation_item_received_audio.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/layout/conversation_item_received_audio.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_volume_off_white_18dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_volume_off_white_18dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_baseline_devices_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_baseline_devices_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_keyboard_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_keyboard_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_mood_grey600_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_mood_grey600_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-hdpi_ic_brush_marker_32.webp.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-hdpi/ic_brush_marker_32.webp"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_warning_light.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_warning_light.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_send_sms_insecure_dark.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_send_sms_insecure_dark.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-ldrtl_message_bubble_background_sent_alone.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-ldrtl/message_bubble_background_sent_alone.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_clear_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_clear_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xhdpi_ic_reply.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xhdpi/ic_reply.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_local_dining_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_local_dining_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_donate_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_donate_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_play_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_play_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-mdpi_ic_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-mdpi/ic_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_ic_videocam_white_24dp.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/ic_videocam_white_24dp.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_keyboard_arrow_down_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_keyboard_arrow_down_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_circle_fill_white_48dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_circle_fill_white_48dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable-xxhdpi_ic_keyboard_white_24dp.png.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable-xxhdpi/ic_keyboard_white_24dp.png"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_triangle_right.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/triangle_right.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_baseline_call_end_24.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/baseline_call_end_24.xml"
+    },
+    {
+        "merged": "org.thoughtcrime.securesms-fossRelease-66:/drawable_message_bubble_background_sent_alone_with_border.xml.flat",
+        "source": "org.thoughtcrime.securesms-main-69:/drawable/message_bubble_background_sent_alone_with_border.xml"
+    }
+]

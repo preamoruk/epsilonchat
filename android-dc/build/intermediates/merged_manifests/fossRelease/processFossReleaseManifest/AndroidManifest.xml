@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.epsilonchat.messenger"
+    android:versionCode="751"
+    android:versionName="0.7.0" > <!-- force compiling libs on older sdk than supported; runtime checks are required -->
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="36" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" /> <!-- dangerous permissions - we need to as the user with a PermissionsRequest -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- normal/instant permissions - adding them here is enough -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <permission
+        android:name="com.epsilonchat.messenger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.epsilonchat.messenger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+
+    <application
+        android:name="org.thoughtcrime.securesms.ApplicationContext"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:extractNativeLibs="true"
+        android:hasFragileUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:localeConfig="@xml/_generated_res_locale_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/TextSecure.LightTheme" >
+        <service
+            android:name="org.thoughtcrime.securesms.connect.KeepAliveService"
+            android:enabled="true"
+            android:foregroundServiceType="specialUse" />
+        <!--
+         android car support, see https://developer.android.com/training/auto/start/, as this potentially
+            blocks releases on gplay due to extra-checks, we disable this during the first gplay releases
+        -->
+        <!--
+ <meta-data android:name="com.google.android.gms.car.application" android:resource="@xml/automotive_app_desc"
+            />
+        -->
+        <!-- Opt out of metrics collection: https://developer.android.com/develop/ui/views/layout/webapps/managing-webview#metrics -->
+        <meta-data
+            android:name="android.webkit.WebView.MetricsOptOut"
+            android:value="true" />
+
+        <activity
+            android:name="org.thoughtcrime.securesms.ShareActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/*" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="mailto" />
+
+                <action android:name="android.intent.action.SENDTO" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/*" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.chooser.chooser_target_service"
+                android:value="androidx.sharetarget.ChooserTargetServiceCompat" />
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.ConversationListActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/TextSecure.Splash" />
+        <!--
+            RoutingActivity kept for deep-link handling (openpgp4fpr, i.delta.chat),
+            but it is no longer the LAUNCHER activity — MeshSetupActivity is.
+        -->
+        <activity-alias
+            android:name="org.thoughtcrime.securesms.RoutingActivity"
+            android:exported="true"
+            android:targetActivity="org.thoughtcrime.securesms.ConversationListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Android's scheme matcher is case-sensitive, so include most likely variations -->
+                <data android:scheme="openpgp4fpr" />
+                <data android:scheme="OPENPGP4FPR" />
+                <data android:scheme="OpenPGP4FPR" />
+                <data android:scheme="OpenPGP4fpr" />
+                <data android:scheme="OpenPGP4fpr" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="i.delta.chat"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.sec.minimode.icon.portrait.normal"
+                android:resource="@mipmap/ic_launcher" />
+            <meta-data
+                android:name="com.sec.minimode.icon.landscape.normal"
+                android:resource="@mipmap/ic_launcher" />
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity-alias> <!-- MeshSetupActivity: EpsilonChat mesh invite / QR bootstrap screen. -->
+        <!-- This replaces the Delta Chat email onboarding flow as the main entry point. -->
+        <activity
+            android:name="org.thoughtcrime.securesms.MeshSetupActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/TextSecure.LightNoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="epsilon" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.ConversationListArchiveActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/chat_archived_label"
+            android:launchMode="singleTask"
+            android:parentActivityName="org.thoughtcrime.securesms.ConversationListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.thoughtcrime.securesms.ConversationListActivity" />
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.ConversationListRelayingActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/TextSecure.LightNoActionBar" />
+        <activity
+            android:name="org.thoughtcrime.securesms.ConversationActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:launchMode="singleTask"
+            android:parentActivityName="org.thoughtcrime.securesms.ConversationListActivity"
+            android:relinquishTaskIdentity="true"
+            android:windowSoftInputMode="stateUnchanged" >
+
+            <!--
+                 Without relinquishTaskIdentity="true", we would have the following bug: - Directly open
+                a chat via shortcut (by long-pressing on the DeltaChat icon in the launcher) - Press back twice - Reopen
+                DeltaChat from recent apps - Expected: ConversationList shown. Actual: The chat from the beginning is
+                shown again.
+            -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.thoughtcrime.securesms.ConversationListActivity" />
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.GroupCreateActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity
+            android:name="org.thoughtcrime.securesms.contacts.NewContactActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity
+            android:name="org.thoughtcrime.securesms.NewConversationActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightNoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.ContactMultiSelectionActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/contacts_title"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="org.thoughtcrime.securesms.ApplicationPreferencesActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity
+            android:name="org.thoughtcrime.securesms.WelcomeActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/TextSecure.LightNoActionBar" />
+        <activity
+            android:name="org.thoughtcrime.securesms.relay.EditRelayActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateUnchanged" >
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.relay.RelayListActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="org.thoughtcrime.securesms.proxy.ProxySettingsActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:label="@string/proxy_settings"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Android's scheme matcher is case-sensitive, so include most likely variations -->
+                <data android:scheme="ss" />
+                <data android:scheme="socks5" />
+                <data android:scheme="SOCKS5" />
+                <data android:scheme="SS" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.LogViewActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/pref_log_header"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="org.thoughtcrime.securesms.MediaPreviewActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/media_preview"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="org.thoughtcrime.securesms.ProfileActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightNoActionBar" />
+        <activity
+            android:name="org.thoughtcrime.securesms.AllMediaActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightNoActionBar" />
+        <activity
+            android:name="org.thoughtcrime.securesms.DummyActivity"
+            android:allowTaskReparenting="true"
+            android:alwaysRetainTaskState="false"
+            android:clearTaskOnLaunch="true"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:noHistory="true"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name="org.thoughtcrime.securesms.AttachContactActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" />
+        <activity
+            android:name="org.thoughtcrime.securesms.BlockedContactsActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" />
+        <activity
+            android:name="org.thoughtcrime.securesms.scribbles.ScribbleActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.ScribbleTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="org.thoughtcrime.securesms.scribbles.StickerSelectActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.ScribbleTheme" />
+        <activity
+            android:name="org.thoughtcrime.securesms.InstantOnboardingActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:exported="true"
+            android:theme="@style/TextSecure.LightTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Android's scheme matcher is case-sensitive, so include most likely variations -->
+                <data android:scheme="DCACCOUNT" />
+                <data android:scheme="dcaccount" />
+                <data android:scheme="DCLOGIN" />
+                <data android:scheme="dclogin" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.CreateProfileActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="org.thoughtcrime.securesms.qr.QrActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" />
+        <activity
+            android:name="org.thoughtcrime.securesms.qr.QrShowActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" />
+        <activity
+            android:name="org.thoughtcrime.securesms.qr.RegistrationQrActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" />
+        <activity
+            android:name="org.thoughtcrime.securesms.qr.BackupTransferActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" />
+        <activity
+            android:name="org.thoughtcrime.securesms.preferences.ChatBackgroundActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" />
+        <activity
+            android:name="org.thoughtcrime.securesms.LocalHelpActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" >
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.calls.CallActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:supportsPictureInPicture="true"
+            android:taskAffinity=".calls.PipCallTask"
+            android:theme="@style/Theme.App.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.WebxdcActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode"
+            android:label=""
+            android:theme="@style/TextSecure.LightTheme" >
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.WebxdcStoreActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode"
+            android:theme="@style/TextSecure.LightTheme" >
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.FullMsgActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" >
+        </activity>
+        <activity
+            android:name="org.thoughtcrime.securesms.ConnectivityActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@style/TextSecure.LightTheme" >
+        </activity>
+
+        <service
+            android:name="org.thoughtcrime.securesms.service.GenericForegroundService"
+            android:foregroundServiceType="dataSync" />
+        <service
+            android:name="org.thoughtcrime.securesms.service.FetchForegroundService"
+            android:foregroundServiceType="dataSync" />
+        <service
+            android:name="org.thoughtcrime.securesms.geolocation.LocationStreamingService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+        <service
+            android:name="org.thoughtcrime.securesms.service.AudioPlaybackService"
+            android:exported="true"
+            android:foregroundServiceType="mediaPlayback" >
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaSessionService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.thoughtcrime.securesms.calls.CallService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="camera|microphone|phoneCall" />
+
+        <receiver
+            android:name="org.thoughtcrime.securesms.calls.CallActionReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="org.thoughtcrime.securesms.notifications.MarkReadReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="org.thoughtcrime.securesms.notifications.MARK_NOTICED" />
+                <action android:name="org.thoughtcrime.securesms.notifications.CANCEL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="org.thoughtcrime.securesms.notifications.RemoteReplyReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="org.thoughtcrime.securesms.notifications.WEAR_REPLY" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.epsilonchat.messenger.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+
+            <!--
+                 tell SafeContentResolver to allow incoming share-file Intent pointing to files from
+                this content resolver, it could be the user sharing the app's log file to a chat. See: https://github.com/deltachat/deltachat-android/pull/3052
+                https://github.com/deltachat/deltachat-android/pull/3031
+            -->
+            <meta-data
+                android:name="de.cketti.safecontentresolver.ALLOW_INTERNAL_ACCESS"
+                android:value="true" />
+        </provider>
+        <provider
+            android:name="org.thoughtcrime.securesms.connect.AttachmentsContentProvider"
+            android:authorities="com.epsilonchat.messenger.attachments"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+
+            <!--
+                 tell SafeContentResolver to allow incoming share-file Intent pointing to files from
+                this content resolver, it could be the user sharing a file from one chat to another. See: https://github.com/deltachat/deltachat-android/pull/3031
+            -->
+            <meta-data
+                android:name="de.cketti.safecontentresolver.ALLOW_INTERNAL_ACCESS"
+                android:value="true" />
+        </provider>
+
+        <receiver
+            android:name="org.thoughtcrime.securesms.service.BootReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="org.thoughtcrime.securesms.RESTART" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="org.thoughtcrime.securesms.service.PanicResponderListener"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="info.guardianproject.panic.action.TRIGGER" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library
+            android:name="com.sec.android.app.multiwindow"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W"
+            android:value="632.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H"
+            android:value="598.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W"
+            android:value="632.0dip" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H"
+            android:value="598.0dip" /> <!-- MuteStateReceiver is needed on sdk 33 and lower to echo global mute state changes -->
+        <receiver
+            android:name="androidx.core.telecom.internal.MuteStateReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.media.action.MICROPHONE_MUTE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.core.telecom.internal.JetpackConnectionService"
+            android:exported="true"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE" >
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="androidx.sharetarget.ChooserTargetServiceCompat"
+            android:exported="true"
+            android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.chooser.ChooserTargetService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.epsilonchat.messenger.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" />
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorLandscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

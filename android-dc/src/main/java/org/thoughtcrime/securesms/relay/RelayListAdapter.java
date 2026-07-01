@@ -1,0 +1,107 @@
+package org.thoughtcrime.securesms.relay;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
+import chat.delta.rpc.types.TransportListEntry;
+import java.util.ArrayList;
+import java.util.List;
+import org.thoughtcrime.securesms.R;
+
+public class RelayListAdapter extends RecyclerView.Adapter<RelayListAdapter.RelayViewHolder> {
+
+  private List<TransportListEntry> relays = new ArrayList<>();
+  private final OnRelayClickListener listener;
+  private String mainRelayAddr;
+
+  public interface OnRelayClickListener {
+    void onRelayClick(TransportListEntry relay);
+
+    void onRelayLongClick(View view, TransportListEntry relay);
+  }
+
+  public RelayListAdapter(OnRelayClickListener listener) {
+    this.listener = listener;
+  }
+
+  public String getMainRelay() {
+    return mainRelayAddr;
+  }
+
+  public void setRelays(@Nullable List<TransportListEntry> relays, String mainRelayAddr) {
+    this.relays = relays != null ? relays : new ArrayList<>();
+    this.mainRelayAddr = mainRelayAddr;
+    notifyDataSetChanged();
+  }
+
+  @NonNull
+  @Override
+  public RelayViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    View view =
+        LayoutInflater.from(parent.getContext()).inflate(R.layout.relay_list_item, parent, false);
+    return new RelayViewHolder(view);
+  }
+
+  @Override
+  public void onBindViewHolder(@NonNull RelayViewHolder holder, int position) {
+    TransportListEntry relay = relays.get(position);
+    boolean isMain = relay.param.addr != null && relay.param.addr.equals(mainRelayAddr);
+    holder.bind(relay, isMain, listener);
+  }
+
+  @Override
+  public int getItemCount() {
+    return relays.size();
+  }
+
+  public static class RelayViewHolder extends RecyclerView.ViewHolder {
+    private final TextView titleText;
+    private final TextView subtitleText;
+    private final ImageView mainIndicator;
+
+    public RelayViewHolder(@NonNull View itemView) {
+      super(itemView);
+      titleText = itemView.findViewById(R.id.title);
+      subtitleText = itemView.findViewById(R.id.subtitle);
+      mainIndicator = itemView.findViewById(R.id.main_indicator);
+    }
+
+    public void bind(TransportListEntry relay, boolean isMain, OnRelayClickListener listener) {
+      Context context = itemView.getContext();
+      String[] parts = relay.param.addr.split("@");
+      titleText.setText(parts.length == 2 ? parts[1] : parts[0]);
+
+      String subtitle = parts.length == 2 ? parts[0] : "";
+      if (isMain) {
+        subtitle += " · " + context.getString(R.string.used_for_sending);
+      }
+      if (relay.isUnpublished) {
+        subtitle += " · " + context.getString(R.string.hidden_from_contacts);
+      }
+      subtitleText.setText(subtitle);
+
+      mainIndicator.setVisibility(isMain ? View.VISIBLE : View.INVISIBLE);
+
+      itemView.setOnClickListener(
+          v -> {
+            if (listener != null) {
+              listener.onRelayClick(relay);
+            }
+          });
+
+      itemView.setOnLongClickListener(
+          v -> {
+            if (listener != null) {
+              listener.onRelayLongClick(v, relay);
+            }
+            return true;
+          });
+    }
+  }
+}
