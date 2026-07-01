@@ -7,6 +7,7 @@ pub mod android_bridge;
 pub mod anti_farm;
 pub mod availability;
 pub mod chat_core;
+pub mod ffi;
 pub mod gossip;
 pub mod leaf_store;
 pub mod mesh_indexer;

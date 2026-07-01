@@ -2350,6 +2350,7 @@ dependencies = [
  "anyhow",
  "deltachat",
  "deltachat-jsonrpc",
+ "epsilon-merkle",
  "human-panic",
  "libc",
  "num-traits",

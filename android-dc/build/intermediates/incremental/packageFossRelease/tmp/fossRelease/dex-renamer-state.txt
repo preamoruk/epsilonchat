@@ -1,4 +1,0 @@
-#Wed Jul 01 18:28:48 EEST 2026
-base.0=/Users/Apple/epsilonchat/android-dc/build/intermediates/dex/fossRelease/minifyFossReleaseWithR8/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

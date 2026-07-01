@@ -388,4 +388,12 @@ public class DcContext {
   private native long getProviderFromEmailWithDnsCPtr(String addr);
 
   private native long newBackupProviderCPtr();
+
+  // EpsilonChat mesh native methods
+  public native String epsilonStartMesh();
+  public native String epsilonGetInvite();
+  public native boolean epsilonConnectPeer(String invite);
+  public native boolean epsilonSendMessage(String text);
+  public native String epsilonRecvMessage();
+  public native int epsilonPeerCount();
 }

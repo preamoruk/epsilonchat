@@ -16,6 +16,7 @@ crate-type = ["cdylib", "staticlib"]
 [dependencies]
 deltachat = { workspace = true, default-features = false }
 deltachat-jsonrpc = { workspace = true }
+epsilon-merkle = { path = "../epsilon-merkle" }
 libc = { workspace = true }
 human-panic = { version = "2", default-features = false }
 num-traits = { workspace = true }

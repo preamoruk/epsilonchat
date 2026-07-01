@@ -7,6 +7,10 @@ license = "MIT"
 
 # epsilon-merkle is part of the main deltachat workspace
 
+[lib]
+name = "epsilon_merkle"
+crate-type = ["rlib", "staticlib"]
+
 [dependencies]
 # Iroh P2P transport
 iroh = "1.0"

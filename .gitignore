@@ -1,26 +1,13 @@
-# Build artifacts
-*.apk
-*.dex
-*.class
-*.idsig
-*.zip
-debug.keystore
-compiled_resources.zip
-epsilonchat-*.apk
-epsilonchat-base.apk
-epsilonchat-aligned.apk
-epsilonchat-unsigned.apk
+# Large binary files — don't commit to git
+android-dc/jni/arm64-v8a/
+android-dc/jni/armeabi-v7a/
+android-dc/jni/x86/
+android-dc/jni/x86_64/
+android-dc/libs/
+android-dc/obj/
+android-dc/build/
+android-dc/.gradle/
+android-dc/ndkArch
 
-# Gradle
-.gradle/
-build/
-local.properties
-
-# Rust
+# Rust build artifacts
 target/
-
-# OS
-.DS_Store
-
-# Keep source files
-!android/gradle-project/app/src/**

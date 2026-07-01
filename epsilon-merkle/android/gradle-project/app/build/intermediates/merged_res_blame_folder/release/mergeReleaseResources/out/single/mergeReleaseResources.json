@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.epsilonchat.merkle.app-release-10:/layout_item_message.xml.flat",
+        "source": "com.epsilonchat.merkle.app-main-11:/layout/item_message.xml"
+    },
+    {
+        "merged": "com.epsilonchat.merkle.app-release-10:/layout_activity_main.xml.flat",
+        "source": "com.epsilonchat.merkle.app-main-11:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.epsilonchat.merkle.app-release-10:/xml_network_security_config.xml.flat",
+        "source": "com.epsilonchat.merkle.app-main-11:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.epsilonchat.merkle.app-release-10:/drawable_msg_sent_bg.xml.flat",
+        "source": "com.epsilonchat.merkle.app-main-11:/drawable/msg_sent_bg.xml"
+    },
+    {
+        "merged": "com.epsilonchat.merkle.app-release-10:/drawable_ic_launcher.xml.flat",
+        "source": "com.epsilonchat.merkle.app-main-11:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.epsilonchat.merkle.app-release-10:/drawable_msg_recv_bg.xml.flat",
+        "source": "com.epsilonchat.merkle.app-main-11:/drawable/msg_recv_bg.xml"
+    }
+]

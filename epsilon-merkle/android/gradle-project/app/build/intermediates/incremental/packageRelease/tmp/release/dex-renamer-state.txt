@@ -1,0 +1,4 @@
+#Wed Jul 01 16:36:57 EEST 2026
+base.0=/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

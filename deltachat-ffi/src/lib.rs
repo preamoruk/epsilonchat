@@ -47,6 +47,45 @@ mod dc_array;
 mod lot;
 
 mod string;
+
+// Re-export epsilon-merkle FFI functions so they're included in the static library.
+// We define thin wrappers with #[no_mangle] to ensure the symbols survive linking.
+use epsilon_merkle::ffi as eps;
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_start_mesh() -> *mut std::os::raw::c_char {
+    eps::epsilon_start_mesh()
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_get_invite() -> *mut std::os::raw::c_char {
+    eps::epsilon_get_invite()
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_connect_peer(invite: *const std::os::raw::c_char) -> i32 {
+    eps::epsilon_connect_peer(invite)
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_send_message(text: *const std::os::raw::c_char) -> i32 {
+    eps::epsilon_send_message(text)
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_recv_message() -> *mut std::os::raw::c_char {
+    eps::epsilon_recv_message()
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_peer_count() -> i32 {
+    eps::epsilon_peer_count()
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_free_string(ptr: *mut std::os::raw::c_char) {
+    eps::epsilon_free_string(ptr)
+}
 use deltachat::chatlist::Chatlist;
 
 use self::string::*;

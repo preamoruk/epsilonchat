@@ -1,0 +1,54 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.epsilonchat.merkle"
+4    android:versionCode="6"
+5    android:versionName="0.6.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:8:5-23:19
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.7.0] /Users/Apple/.gradle/caches/8.10.2/transforms/d8caaaa404bcc9be2b96933de8e1cfaf/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+16        android:extractNativeLibs="false"
+17        android:icon="@drawable/ic_launcher"
+17-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:10:9-45
+18        android:label="EpsilonChat"
+18-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:9:9-36
+19        android:networkSecurityConfig="@xml/network_security_config"
+19-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:13:9-69
+20        android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+20-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:11:9-71
+21        android:usesCleartextTraffic="true" >
+21-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:12:9-44
+22        <activity
+22-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:14:9-22:20
+23            android:name="com.epsilonchat.merkle.MainActivity"
+23-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:15:13-41
+24            android:configChanges="orientation|screenSize|keyboardHidden"
+24-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:17:13-74
+25            android:exported="true" >
+25-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:16:13-36
+26            <intent-filter>
+26-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:18:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:19:17-69
+27-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:19:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:20:17-77
+29-->/Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>

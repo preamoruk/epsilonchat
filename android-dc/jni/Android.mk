@@ -1,7 +1,7 @@
 JNI_DIR := $(call my-dir)
 LOCAL_PATH := $(call my-dir)
 
-# Include prebuilt rust
+# Include prebuilt deltachat-core rust static lib (includes epsilon-merkle)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE            := deltachat-core

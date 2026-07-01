@@ -1,0 +1,13 @@
+com.epsilonchat.merkle.app-core-ktx-1.5.0-0 /Users/Apple/.gradle/caches/8.10.2/transforms/5adaf29827baf16ec164baddd41d1546/transformed/core-ktx-1.5.0/res
+com.epsilonchat.merkle.app-annotation-experimental-1.1.0-1 /Users/Apple/.gradle/caches/8.10.2/transforms/7e9a2007de9d7e099752d64466e70741/transformed/annotation-experimental-1.1.0/res
+com.epsilonchat.merkle.app-lifecycle-runtime-2.3.1-2 /Users/Apple/.gradle/caches/8.10.2/transforms/a79f86a9162c46ad66838adbcb5bd67c/transformed/lifecycle-runtime-2.3.1/res
+com.epsilonchat.merkle.app-core-1.7.0-3 /Users/Apple/.gradle/caches/8.10.2/transforms/d8caaaa404bcc9be2b96933de8e1cfaf/transformed/core-1.7.0/res
+com.epsilonchat.merkle.app-customview-poolingcontainer-1.0.0-4 /Users/Apple/.gradle/caches/8.10.2/transforms/e0ec662c9724cf9c0aec14d77dc3e079/transformed/customview-poolingcontainer-1.0.0/res
+com.epsilonchat.merkle.app-recyclerview-1.3.2-5 /Users/Apple/.gradle/caches/8.10.2/transforms/e30ffa2aac490cd3a1ee662cf05525bc/transformed/recyclerview-1.3.2/res
+com.epsilonchat.merkle.app-pngs-6 /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/build/generated/res/pngs/release
+com.epsilonchat.merkle.app-resValues-7 /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/build/generated/res/resValues/release
+com.epsilonchat.merkle.app-packageReleaseResources-8 /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.epsilonchat.merkle.app-packageReleaseResources-9 /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.epsilonchat.merkle.app-release-10 /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/build/intermediates/merged_res/release/mergeReleaseResources
+com.epsilonchat.merkle.app-main-11 /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/res
+com.epsilonchat.merkle.app-release-12 /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/release/res

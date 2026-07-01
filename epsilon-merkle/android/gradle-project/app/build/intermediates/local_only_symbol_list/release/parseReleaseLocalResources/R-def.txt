@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher
+drawable msg_recv_bg
+drawable msg_sent_bg
+id btnClaim
+id btnConnect
+id btnInvite
+id btnProof
+id btnSend
+id etMessage
+id rvMessages
+id tvBalance
+id tvMessage
+id tvSender
+id tvStatus
+id tvTime
+layout activity_main
+layout item_message
+string app_name
+style AppTheme
+xml network_security_config

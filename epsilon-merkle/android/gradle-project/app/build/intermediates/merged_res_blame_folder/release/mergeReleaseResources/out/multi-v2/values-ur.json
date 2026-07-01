@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.epsilonchat.merkle.app-mergeReleaseResources-8:/values-ur/values-ur.xml",
+            "map": [
+                {
+                    "source": "/Users/Apple/.gradle/caches/8.10.2/transforms/d8caaaa404bcc9be2b96933de8e1cfaf/transformed/core-1.7.0/res/values-ur/values-ur.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

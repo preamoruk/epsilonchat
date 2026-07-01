@@ -1,0 +1,97 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/Apple/.gradle/caches/8.10.2/transforms/e30ffa2aac490cd3a1ee662cf05525bc/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/Apple/.gradle/caches/8.10.2/transforms/0ea4d5a2fc45a8c02020aade38fd18e3/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/Apple/.gradle/caches/8.10.2/transforms/e0ec662c9724cf9c0aec14d77dc3e079/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.5.0] /Users/Apple/.gradle/caches/8.10.2/transforms/5adaf29827baf16ec164baddd41d1546/transformed/core-ktx-1.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.core:core:1.7.0] /Users/Apple/.gradle/caches/8.10.2/transforms/d8caaaa404bcc9be2b96933de8e1cfaf/transformed/core-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Apple/.gradle/caches/8.10.2/transforms/674a4dbf70b94751004bd496b5bd3b19/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/Apple/.gradle/caches/8.10.2/transforms/a79f86a9162c46ad66838adbcb5bd67c/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/Apple/.gradle/caches/8.10.2/transforms/67ccc7a7f575eff8b0e755e7cc74f507/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/Apple/.gradle/caches/8.10.2/transforms/7e9a2007de9d7e099752d64466e70741/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+	package
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:8:5-23:19
+INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:8:5-23:19
+MERGED from [androidx.core:core:1.7.0] /Users/Apple/.gradle/caches/8.10.2/transforms/d8caaaa404bcc9be2b96933de8e1cfaf/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] /Users/Apple/.gradle/caches/8.10.2/transforms/d8caaaa404bcc9be2b96933de8e1cfaf/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Apple/.gradle/caches/8.10.2/transforms/674a4dbf70b94751004bd496b5bd3b19/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Apple/.gradle/caches/8.10.2/transforms/674a4dbf70b94751004bd496b5bd3b19/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] /Users/Apple/.gradle/caches/8.10.2/transforms/d8caaaa404bcc9be2b96933de8e1cfaf/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:9:9-36
+	android:icon
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:10:9-45
+	android:theme
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:11:9-71
+	android:networkSecurityConfig
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:13:9-69
+	android:usesCleartextTraffic
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:12:9-44
+activity#com.epsilonchat.merkle.MainActivity
+ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:14:9-22:20
+	android:exported
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:16:13-36
+	android:configChanges
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:17:13-74
+	android:name
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:15:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:18:13-21:29
+action#android.intent.action.MAIN
+ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml:20:27-74
+uses-sdk
+INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml
+INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/Apple/.gradle/caches/8.10.2/transforms/e30ffa2aac490cd3a1ee662cf05525bc/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/Apple/.gradle/caches/8.10.2/transforms/e30ffa2aac490cd3a1ee662cf05525bc/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/Apple/.gradle/caches/8.10.2/transforms/0ea4d5a2fc45a8c02020aade38fd18e3/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/Apple/.gradle/caches/8.10.2/transforms/0ea4d5a2fc45a8c02020aade38fd18e3/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/Apple/.gradle/caches/8.10.2/transforms/e0ec662c9724cf9c0aec14d77dc3e079/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/Apple/.gradle/caches/8.10.2/transforms/e0ec662c9724cf9c0aec14d77dc3e079/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.5.0] /Users/Apple/.gradle/caches/8.10.2/transforms/5adaf29827baf16ec164baddd41d1546/transformed/core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.5.0] /Users/Apple/.gradle/caches/8.10.2/transforms/5adaf29827baf16ec164baddd41d1546/transformed/core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core:1.7.0] /Users/Apple/.gradle/caches/8.10.2/transforms/d8caaaa404bcc9be2b96933de8e1cfaf/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /Users/Apple/.gradle/caches/8.10.2/transforms/d8caaaa404bcc9be2b96933de8e1cfaf/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Apple/.gradle/caches/8.10.2/transforms/674a4dbf70b94751004bd496b5bd3b19/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/Apple/.gradle/caches/8.10.2/transforms/674a4dbf70b94751004bd496b5bd3b19/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/Apple/.gradle/caches/8.10.2/transforms/a79f86a9162c46ad66838adbcb5bd67c/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/Apple/.gradle/caches/8.10.2/transforms/a79f86a9162c46ad66838adbcb5bd67c/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/Apple/.gradle/caches/8.10.2/transforms/67ccc7a7f575eff8b0e755e7cc74f507/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/Apple/.gradle/caches/8.10.2/transforms/67ccc7a7f575eff8b0e755e7cc74f507/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/Apple/.gradle/caches/8.10.2/transforms/7e9a2007de9d7e099752d64466e70741/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/Apple/.gradle/caches/8.10.2/transforms/7e9a2007de9d7e099752d64466e70741/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/Apple/epsilonchat/epsilon-merkle/android/gradle-project/app/src/main/AndroidManifest.xml
