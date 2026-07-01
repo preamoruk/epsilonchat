@@ -82,7 +82,6 @@ pub extern "C" fn epsilon_get_invite() -> *mut c_char {
 fn get_invite_inner() -> Option<String> {
     let handle = get_handle()?;
     let invite = handle.block_on(async {
-        let _g = STATE_LOCK.lock();
         unsafe {
             if let Some(ref node) = MESH_NODE {
                 let node_id = node.id().to_string();
@@ -118,8 +117,8 @@ fn connect_peer_inner(invite_ptr: *const c_char) -> i32 {
     };
 
     let handle = match get_handle() { Some(h) => h, None => return 0 };
+    // Do NOT hold STATE_LOCK during async connect — would deadlock
     let ok = handle.block_on(async {
-        let _g = STATE_LOCK.lock();
         unsafe {
             if let Some(ref node) = MESH_NODE {
                 node.connect(&addr_json).await.is_ok()
@@ -143,7 +142,6 @@ fn send_message_inner(text_ptr: *const c_char) -> i32 {
 
     let handle = match get_handle() { Some(h) => h, None => return 0 };
     let ok = handle.block_on(async {
-        let _g = STATE_LOCK.lock();
         unsafe {
             if let Some(ref node) = MESH_NODE {
                 let msg = MeshMessage::ChatMessage {
@@ -187,7 +185,6 @@ pub extern "C" fn epsilon_peer_count() -> i32 {
 fn peer_count_inner() -> i32 {
     let handle = match get_handle() { Some(h) => h, None => return 0 };
     let count = handle.block_on(async {
-        let _g = STATE_LOCK.lock();
         unsafe {
             if let Some(ref node) = MESH_NODE { node.peer_count().await } else { 0 }
         }
