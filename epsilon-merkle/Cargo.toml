@@ -37,3 +37,5 @@ data-encoding = "2"
 axum = "0.7"
 tower-http = { version = "0.6", features = ["fs", "cors"] }
 rust-embed = { version = "8", features = ["axum"] }
+hex = "0.4"
+bs58 = "0.5"
