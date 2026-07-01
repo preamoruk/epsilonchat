@@ -86,18 +86,13 @@ android {
             }
         }
         release {
-            // can be defined at `~/.gradle/gradle.properties` or at "Build/Generate signed APK"
+            // Signing config must be provided via gradle.properties:
+            // DC_RELEASE_STORE_FILE, DC_RELEASE_STORE_PASSWORD, DC_RELEASE_KEY_ALIAS, DC_RELEASE_KEY_PASSWORD
             if(project.hasProperty("DC_RELEASE_STORE_FILE")) {
                 storeFile file(DC_RELEASE_STORE_FILE)
                 storePassword DC_RELEASE_STORE_PASSWORD
                 keyAlias DC_RELEASE_KEY_ALIAS
                 keyPassword DC_RELEASE_KEY_PASSWORD
-            } else {
-                // Fallback to debug keystore for development builds
-                storeFile file("/tmp/debug.keystore")
-                storePassword "android"
-                keyAlias "androiddebugkey"
-                keyPassword "android"
             }
         }
     }

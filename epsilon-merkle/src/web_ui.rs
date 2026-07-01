@@ -189,7 +189,7 @@ pub async fn run_web_ui(port: u16) -> Result<()> {
     println!("╔══════════════════════════════════════════╗");
     println!("║  EpsilonChat Web UI                       ║");
     println!("║  Open: http://localhost:{}              ║", port);
-    println!("║  Phone: http://192.168.1.139:{}          ║", port);
+    println!("║  Phone: http://0.0.0.0:{}             ║", port);
     println!(
         "║  Node ID: {}...          ║",
         &node_id[..node_id.len().min(32)]

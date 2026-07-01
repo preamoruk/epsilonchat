@@ -8,7 +8,6 @@ repository = "https://github.com/chatmail/core"
 
 [profile.dev]
 debug = 0
-panic = 'abort'
 opt-level = 1
 
 [profile.test]
@@ -29,7 +28,6 @@ opt-level = "z"
 
 [profile.release]
 lto = true
-panic = 'abort'
 opt-level = "z"
 codegen-units = 1
 strip = true

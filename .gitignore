@@ -8,6 +8,23 @@ android-dc/obj/
 android-dc/build/
 android-dc/.gradle/
 android-dc/ndkArch
+android-dc/google-services.json
 
 # Rust build artifacts
 target/
+
+# Keystores and secrets
+*.keystore
+*.jks
+*.p12
+*.pem
+.env
+.env.*
+
+# APK files
+*.apk
+*.idsig
+*.aab
+
+# Debug files
+debug.keystore
