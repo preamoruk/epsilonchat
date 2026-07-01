@@ -15,6 +15,9 @@ pub mod relay_settlement;
 pub mod solana_zk;
 pub mod vrf_sortition;
 pub mod validator;
+pub mod chat_core;
+pub mod token_account;
+pub mod android_bridge;
 
 use clap::{Parser, Subcommand};
 
