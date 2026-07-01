@@ -1,12 +1,12 @@
 # EpsilonChat
 
-Pure P2P mesh messenger forked from Delta Chat. No servers, no email, no VPS. Phones connect directly via Iroh mesh. Token (EPS) earned by being online (Proof-of-Availability), spent as P2P payments inside chat.
+Pure P2P mesh messenger forked from EpsilonChat. No servers, no email, no VPS. Phones connect directly via Iroh mesh. Token (EPS) earned by being online (Proof-of-Availability), spent as P2P payments inside chat.
 
 ## Architecture
 
 ```
 ┌─────────────────────────────────────────────────┐
-│              Delta Chat Android App              │
+│              EpsilonChat Android App              │
 │    (real chat UI — cloned from deltachat-android) │
 │    message bubbles, contacts, groups, files       │
 ├─────────────────────────────────────────────────┤
@@ -46,9 +46,9 @@ Pure P2P mesh messenger forked from Delta Chat. No servers, no email, no VPS. Ph
 └─────────────────────────────────────────────────┘
 ```
 
-## Key Differences from Delta Chat
+## Key Differences from EpsilonChat
 
-| Feature | Delta Chat | EpsilonChat |
+| Feature | EpsilonChat | EpsilonChat |
 |---|---|---|
 | Transport | IMAP/SMTP (email servers) | Iroh P2P mesh (no servers) |
 | Bootstrap | Email address + password | Invite link / QR code |
@@ -87,4 +87,4 @@ cd Android/gradle-project
 
 ## License
 
-GPL-3.0 (inherited from Delta Chat core)
+GPL-3.0 (inherited from EpsilonChat core)

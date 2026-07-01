@@ -3753,7 +3753,7 @@ async fn test_broadcast_channel_protected_listid() -> Result<()> {
     // Do the counter check that the Message-Id header is present:
     assert!(sent.payload.contains("Message-ID"));
 
-    // Check that Delta Chat ignores an injected List-ID header:
+    // Check that EpsilonChat ignores an injected List-ID header:
     let new_payload = sent.payload.replace(
         "Date: ",
         "List-ID: some wrong listid that would make things fail\nDate: ",

@@ -1,6 +1,6 @@
-## Delta Chat Android Client
+## EpsilonChat Android Client
 
-This is the Android client for [Delta Chat](https://delta.chat/).
+This is the Android client for [EpsilonChat](https://delta.chat/).
 
 [<img src="https://delta.chat/assets/badges/get-it-on-gplay.png" alt="Get it on Google Play" height="48">](https://play.google.com/store/apps/details?id=chat.delta)
 [<img src="https://delta.chat/assets/badges/get-it-on-fdroid.png" alt="Get it on F-Droid" height="48">](https://f-droid.org/app/com.b44t.messenger)
@@ -37,4 +37,4 @@ Meanwhile, development has diverged in many areas.
 
 Licensed GPLv3+, see the LICENSE file for details.
 
-Copyright © Delta Chat contributors.
+Copyright © EpsilonChat contributors.

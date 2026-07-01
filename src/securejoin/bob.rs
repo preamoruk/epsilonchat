@@ -73,7 +73,7 @@ pub(super) async fn start_protocol(context: &Context, invite: QrInvite) -> Resul
         if let Some(addrs_in_key) = addresses_from_public_key(&public_key) {
             invite.addrs().iter().all(|a| addrs_in_key.contains(a))
         } else {
-            // This can happen if the inviter is using an old version of Delta Chat
+            // This can happen if the inviter is using an old version of EpsilonChat
             // that doesn't put the relay list into the key.
             // In this case, we never take the securejoin protocol shortcut, which is fine.
             false
@@ -375,9 +375,9 @@ pub(crate) async fn send_handshake_message(
                 // Sends the grpid in the Secure-Join-Group header.
                 //
                 // `Secure-Join-Group` header is deprecated,
-                // but old Delta Chat core requires that Alice receives it.
+                // but old EpsilonChat core requires that Alice receives it.
                 //
-                // Previous Delta Chat core also sent `Secure-Join-Group` header
+                // Previous EpsilonChat core also sent `Secure-Join-Group` header
                 // in `vg-request` messages,
                 // but it was not used on the receiver.
                 if let QrInvite::Group { grpid, .. } = invite {

@@ -7,7 +7,7 @@
 //! RFC 9078 specifies how reactions are transmitted in MIME messages.
 //!
 //! Reaction update semantics is not well-defined in RFC 9078, so
-//! Delta Chat uses the same semantics as in
+//! EpsilonChat uses the same semantics as in
 //! [XEP-0444](https://xmpp.org/extensions/xep-0444.html) section
 //! "3.2 Updating reactions to a message". Received reactions override
 //! all previously received reactions from the same user and it is

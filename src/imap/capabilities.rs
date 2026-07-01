@@ -37,7 +37,7 @@ pub(crate) struct Capabilities {
     ///
     /// This can be used to hide some advanced settings in the UI
     /// that are only interesting for normal email accounts,
-    /// e.g. the ability to move messages to Delta Chat folder.
+    /// e.g. the ability to move messages to EpsilonChat folder.
     pub is_chatmail: bool,
 
     /// Server ID if the server supports ID capability.

@@ -99,7 +99,7 @@ pub enum StockMessage {
     SavedMessages = 69,
 
     #[strum(props(
-        fallback = "Messages in this chat are generated locally by your Delta Chat app. \
+        fallback = "Messages in this chat are generated locally by your EpsilonChat app. \
                     Its makers use it to inform about app updates and problems during usage."
     ))]
     DeviceMessagesHint = 70,
@@ -131,7 +131,7 @@ pub enum StockMessage {
     ))]
     BadTimeMsgBody = 85,
 
-    #[strum(props(fallback = "⚠️ Your Delta Chat version might be outdated.\n\n\
+    #[strum(props(fallback = "⚠️ Your EpsilonChat version might be outdated.\n\n\
                     This may cause problems because your chat partners use newer versions - \
                     and you are missing the latest features 😳\n\
                     Please check https://get.delta.chat or your app store for updates."))]
@@ -158,7 +158,7 @@ pub enum StockMessage {
 
     #[strum(props(
         fallback = "This message is used to synchronize data between your devices.\n\n\
-                    👉 If you see this message in Delta Chat, please update your Delta Chat apps on all devices."
+                    👉 If you see this message in EpsilonChat, please update your EpsilonChat apps on all devices."
     ))]
     SyncMsgBody = 102,
 
@@ -347,12 +347,12 @@ pub enum StockMessage {
     #[strum(props(fallback = "Establishing connection, please wait…"))]
     SecurejoinWait = 190,
 
-    #[strum(props(fallback = "❤️ Seems you're enjoying Delta Chat!
+    #[strum(props(fallback = "❤️ Seems you're enjoying EpsilonChat!
 
-Please consider donating to help that Delta Chat stays free for everyone.
+Please consider donating to help that EpsilonChat stays free for everyone.
 
-While Delta Chat is free to use and open source, development costs money.
-Help keeping us to keep Delta Chat independent and make it more awesome in the future.
+While EpsilonChat is free to use and open source, development costs money.
+Help keeping us to keep EpsilonChat independent and make it more awesome in the future.
 
 https://delta.chat/donate"))]
     DonationRequest = 193,
@@ -386,7 +386,7 @@ https://delta.chat/donate"))]
     MsgBroadcastImgChanged = 205,
 
     #[strum(props(
-        fallback = "The attachment contains anonymous usage statistics, which helps us improve Delta Chat. Thank you!"
+        fallback = "The attachment contains anonymous usage statistics, which helps us improve EpsilonChat. Thank you!"
     ))]
     StatsMsgBody = 210,
 
@@ -763,7 +763,7 @@ pub(crate) fn securejoin_wait(context: &Context) -> String {
     translated(context, StockMessage::SecurejoinWait)
 }
 
-/// Stock string: `❤️ Seems you're enjoying Delta Chat!`…
+/// Stock string: `❤️ Seems you're enjoying EpsilonChat!`…
 pub(crate) fn donation_request(context: &Context) -> String {
     translated(context, StockMessage::DonationRequest)
 }
@@ -903,7 +903,7 @@ pub(crate) fn device_messages_hint(context: &Context) -> String {
     translated(context, StockMessage::DeviceMessagesHint)
 }
 
-/// Stock string: `Welcome to Delta Chat! – ...`.
+/// Stock string: `Welcome to EpsilonChat! – ...`.
 pub(crate) fn welcome_message(context: &Context) -> String {
     translated(context, StockMessage::WelcomeMessage)
 }
@@ -993,7 +993,7 @@ pub(crate) fn bad_time_msg_body(context: &Context, now: &str) -> String {
     translated(context, StockMessage::BadTimeMsgBody).replace1(now)
 }
 
-/// Stock string: `⚠️ Your Delta Chat version might be outdated...`.
+/// Stock string: `⚠️ Your EpsilonChat version might be outdated...`.
 pub(crate) fn update_reminder_msg_body(context: &Context) -> String {
     translated(context, StockMessage::UpdateReminderMsgBody)
 }
@@ -1152,7 +1152,7 @@ pub(crate) async fn unencrypted_email(context: &Context, provider: &str) -> Stri
     translated(context, StockMessage::InvalidUnencryptedMail).replace1(provider)
 }
 
-/// Stock string: `The attachment contains anonymous usage statistics, which helps us improve Delta Chat. Thank you!`
+/// Stock string: `The attachment contains anonymous usage statistics, which helps us improve EpsilonChat. Thank you!`
 pub(crate) fn stats_msg_body(context: &Context) -> String {
     translated(context, StockMessage::StatsMsgBody)
 }

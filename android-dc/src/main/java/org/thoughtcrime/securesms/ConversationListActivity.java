@@ -751,7 +751,7 @@ public class ConversationListActivity extends PassphraseRequiredActionBarActivit
       AccountManager.getInstance().showSwitchAccountMenu(this, false);
     }
 
-    // title update needed to show "Delta Chat" in case there is only one profile left
+    // title update needed to show "EpsilonChat" in case there is only one profile left
     refreshTitle();
   }
 

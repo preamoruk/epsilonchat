@@ -58,7 +58,7 @@ pub(crate) async fn determine_capabilities(
         .await
         .context("CAPABILITY command error")?;
     let server_id = if caps.has_str("ID") {
-        session.id([("name", Some("Delta Chat"))]).await?
+        session.id([("name", Some("EpsilonChat"))]).await?
     } else {
         None
     };

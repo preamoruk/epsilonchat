@@ -171,7 +171,7 @@ pub enum FolderMeaning {
     /// Virtual folders.
     ///
     /// On Gmail there are virtual folders marked as \\All, \\Important and \\Flagged.
-    /// Delta Chat ignores these folders because the same messages can be fetched
+    /// EpsilonChat ignores these folders because the same messages can be fetched
     /// from the real folder and the result of moving and deleting messages via
     /// virtual folder is unclear.
     Virtual,

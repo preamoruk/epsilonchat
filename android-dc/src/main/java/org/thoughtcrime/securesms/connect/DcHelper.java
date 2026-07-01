@@ -479,7 +479,7 @@ public class DcHelper {
    *
    * @param context
    * @param connectedString Usually "Connected", but when using this as the title in
-   *     ConversationListActivity, we want to write "Delta Chat" or the user's display name there
+   *     ConversationListActivity, we want to write "EpsilonChat" or the user's display name there
    *     instead.
    * @return
    */
@@ -545,7 +545,7 @@ public class DcHelper {
       if (lastError != null && !lastError.isEmpty()) {
         Log.w(TAG, "Opening account failed, trying to share error: " + lastError);
 
-        String subject = "Delta Chat failed to update";
+        String subject = "EpsilonChat failed to update";
         String email = "delta@merlinux.eu";
 
         new AlertDialog.Builder(context)

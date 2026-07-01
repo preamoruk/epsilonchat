@@ -1,6 +1,6 @@
 //! # Proxy support.
 //!
-//! Delta Chat supports HTTP(S) CONNECT, SOCKS5 and Shadowsocks protocols.
+//! EpsilonChat supports HTTP(S) CONNECT, SOCKS5 and Shadowsocks protocols.
 
 use std::fmt;
 use std::pin::Pin;
@@ -272,7 +272,7 @@ impl ProxyConfig {
             // `socks5` URL scheme may be expected to resolve domain names locally
             // with `socks5h` URL scheme meaning that hostnames are passed to the proxy.
             // Resolving hostnames locally is not supported
-            // in Delta Chat when using a proxy
+            // in EpsilonChat when using a proxy
             // to prevent DNS leaks.
             // Because of this we do not distinguish
             // between `socks5` and `socks5h`.

@@ -157,7 +157,7 @@
             android:exported="true" />
 
         <!-- MeshSetupActivity: EpsilonChat mesh invite / QR bootstrap screen. -->
-        <!-- This replaces the Delta Chat email onboarding flow as the main entry point. -->
+        <!-- This replaces the EpsilonChat email onboarding flow as the main entry point. -->
         <activity
             android:name=".MeshSetupActivity"
             android:label="@string/app_name"
@@ -256,8 +256,8 @@
             android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
             android:parentActivityName=".ConversationListActivity">
             <!-- Without relinquishTaskIdentity="true", we would have the following bug: - Directly open
-                a chat via shortcut (by long-pressing on the DeltaChat icon in the launcher) - Press back twice - Reopen
-                DeltaChat from recent apps - Expected: ConversationList shown. Actual: The chat from the beginning is
+                a chat via shortcut (by long-pressing on the EpsilonChat icon in the launcher) - Press back twice - Reopen
+                EpsilonChat from recent apps - Expected: ConversationList shown. Actual: The chat from the beginning is
                 shown again. -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -335,6 +335,12 @@
         <activity
             android:name=".LogViewActivity"
             android:label="@string/pref_log_header"
+            android:windowSoftInputMode="stateHidden"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+
+        <activity
+            android:name=".WalletActivity"
+            android:label="@string/wallet_title"
             android:windowSoftInputMode="stateHidden"
             android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
 

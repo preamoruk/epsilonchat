@@ -228,6 +228,32 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/payment_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <org.thoughtcrime.securesms.components.CircleColorImageView
+                    android:id="@+id/payment_button"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:src="@drawable/ic_payment_white_24dp"
+                    android:scaleType="center"
+                    android:contentDescription="@string/send_payment"
+                    app:circleColor="@color/payment_icon" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AttachmentTypeLabel"
+                    android:text="@string/send_payment" />
+
+            </LinearLayout>
+
 
         </LinearLayout>
 

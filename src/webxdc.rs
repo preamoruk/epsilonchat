@@ -51,7 +51,7 @@ use crate::tools::{create_id, get_abs_path, time};
 /// The current API version.
 /// If `min_api` in manifest.toml is set to a larger value,
 /// the Webxdc's index.html is replaced by an error message.
-/// In the future, that may be useful to avoid new Webxdc being loaded on old Delta Chats.
+/// In the future, that may be useful to avoid new Webxdc being loaded on old EpsilonChats.
 const WEBXDC_API_VERSION: u32 = 1;
 
 /// Suffix used to recognize webxdc files.
@@ -899,7 +899,7 @@ impl Message {
             && min_api > WEBXDC_API_VERSION
         {
             return Ok(Vec::from(
-                "<!DOCTYPE html>This Webxdc requires a newer Delta Chat version.",
+                "<!DOCTYPE html>This Webxdc requires a newer EpsilonChat version.",
             ));
         }
 

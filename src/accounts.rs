@@ -620,7 +620,7 @@ impl Config {
     async fn create_lock_task(_dir: PathBuf) -> Result<Option<JoinHandle<anyhow::Result<()>>>> {
         // Do not lock accounts.toml on iOS.
         // This results in 0xdead10cc crashes on suspend.
-        // iOS itself ensures that multiple instances of Delta Chat are not running.
+        // iOS itself ensures that multiple instances of EpsilonChat are not running.
         Ok(None)
     }
 
@@ -659,7 +659,7 @@ impl Config {
         });
         if locked_rx.await.is_err() {
             bail!(
-                "Delta Chat is already running. To use Delta Chat, you must first close the existing Delta Chat process, or restart your device. (accounts.lock file is already locked)"
+                "EpsilonChat is already running. To use EpsilonChat, you must first close the existing EpsilonChat process, or restart your device. (accounts.lock file is already locked)"
             );
         };
         Ok(Some(lock_task))
@@ -890,7 +890,7 @@ impl Config {
 
 /// Spend up to 1 minute trying to do the operation.
 ///
-/// Even if Delta Chat itself does not hold the file lock,
+/// Even if EpsilonChat itself does not hold the file lock,
 /// there may be other processes such as antivirus,
 /// or the filesystem may be network-mounted.
 ///

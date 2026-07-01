@@ -163,7 +163,7 @@ async fn test_subject_from_mua() {
 
 #[tokio::test(flavor = "multi_thread", worker_threads = 2)]
 async fn test_subject_from_dc() {
-    // 2. Receive a message from Delta Chat
+    // 2. Receive a message from EpsilonChat
     assert_eq!(
         msg_to_subject_str(
             b"From: bob@example.net\r\n\

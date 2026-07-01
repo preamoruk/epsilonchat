@@ -66,6 +66,9 @@ pub async fn run_web_ui(port: u16) -> Result<()> {
     // Start accept loop for incoming connections
     mesh.clone().start_accept_loop();
 
+    // Start heartbeat sender + peer sweeper
+    mesh.clone().start_heartbeat();
+
     let state = Arc::new(Mutex::new(WebState {
         mesh: mesh.clone(),
         alice_running: false,
@@ -148,6 +151,16 @@ pub async fn run_web_ui(port: u16) -> Result<()> {
                             leaf_count,
                             node_id,
                         } => {
+                            // Update last_seen for this peer in the peer list
+                            {
+                                let mut peers = s.mesh.peers.lock().await;
+                                for peer in peers.iter_mut() {
+                                    if peer.node_id == node_id {
+                                        peer.last_seen = std::time::Instant::now();
+                                        break;
+                                    }
+                                }
+                            }
                             s.msg_log.push(format!(
                                 "Heartbeat from {} (forester={}, leaves={})",
                                 &node_id[..8.min(node_id.len())],
@@ -217,12 +230,22 @@ async fn index_handler() -> Html<String> {
 }
 
 async fn status_handler(State(state): State<Arc<Mutex<WebState>>>) -> Json<Value> {
-    let s = state.lock().await;
+    let mut s = state.lock().await;
     let peer_count = s.mesh.peer_count().await;
+
+    // If no live peers, we're not connected — clear stale state
+    if peer_count == 0 {
+        s.connected = false;
+        // Don't clear leaves if we're the forester (Alice) and running — those are our own leaves
+        if !s.alice_running {
+            s.leaves.clear();
+        }
+    }
+
     Json(json!({
         "alice_running": s.alice_running,
         "bob_running": s.bob_running,
-        "connected": s.connected || peer_count > 0,
+        "connected": peer_count > 0,
         "peers": peer_count,
         "leaves": s.leaves,
         "proofs_served": s.proofs_served,

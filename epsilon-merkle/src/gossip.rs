@@ -78,7 +78,14 @@ pub struct PeerConnection {
     pub node_id: String,
     pub is_forester: bool,
     pub conn: iroh::endpoint::Connection,
+    pub last_seen: std::time::Instant,
 }
+
+/// How long without hearing from a peer before we consider them dead
+const PEER_TIMEOUT: std::time::Duration = std::time::Duration::from_secs(30);
+
+/// Heartbeat broadcast interval
+const HEARTBEAT_INTERVAL: std::time::Duration = std::time::Duration::from_secs(10);
 
 /// The mesh node — wraps an Iroh Endpoint with message handling
 pub struct MeshNode {
@@ -92,7 +99,7 @@ pub struct MeshNode {
 impl MeshNode {
     /// Create a new mesh node (forester or phone)
     pub async fn new(is_forester: bool) -> Result<Self> {
-        let endpoint = Endpoint::builder(N0)
+        let endpoint: Endpoint = Endpoint::builder(N0)
             .alpns(vec![EPSILON_ALPN.to_vec()])
             .relay_mode(RelayMode::Disabled)
             .clear_address_lookup()
@@ -147,6 +154,7 @@ impl MeshNode {
             node_id: remote_id.clone(),
             is_forester: !self.is_forester,
             conn: conn.clone(),
+            last_seen: std::time::Instant::now(),
         };
 
         self.peers.lock().await.push(peer_conn);
@@ -223,6 +231,7 @@ impl MeshNode {
                     node_id: remote_id.clone(),
                     is_forester: !is_forester,
                     conn: conn.clone(),
+                    last_seen: std::time::Instant::now(),
                 });
 
                 let msg_tx2 = msg_tx.clone();
@@ -235,9 +244,61 @@ impl MeshNode {
         });
     }
 
-    /// Get number of connected peers
+    /// Get number of connected peers (prunes dead peers first)
     pub async fn peer_count(&self) -> usize {
+        self.prune_dead_peers().await;
         self.peers.lock().await.len()
+    }
+
+    /// Remove peers that haven't been heard from in PEER_TIMEOUT or whose connection is closed
+    pub async fn prune_dead_peers(&self) {
+        let now = std::time::Instant::now;
+        let mut peers = self.peers.lock().await;
+        peers.retain(|p| {
+            let alive = now().duration_since(p.last_seen) < PEER_TIMEOUT
+                && p.conn.close_reason().is_none();
+            if !alive {
+                tracing::info!("Pruning dead peer: {}", p.node_id);
+            }
+            alive
+        });
+    }
+
+    /// Start heartbeat sender + peer sweeper background task
+    pub fn start_heartbeat(self: Arc<Self>) {
+        let node = self.clone();
+        let peers = self.peers.clone();
+        let is_forester = self.is_forester;
+        let node_id = self.node_id.clone();
+
+        tokio::spawn(async move {
+            loop {
+                tokio::time::sleep(HEARTBEAT_INTERVAL).await;
+
+                // Prune dead peers
+                let now = std::time::Instant::now;
+                {
+                    let mut p = peers.lock().await;
+                    p.retain(|peer| {
+                        let alive = now().duration_since(peer.last_seen) < PEER_TIMEOUT
+                            && peer.conn.close_reason().is_none();
+                        if !alive {
+                            tracing::info!("Sweeper pruned dead peer: {}", peer.node_id);
+                        }
+                        alive
+                    });
+                }
+
+                // Broadcast heartbeat to all peers
+                let leaf_count = peers.lock().await.len() as u64;
+                let msg = MeshMessage::Heartbeat {
+                    is_forester,
+                    leaf_count,
+                    node_id: node_id.clone(),
+                };
+                let _ = node.broadcast(&msg).await;
+            }
+        });
     }
 
     /// Get connected peer IDs
@@ -270,6 +331,16 @@ async fn receive_loop(
                 match recv.read_to_end(MAX_MSG_SIZE).await {
                     Ok(data) => {
                         if !data.is_empty() {
+                            // Update last_seen for this peer
+                            {
+                                let mut p = peers.lock().await;
+                                for peer in p.iter_mut() {
+                                    if peer.node_id == remote_id {
+                                        peer.last_seen = std::time::Instant::now();
+                                        break;
+                                    }
+                                }
+                            }
                             if let Some(msg) = MeshMessage::decode(&data) {
                                 tracing::debug!(
                                     "Received message from {}: {:?}",

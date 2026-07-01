@@ -38,6 +38,7 @@ public class AttachmentTypeSelector extends PopupWindow {
   public static final int ADD_LOCATION = 5;
   public static final int RECORD_VIDEO = 6;
   public static final int ADD_WEBXDC = 7;
+  public static final int SEND_PAYMENT = 8;
 
   private static final int ANIMATION_DURATION = 300;
 
@@ -50,6 +51,7 @@ public class AttachmentTypeSelector extends PopupWindow {
   private final @NonNull ImageView videoButton;
   private final @NonNull ImageView locationButton;
   private final @NonNull ImageView webxdcButton;
+  private final @NonNull ImageView paymentButton;
 
   private @Nullable View currentAnchor;
   private @Nullable AttachmentClickedListener listener;
@@ -78,6 +80,7 @@ public class AttachmentTypeSelector extends PopupWindow {
     this.videoButton = ViewUtil.findById(layout, R.id.record_video_button);
     this.locationButton = ViewUtil.findById(layout, R.id.location_button);
     this.webxdcButton = ViewUtil.findById(layout, R.id.webxdc_button);
+    this.paymentButton = ViewUtil.findById(layout, R.id.payment_button);
 
     this.imageButton.setOnClickListener(new PropagatingClickListener(ADD_GALLERY));
     this.documentButton.setOnClickListener(new PropagatingClickListener(ADD_DOCUMENT));
@@ -86,6 +89,7 @@ public class AttachmentTypeSelector extends PopupWindow {
     this.videoButton.setOnClickListener(new PropagatingClickListener(RECORD_VIDEO));
     this.locationButton.setOnClickListener(new PropagatingClickListener(ADD_LOCATION));
     this.webxdcButton.setOnClickListener(new PropagatingClickListener(ADD_WEBXDC));
+    this.paymentButton.setOnClickListener(new PropagatingClickListener(SEND_PAYMENT));
     this.recentRail.setListener(new RecentPhotoSelectedListener());
 
     if (!Prefs.isLocationStreamingEnabled(context)) {
@@ -94,6 +98,7 @@ public class AttachmentTypeSelector extends PopupWindow {
 
     if (DcHelper.getContext(context).getChat(chatId).isOutBroadcast()) {
       ViewUtil.findById(layout, R.id.webxdc_linear_layout).setVisibility(View.GONE);
+      ViewUtil.findById(layout, R.id.payment_linear_layout).setVisibility(View.GONE);
     }
 
     setLocationButtonImage(context);
@@ -142,6 +147,7 @@ public class AttachmentTypeSelector extends PopupWindow {
     animateButtonIn(locationButton, ANIMATION_DURATION / 4);
     animateButtonIn(documentButton, ANIMATION_DURATION / 4);
     animateButtonIn(webxdcButton, 0);
+    animateButtonIn(paymentButton, 0);
   }
 
   @Override

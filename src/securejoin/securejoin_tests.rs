@@ -493,9 +493,9 @@ async fn test_secure_join_group_ex(v3: bool, remove_invite: bool) -> Result<()> 
     );
     assert!(!msg.header_exists(HeaderDef::AutoSubmitted));
 
-    // Old Delta Chat core sent `Secure-Join-Group` header in `vg-request`,
+    // Old EpsilonChat core sent `Secure-Join-Group` header in `vg-request`,
     // but it was only used by Alice in `vg-request-with-auth`.
-    // New Delta Chat versions do not use `Secure-Join-Group` header at all
+    // New EpsilonChat versions do not use `Secure-Join-Group` header at all
     // and it is deprecated.
     // Now `Secure-Join-Group` header
     // is only sent in `vg-request-with-auth` for compatibility.

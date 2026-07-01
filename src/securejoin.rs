@@ -43,7 +43,7 @@ use crate::token::Namespace;
 /// so, Alice doesn't mark Bob as verified.
 // TODO For backwards compatibility reasons, this is still using a rather large value.
 // Set this to a lower value (e.g. 10 minutes)
-// when Delta Chat v2.22.0 is sufficiently rolled out
+// when EpsilonChat v2.22.0 is sufficiently rolled out
 const VERIFICATION_TIMEOUT_SECONDS: i64 = 7 * 24 * 3600;
 
 const DISALLOWED_CHARACTERS: &AsciiSet = &NON_ALPHANUMERIC_WITHOUT_DOT.remove(b'_');
@@ -108,7 +108,7 @@ pub async fn get_securejoin_qr(context: &Context, chat: Option<ChatId>) -> Resul
                 bail!(err);
             }
             if chat.typ == Chattype::OutBroadcast {
-                // If the user created the broadcast before updating Delta Chat,
+                // If the user created the broadcast before updating EpsilonChat,
                 // then the secret will be missing, and the user needs to recreate the broadcast:
                 if load_broadcast_secret(context, chat.id).await?.is_none() {
                     error!(
@@ -438,7 +438,7 @@ pub(crate) async fn handle_securejoin_handshake(
     // because if Eve can see Alice's QR code and have Bob scan a manipulated QR code,
     // she can just do a classical MitM attack.
     //
-    // Protecting all messages sent by Delta Chat against 'surreptitious forwarding'
+    // Protecting all messages sent by EpsilonChat against 'surreptitious forwarding'
     // by checking the 'intended recipient fingerprint'
     // will improve security (completely unrelated to the securejoin protocol)
     // and is something we want to do in the future:

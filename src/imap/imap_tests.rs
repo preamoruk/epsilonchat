@@ -160,7 +160,7 @@ async fn check_target_folder_combination(
     Ok(())
 }
 
-// chat_msg means that the message was sent by Delta Chat
+// chat_msg means that the message was sent by EpsilonChat
 // The tuples are (folder, chat_msg, expected_destination)
 const COMBINATIONS_ACCEPTED_CHAT: &[(&str, bool, &str)] = &[
     ("INBOX", false, "INBOX"),

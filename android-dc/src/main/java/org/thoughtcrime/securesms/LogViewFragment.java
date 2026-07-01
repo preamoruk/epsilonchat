@@ -108,7 +108,7 @@ public class LogViewFragment extends Fragment {
     File logFile = null;
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd-HHmmss");
     Date now = new Date();
-    String logFileName = "deltachat-log-" + dateFormat.format(now) + ".txt";
+    String logFileName = "epsilonchat-log-" + dateFormat.format(now) + ".txt";
 
     try {
       String logText = logPreview.getText().toString();

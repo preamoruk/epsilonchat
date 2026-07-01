@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh_CN"><head><meta charset="UTF-8" /><meta name="viewport" content="initial-scale=1.0" /><link rel="stylesheet" href="../help.css" /></head><body><ul id="top">
-  <li><a href="#什么是-delta-chat">什么是 Delta Chat？</a>
+  <li><a href="#什么是-delta-chat">什么是 EpsilonChat？</a>
     <ul>
       <li><a href="#howtoe2ee">如何找到可以聊天的人？</a></li>
       <li><a href="#为什么聊天被标记为-请求">为什么聊天被标记为 “请求”？</a></li>
       <li><a href="#如何让我的两个朋友相互联系">如何让我的两个朋友相互联系？</a></li>
       <li><a href="#multiple-accounts">什么是账户资料？如何在它们之间切换？</a></li>
       <li><a href="#谁会看见我的个人资料图片">谁会看见我的个人资料图片？</a></li>
-      <li><a href="#signature">我可以用Delta Chat 设置个人介绍/个人照片/状态吗？</a></li>
+      <li><a href="#signature">我可以用EpsilonChat 设置个人介绍/个人照片/状态吗？</a></li>
       <li><a href="#固定静音归档是什么意思">固定、静音、归档是什么意思？</a></li>
       <li><a href="#save">“保存的消息”如何工作？</a></li>
       <li><a href="#绿色圆点代表什么">绿色圆点代表什么？</a></li>
@@ -59,16 +59,16 @@
       <li><a href="#什么是推送通知如何获得即时消息传递">什么是推送通知？如何获得即时消息传递？</a></li>
       <li><a href="#ios-设备上是否启用了推送通知我还有其他的选择吗">iOS 设备上是否启用了推送通知？我还有其他的选择吗？</a></li>
       <li><a href="#android-push">Android 设备上是否启用/需要推送通知？</a></li>
-      <li><a href="#privacy-notifications">Delta Chat 推送通知的隐私性如何？</a></li>
-      <li><a href="#为什么-delta-chat-与集中式专有的-applegoogle-推送服务集成">为什么 Delta Chat 与集中式专有的 Apple/Google 推送服务集成？</a></li>
+      <li><a href="#privacy-notifications">EpsilonChat 推送通知的隐私性如何？</a></li>
+      <li><a href="#为什么-delta-chat-与集中式专有的-applegoogle-推送服务集成">为什么 EpsilonChat 与集中式专有的 Apple/Google 推送服务集成？</a></li>
     </ul>
   </li>
   <li><a href="#multiclient">多客户端</a>
     <ul>
-      <li><a href="#我能同时在多个设备上使用-delta-chat-吗">我能同时在多个设备上使用 Delta Chat 吗?</a></li>
+      <li><a href="#我能同时在多个设备上使用-delta-chat-吗">我能同时在多个设备上使用 EpsilonChat 吗?</a></li>
       <li><a href="#故障排除">故障排除</a></li>
       <li><a href="#backup">手动传输</a></li>
-      <li><a href="#有推出-delta-chat-web-客户端的计划吗">有推出 Delta Chat Web 客户端的计划吗？</a></li>
+      <li><a href="#有推出-delta-chat-web-客户端的计划吗">有推出 EpsilonChat Web 客户端的计划吗？</a></li>
     </ul>
   </li>
   <li><a href="#高级">高级</a></li>
@@ -76,10 +76,10 @@
     <ul>
       <li><a href="#relays">什么是中继服务器？</a>
         <ul>
-          <li><a href="#我可以在delta-chat-中使用传统电子邮件吗">我可以在Delta Chat 中使用传统电子邮件吗？</a></li>
+          <li><a href="#我可以在delta-chat-中使用传统电子邮件吗">我可以在EpsilonChat 中使用传统电子邮件吗？</a></li>
           <li><a href="#classic-email">如何使用经典电子邮件地址作为中继配置聊天配置文件？</a></li>
-          <li><a href="#我想管理自己的服务器delta-chat-您有什么建议">我想管理自己的服务器Delta Chat 。您有什么建议？</a></li>
-          <li><a href="#statssending">什么是 “向Delta Chat’开发人员发送统计数据”？</a></li>
+          <li><a href="#我想管理自己的服务器delta-chat-您有什么建议">我想管理自己的服务器EpsilonChat 。您有什么建议？</a></li>
+          <li><a href="#statssending">什么是 “向EpsilonChat’开发人员发送统计数据”？</a></li>
         </ul>
       </li>
       <li><a href="#我对技术细节很感兴趣能告诉我更多吗">我对技术细节很感兴趣。能告诉我更多吗？</a></li>
@@ -100,28 +100,28 @@
           <li><a href="#您是否考虑过使用-openpgp-的替代版端到端加密-openpgp-alternatives">您是否考虑过使用 OpenPGP 的替代版端到端加密 ？{#openpgp-alternatives}</a></li>
         </ul>
       </li>
-      <li><a href="#delta-chat-是否容易受到-efail-攻击">Delta Chat 是否容易受到 EFAIL 攻击？</a></li>
+      <li><a href="#delta-chat-是否容易受到-efail-攻击">EpsilonChat 是否容易受到 EFAIL 攻击？</a></li>
       <li><a href="#带有邮件图标的邮件是否会在互联网上公开显示tls">带有邮件图标的邮件是否会在互联网上公开显示？{#tls}</a></li>
-      <li><a href="#message-metadata">Delta Chat 如何保护消息中的元数据？</a></li>
+      <li><a href="#message-metadata">EpsilonChat 如何保护消息中的元数据？</a></li>
       <li><a href="#device-seizure">当设备被查封时，如何保护元数据和联系人？</a>
         <ul>
           <li><a href="#谁能看到我的-ip-地址">谁能看到我的 IP 地址？</a></li>
         </ul>
       </li>
-      <li><a href="#pfs">Delta Chat 是否支持完美前向保密？</a>
+      <li><a href="#pfs">EpsilonChat 是否支持完美前向保密？</a>
         <ul>
           <li><a href="#如何手动检查加密-信息">如何手动检查加密 信息？</a></li>
         </ul>
       </li>
       <li><a href="#importkey">我可以重复使用现有的私钥吗？</a></li>
-      <li><a href="#security-audits">Delta Chat 是否已进行独立的安全漏洞审计？</a></li>
+      <li><a href="#security-audits">EpsilonChat 是否已进行独立的安全漏洞审计？</a></li>
     </ul>
   </li>
   <li><a href="#杂项">杂项</a>
     <ul>
-      <li><a href="#delta-chat-需要哪些权限">Delta Chat 需要哪些权限？</a></li>
-      <li><a href="#我的朋友在哪里可以找到-delta-chat">我的朋友在哪里可以找到 Delta Chat？</a></li>
-      <li><a href="#delta-chat-的开发是如何被资助的">Delta Chat 的开发是如何被资助的?</a></li>
+      <li><a href="#delta-chat-需要哪些权限">EpsilonChat 需要哪些权限？</a></li>
+      <li><a href="#我的朋友在哪里可以找到-delta-chat">我的朋友在哪里可以找到 EpsilonChat？</a></li>
+      <li><a href="#delta-chat-的开发是如何被资助的">EpsilonChat 的开发是如何被资助的?</a></li>
     </ul>
   </li>
 </ul>
@@ -131,12 +131,12 @@
 <h2 id="什么是-delta-chat">
         
         
-          什么是 Delta Chat？ <a href="#什么是-delta-chat" class="anchor"></a>
+          什么是 EpsilonChat？ <a href="#什么是-delta-chat" class="anchor"></a>
         
         
       </h2>
 
-<p>Delta Chat 是一款可靠、去中心化和安全的消息应用程序、 
+<p>EpsilonChat 是一款可靠、去中心化和安全的消息应用程序、 
 适用于移动和桌面平台。</p>
 
 <ul>
@@ -171,7 +171,7 @@
         
       </h3>
 
-<p>首先，请注意Delta Chat 是一个私人信使。
+<p>首先，请注意EpsilonChat 是一个私人信使。
 没有公开的发现功能，由您决定您的联系人。</p>
 
 <ul>
@@ -179,7 +179,7 @@
     <p>如果您与朋友或家人<strong>面对面</strong>、
 点击主屏幕上的 <strong>二维码</strong> 图标<img style="vertical-align:middle; height:1.3em; margin:1px" src="../qr-icon.png" />
 图标。<br />
-请您的聊天对象在 Delta Chat 上<strong>扫描</strong> 二维码 。</p>
+请您的聊天对象在 EpsilonChat 上<strong>扫描</strong> 二维码 。</p>
   </li>
   <li>
     <p>对于<strong>远程</strong>联络设置、
@@ -258,7 +258,7 @@
 个人配置只存在于您的设备(们)中
 并使用聊天邮件或传统电子邮件服务器传输信息。</p>
 
-<p>首次安装Delta Chat 时，会创建第一个账户资料文件。</p>
+<p>首次安装EpsilonChat 时，会创建第一个账户资料文件。</p>
 
 <p>之后，您可以点击左上角的个人资料图像，<strong>添加个人账户</strong>
 或<strong>切换账户</strong>。</p>
@@ -282,7 +282,7 @@
       <h3 id="signature">
         
         
-          我可以用Delta Chat 设置个人介绍/个人照片/状态吗？ <a href="#signature" class="anchor"></a>
+          我可以用EpsilonChat 设置个人介绍/个人照片/状态吗？ <a href="#signature" class="anchor"></a>
         
         
       </h3>
@@ -462,17 +462,17 @@ Please use this method sparingly, as sending original files will significantly i
 5 分钟到 1 年之间。</p>
 
 <p>在再次关闭该设置之前，
-每个聊天成员的 Delta Chat 应用都会负责
+每个聊天成员的 EpsilonChat 应用都会负责
 在选定的时间跨度后删除消息。
 时间跨度从
-接收者首次在 Delta Chat 中看到消息时开始。
+接收者首次在 EpsilonChat 中看到消息时开始。
 消息将在
 服务器上的每个电子邮件帐户中以及应用本身中删除。</p>
 
 <p>请注意，只有当您信任您的聊天伙伴时，您才可以依赖“消息定时销毁”；
 不怀好意的人可能会拍照，或者在删除之前以其他方式保存、复制或转发消息。</p>
 
-<p>但是，如果一个聊天伙伴卸载了Delta Chat 、
+<p>但是，如果一个聊天伙伴卸载了EpsilonChat 、
 (加密）信息可能需要更长的时间才能从他们的服务器上删除。</p>
     
       <h3 id="delold">
@@ -562,7 +562,7 @@ Please use this method sparingly, as sending original files will significantly i
   <li>
     <p>如果会员还不在您的联系人列表中，但可以<strong>与您面对面</strong>、
 在同一屏幕上，显示<strong>二维码</strong>。<br />
-在 Delta Chat 主屏幕上点击。</p>
+在 EpsilonChat 主屏幕上点击。</p>
   </li>
   <li>
     <p>如需添加<strong>远程</strong>成员、
@@ -633,7 +633,7 @@ Please use this method sparingly, as sending original files will significantly i
 但不建议超过 150 个。</p>
 
 <p>随着群体规模的扩大，他们的社会地位可能会变得不同，可能需要一个等级制度。
-其中Delta Chat 是与<a href="#groups">平等权利</a> 聊天的私人信使。
+其中EpsilonChat 是与<a href="#groups">平等权利</a> 聊天的私人信使。
 相关知识，请参阅<a href="https://en.wikipedia.org/wiki/Dunbar%27s_number">邓巴数</a>。</p>
     
       <h2 id="channels">
@@ -666,7 +666,7 @@ and, from that point on, all new messages from the channel.</p>
 <p><strong>Don’t worry,</strong> if that does not happen immediately.
 Once the channel owner comes online, your join request will be processed.</p>
 
-<p>As all of Delta Chat, also Channels are private and decentralized,
+<p>As all of EpsilonChat, also Channels are private and decentralized,
 there is no public discovery.</p>
 
 <p>Other channel subscribers will not see that you subscribed and cannot message you.
@@ -724,7 +724,7 @@ so there is no single fixed number that applies everywhere.</p>
 we recommend using a <a href="#multiple-accounts">dedicated profile</a> for the channel
 and checking whether the relay is suitable.</p>
 
-<p>But don’t be too hesitant: Delta Chat is designed to be relay-agnostic,
+<p>But don’t be too hesitant: EpsilonChat is designed to be relay-agnostic,
 so you can change your relay at any point easily -
 your existing subscribers will not even notice.
 You only have to update the invite link you share with new subscribers in that case.</p>
@@ -737,7 +737,7 @@ You only have to update the invite link you share with new subscribers in that c
         
       </h2>
 
-<p>Delta Chat supports one-to-one <strong>audio calls</strong> and <strong>video calls</strong>.</p>
+<p>EpsilonChat supports one-to-one <strong>audio calls</strong> and <strong>video calls</strong>.</p>
 
 <p>Calls are supported on Desktop, Ubuntu Touch, iOS and Android 8 and newer.</p>
     
@@ -770,7 +770,7 @@ where you can choose whether to place an <strong>Audio Call</strong> or a <stron
 <ul>
   <li>
     <p>When someone calls you,
-Delta Chat shows an <strong>incoming call screen</strong> or notification.</p>
+EpsilonChat shows an <strong>incoming call screen</strong> or notification.</p>
   </li>
   <li>
     <p>Tap <strong>Accept</strong> to answer
@@ -800,7 +800,7 @@ or <strong>Decline</strong> to reject the call.</p>
 
 <p>Depending on the device, you can also select the audio output or use picture-in-picture.
 On desktop, the call is using a dedicated window
-and you can continue using the main Delta Chat window as usual.</p>
+and you can continue using the main EpsilonChat window as usual.</p>
     
       <h3 id="missed-calls-and-notifications">
         
@@ -836,7 +836,7 @@ you can still pick up the call by tapping the incoming call message bubble in it
       </h2>
 
 <p>您可以向聊天发送应用程序–游戏、编辑器、投票和其他工具。
-这使得Delta Chat 成为一个真正可扩展的聊天工具。</p>
+这使得EpsilonChat 成为一个真正可扩展的聊天工具。</p>
     
       <h3 id="我在哪里可以获得-webxdc-应用">
         
@@ -904,7 +904,7 @@ you can still pick up the call by tapping the incoming call message bubble in it
 <a href="https://webxdc.org/docs">Webxdc 文档</a>。</p>
   </li>
   <li>
-    <p>如果您有问题，可以在 [Delta Chat 论坛]        (https://support.delta.chat/c/webxdc/20)。</p>
+    <p>如果您有问题，可以在 [EpsilonChat 论坛]        (https://support.delta.chat/c/webxdc/20)。</p>
   </li>
 </ul>
     
@@ -924,7 +924,7 @@ you can still pick up the call by tapping the incoming call message bubble in it
         
       </h3>
 
-<p>推送通知由 Apple 和 Google 的“推送服务”发送到用户的设备，以便非活动状态的 Delta Chat 应用可以在后台获取消息，并在需要时在用户的手机上显示通知。</p>
+<p>推送通知由 Apple 和 Google 的“推送服务”发送到用户的设备，以便非活动状态的 EpsilonChat 应用可以在后台获取消息，并在需要时在用户的手机上显示通知。</p>
 
 <p>推送通知适用于以下所有 <a href="https://delta.chat/chatmail">chatmail</a> 服务器：</p>
 
@@ -947,11 +947,11 @@ you can still pick up the call by tapping the incoming call message bubble in it
         
       </h3>
 
-<p>是的，Delta Chat 会自动使用推送通知来接收 <a href="https://delta.chat/chatmail">chatmail</a> 个人资料。
+<p>是的，EpsilonChat 会自动使用推送通知来接收 <a href="https://delta.chat/chatmail">chatmail</a> 个人资料。
 而且，Apple 手机上没有其他方式可以实现即时消息传递
-因为 Apple 设备不允许 Delta Chat 在后台获取数据。
+因为 Apple 设备不允许 EpsilonChat 在后台获取数据。
 推送通知会自动为 iOS 用户激活，因为
-<a href="#privacy-notifications">Delta Chat 的隐私保护推送通知系统</a>
+<a href="#privacy-notifications">EpsilonChat 的隐私保护推送通知系统</a>
 不会向 Apple 泄露其尚未拥有的数据。</p>
     
       <h3 id="android-push">
@@ -962,20 +962,20 @@ you can still pick up the call by tapping the incoming call message bubble in it
         
       </h3>
 
-<p>如果推送服务可用，Delta Chat 会启用推送通知
+<p>如果推送服务可用，EpsilonChat 会启用推送通知
 为所有聊天邮件用户发送即时信息。</p>
 
-<p>在 Delta Chat“通知”的“推送通知”设置中，您可以更改以下影响所有聊天配置文件的设置：</p>
+<p>在 EpsilonChat“通知”的“推送通知”设置中，您可以更改以下影响所有聊天配置文件的设置：</p>
 
 <ul>
   <li>
     <p>使用后台连接：如果你没有使用推送服务，
-你可以禁用 Delta Chat 的“电池优化”，
+你可以禁用 EpsilonChat 的“电池优化”，
 允许它在后台获取消息。
 但是，可能会有几分钟到几小时的延迟。
 一些 Android 供应商甚至完全限制应用
 （请参阅 <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>），
-并且 Delta Chat 可能不会显示传入的消息，
+并且 EpsilonChat 可能不会显示传入的消息，
 直到你手动再次打开应用为止。</p>
   </li>
   <li>
@@ -992,33 +992,33 @@ you can still pick up the call by tapping the incoming call message bubble in it
       <h3 id="privacy-notifications">
         
         
-          Delta Chat 推送通知的隐私性如何？ <a href="#privacy-notifications" class="anchor"></a>
+          EpsilonChat 推送通知的隐私性如何？ <a href="#privacy-notifications" class="anchor"></a>
         
         
       </h3>
 
-<p>Delta Chat 推送通知支持可避免泄漏私人信息。
+<p>EpsilonChat 推送通知支持可避免泄漏私人信息。
 它不会将个人资料数据、IP 地址或信息内容（即使是加密的）泄露给参与通知推送的任何系统。</p>
 
-<p>以下是 Delta Chat 应用如何执行推送通知传递：</p>
+<p>以下是 EpsilonChat 应用如何执行推送通知传递：</p>
 
 <ul>
   <li>
-    <p>Delta Chat 应用在本地获取“设备令牌”，对其进行加密并将其存储在
+    <p>EpsilonChat 应用在本地获取“设备令牌”，对其进行加密并将其存储在
 <a href="https://delta.chat/chatmail">Chatmail</a> 服务器上。</p>
   </li>
   <li>
-    <p>当 <a href="https://delta.chat/chatmail">chatmail</a> 服务器收到Delta Chat 用户的信息时
-就会将加密设备令牌转发到Delta Chat 中央通知代理。</p>
+    <p>当 <a href="https://delta.chat/chatmail">chatmail</a> 服务器收到EpsilonChat 用户的信息时
+就会将加密设备令牌转发到EpsilonChat 中央通知代理。</p>
   </li>
   <li>
-    <p>中央 Delta Chat 通知代理解密设备令牌
+    <p>中央 EpsilonChat 通知代理解密设备令牌
 并将其转发到相应的推送服务（Apple、Google 等），
-而永远不知道 Delta Chat 用户的 IP 或电子邮件地址。</p>
+而永远不知道 EpsilonChat 用户的 IP 或电子邮件地址。</p>
   </li>
   <li>
     <p>中央推送服务（Apple、Google 等）
-唤醒你设备上的 Delta Chat 应用
+唤醒你设备上的 EpsilonChat 应用
 ，以便在后台检查新消息。
 它不知道它唤醒的设备的 Chatmail 或电子邮件地址。
 中央 Apple/Google 推送服务永远不会看到电子邮件地址（发件人或收件人），
@@ -1026,7 +1026,7 @@ you can still pick up the call by tapping the incoming call message bubble in it
   </li>
 </ul>
 
-<p>中央 Delta Chat 通知代理<a href="https://github.com/deltachat/notifiers">体积小，完全用 Rust 实现</a>
+<p>中央 EpsilonChat 通知代理<a href="https://github.com/deltachat/notifiers">体积小，完全用 Rust 实现</a>
 ，并在 Apple/Google 等处理设备令牌后立即忘记它们，
 通常在几毫秒内。</p>
 
@@ -1036,23 +1036,23 @@ you can still pick up the call by tapping the incoming call message bubble in it
 任何加密身份信息。</p>
 
 <p>由此产生的整体隐私设计，即使查封 Chatmail 服务器，
-或完全查封中央 Delta Chat 通知代理
+或完全查封中央 EpsilonChat 通知代理
 也不会泄露推送服务尚未拥有的私人信息。</p>
     
       <h3 id="为什么-delta-chat-与集中式专有的-applegoogle-推送服务集成">
         
         
-          为什么 Delta Chat 与集中式专有的 Apple/Google 推送服务集成？ <a href="#为什么-delta-chat-与集中式专有的-applegoogle-推送服务集成" class="anchor"></a>
+          为什么 EpsilonChat 与集中式专有的 Apple/Google 推送服务集成？ <a href="#为什么-delta-chat-与集中式专有的-applegoogle-推送服务集成" class="anchor"></a>
         
         
       </h3>
 
-<p>Delta Chat 是一款免费且开源的去中心化即时通讯应用，用户可以自由选择服务器，
+<p>EpsilonChat 是一款免费且开源的去中心化即时通讯应用，用户可以自由选择服务器，
 但我们希望用户可靠地体验到“即时消息传递”，
 就像他们从 Whatsapp、Signal 或 Telegram 应用体验到的那样，
 而无需预先提出更适合专家用户或开发人员的问题。</p>
 
-<p>请注意，Delta Chat 具有<a href="#privacy-notifications">小型且隐私保护的推送通知系统</a>，
+<p>请注意，EpsilonChat 具有<a href="#privacy-notifications">小型且隐私保护的推送通知系统</a>，
 可为所有 Chatmail 服务器实现“即时消息传递”，
 包括<a href="https://delta.chat/chatmail#selfhosted">你可能在未经我们许可的情况下自行设置的服务器</a>。
 欢迎来到可互操作且庞大的 Chatmail 和电子邮件系统的力量 :)</p>
@@ -1068,7 +1068,7 @@ you can still pick up the call by tapping the incoming call message bubble in it
       <h3 id="我能同时在多个设备上使用-delta-chat-吗">
         
         
-          我能同时在多个设备上使用 Delta Chat 吗? <a href="#我能同时在多个设备上使用-delta-chat-吗" class="anchor"></a>
+          我能同时在多个设备上使用 EpsilonChat 吗? <a href="#我能同时在多个设备上使用-delta-chat-吗" class="anchor"></a>
         
         
       </h3>
@@ -1084,10 +1084,10 @@ you can still pick up the call by tapping the incoming call message bubble in it
 并稍等片刻，直到显示二维码</p>
   </li>
   <li>
-    <p>在第二台设备上，<a href="https://get.delta.chat">安装 Delta Chat</a></p>
+    <p>在第二台设备上，<a href="https://get.delta.chat">安装 EpsilonChat</a></p>
   </li>
   <li>
-    <p>在第二台设备上，启动 Delta Chat，选择<strong>添加为第二台设备</strong>，然后扫描旧设备上的二维码</p>
+    <p>在第二台设备上，启动 EpsilonChat，选择<strong>添加为第二台设备</strong>，然后扫描旧设备上的二维码</p>
   </li>
   <li>
     <p>传输应在几秒钟后开始，并且在传输过程中，两台设备都将显示<strong>进度</strong>。
@@ -1117,15 +1117,15 @@ you can still pick up the call by tapping the incoming call message bubble in it
 （传输后，你可以更改回原始值）</p>
   </li>
   <li>
-    <p>在 <strong>iOS</strong> 上，确保授予“系统设置 / 应用 / Delta Chat / <strong>本地网络</strong>”访问权限</p>
+    <p>在 <strong>iOS</strong> 上，确保授予“系统设置 / 应用 / EpsilonChat / <strong>本地网络</strong>”访问权限</p>
   </li>
   <li>
-    <p>在 <strong>macOS</strong> 上，启用“系统设置 / 隐私和安全 / <strong>本地网络</strong> / Delta Chat”</p>
+    <p>在 <strong>macOS</strong> 上，启用“系统设置 / 隐私和安全 / <strong>本地网络</strong> / EpsilonChat”</p>
   </li>
   <li>
     <p>你的系统可能具有“个人防火墙”，
 已知这会引起问题（尤其是在 Windows 上）。
-在两端<strong>禁用个人防火墙</strong>以用于 Delta Chat，然后重试</p>
+在两端<strong>禁用个人防火墙</strong>以用于 EpsilonChat，然后重试</p>
   </li>
   <li>
     <p><strong>访客网络</strong>可能不允许设备相互通信。
@@ -1140,11 +1140,11 @@ you can still pick up the call by tapping the incoming call message bubble in it
   </li>
   <li>
     <p>如果传输已开始，请确保设备<strong>保持活动状态</strong>，并且不会进入睡眠状态。
-不要退出 Delta Chat。
+不要退出 EpsilonChat。
 （我们努力使应用在后台工作，但不幸的是，<a href="https://dontkillmyapp.com">系统倾向于杀死应用</a>）</p>
   </li>
   <li>
-    <p>目标设备上<strong>已登录</strong> Delta Chat？
+    <p>目标设备上<strong>已登录</strong> EpsilonChat？
 你可以在每台设备上使用多个配置文件，只需<a href="#multiple-accounts">添加另一个配置文件</a></p>
   </li>
   <li>
@@ -1178,14 +1178,14 @@ you can still pick up the call by tapping the incoming call message bubble in it
       <h3 id="有推出-delta-chat-web-客户端的计划吗">
         
         
-          有推出 Delta Chat Web 客户端的计划吗？ <a href="#有推出-delta-chat-web-客户端的计划吗" class="anchor"></a>
+          有推出 EpsilonChat Web 客户端的计划吗？ <a href="#有推出-delta-chat-web-客户端的计划吗" class="anchor"></a>
         
         
       </h3>
 
 <ul>
   <li>目前没有计划，但有一些初步的想法。</li>
-  <li>有 2-3 种途径来实现 Delta Chat Web 客户端，但是它们都需要巨大的工作量。目前，我们专注于将稳定的版本作为本地应用程序发布到所有应用程序商店（Google Play/iOS/Windows/macOS/Linux 仓库）。</li>
+  <li>有 2-3 种途径来实现 EpsilonChat Web 客户端，但是它们都需要巨大的工作量。目前，我们专注于将稳定的版本作为本地应用程序发布到所有应用程序商店（Google Play/iOS/Windows/macOS/Linux 仓库）。</li>
   <li>如果是因为不能在工作的电脑上安装软件而需要一个 Web 客户端，您可以使用便携版的 Windows 桌面客户端，或者在 Linux 上使用 AppImage 版。您可以在 <a href="https://get.delta.chat">get.delta.chat</a> 找到它们。</li>
 </ul>
     
@@ -1265,7 +1265,7 @@ instead of removing it right away.</p>
       <h4 id="我可以在delta-chat-中使用传统电子邮件吗">
         
         
-          我可以在Delta Chat 中使用传统电子邮件吗？ <a href="#我可以在delta-chat-中使用传统电子邮件吗" class="anchor"></a>
+          我可以在EpsilonChat 中使用传统电子邮件吗？ <a href="#我可以在delta-chat-中使用传统电子邮件吗" class="anchor"></a>
         
         
       </h4>
@@ -1314,7 +1314,7 @@ Chatmail 使用默认的 INBOX 进行中继；请确保提供商的设置也是�
       <h4 id="我想管理自己的服务器delta-chat-您有什么建议">
         
         
-          我想管理自己的服务器Delta Chat 。您有什么建议？ <a href="#我想管理自己的服务器delta-chat-您有什么建议" class="anchor"></a>
+          我想管理自己的服务器EpsilonChat 。您有什么建议？ <a href="#我想管理自己的服务器delta-chat-您有什么建议" class="anchor"></a>
         
         
       </h4>
@@ -1328,22 +1328,22 @@ Chatmail 使用默认的 INBOX 进行中继；请确保提供商的设置也是�
 
 <p>以及<a href="https://github.com/chatmail/core">核心Rust开发</a></p>
 
-<p>这些核心Rust开发为<a href="https://chatmail.at/clients">聊天邮件客户端</a>提供支持，其中Delta Chat是最知名的客户端。</p>
+<p>这些核心Rust开发为<a href="https://chatmail.at/clients">聊天邮件客户端</a>提供支持，其中EpsilonChat是最知名的客户端。</p>
     
       <h4 id="statssending">
         
         
-          什么是 “向Delta Chat’开发人员发送统计数据”？ <a href="#statssending" class="anchor"></a>
+          什么是 “向EpsilonChat’开发人员发送统计数据”？ <a href="#statssending" class="anchor"></a>
         
         
       </h4>
 
-<p>我们希望在您的帮助下改进Delta Chat 、
-这就是为什么Delta Chat for Android 会询问您是否希望
+<p>我们希望在您的帮助下改进EpsilonChat 、
+这就是为什么EpsilonChat for Android 会询问您是否希望
 发送匿名使用统计数据。</p>
 
 <p>您可以在以下位置打开或关闭它
-<strong>设置 → 高级 → 将统计数据发送给Delta Chat 的开发人员</strong>。</p>
+<strong>设置 → 高级 → 将统计数据发送给EpsilonChat 的开发人员</strong>。</p>
 
 <p>打开后
 每周统计数据将自动发送到机器人。</p>
@@ -1355,7 +1355,7 @@ Chatmail 使用默认的 INBOX 进行中继；请确保提供商的设置也是�
     <p>通过亲自扫描二维码，有多少人被介绍认识？</p>
   </li>
   <li>
-    <p>使用的是Delta Chat 的哪些版本？</p>
+    <p>使用的是EpsilonChat 的哪些版本？</p>
   </li>
   <li>
     <p>用户出现哪些错误？</p>
@@ -1372,7 +1372,7 @@ Chatmail 使用默认的 INBOX 进行中继；请确保提供商的设置也是�
         
       </h3>
 
-<p>请参阅 <a href="https://github.com/chatmail/core/blob/main/standards.md#standards-used-in-delta-chat">Delta Chat 中使用的标准</a>。</p>
+<p>请参阅 <a href="https://github.com/chatmail/core/blob/main/standards.md#standards-used-in-delta-chat">EpsilonChat 中使用的标准</a>。</p>
     
       <h2 id="e2ee">
         
@@ -1390,7 +1390,7 @@ Chatmail 使用默认的 INBOX 进行中继；请确保提供商的设置也是�
         
       </h3>
 
-<p>Delta Chat 使用 <a href="#openpgp-secure">OpenPGP 标准的安全子集</a>
+<p>EpsilonChat 使用 <a href="#openpgp-secure">OpenPGP 标准的安全子集</a>
 使用以下协议提供自动端到端加密：</p>
 
 <ul>
@@ -1413,7 +1413,7 @@ Chatmail 使用默认的 INBOX 进行中继；请确保提供商的设置也是�
   </li>
 </ul>
 
-<p>Delta Chat 不会查询、发布或与任何 OpenPGP 密钥服务器交互。</p>
+<p>EpsilonChat 不会查询、发布或与任何 OpenPGP 密钥服务器交互。</p>
     
       <h4 id="我如何知道信息是否经过端到端加密whene2e">
         
@@ -1423,8 +1423,8 @@ Chatmail 使用默认的 INBOX 进行中继；请确保提供商的设置也是�
         
       </h4>
 
-<p>Delta Chat 中的所有消息 <strong>默认都采用端到端加密</strong>。
-自 Delta Chat 版本 2 发布系列（2025 年 7 月）起， 
+<p>EpsilonChat 中的所有消息 <strong>默认都采用端到端加密</strong>。
+自 EpsilonChat 版本 2 发布系列（2025 年 7 月）起， 
 端到端加密消息上不再有锁或类似的标记。</p>
     
       <h3 id="没有端到端加密-我还能接收或发送信息吗">
@@ -1489,7 +1489,7 @@ Chatmail 使用默认的 INBOX 进行中继；请确保提供商的设置也是�
         
       </h3>
 
-<p>是的，Delta Chat 使用的是 OpenPGP 的一个安全子集，</p>
+<p>是的，EpsilonChat 使用的是 OpenPGP 的一个安全子集，</p>
 
 <p>它要求整条消息都必须经过正确的加密和签名。</p>
 
@@ -1500,8 +1500,8 @@ Chatmail 使用默认的 INBOX 进行中继；请确保提供商的设置也是�
 大多源自相关工具或应用的用户体验缺陷或技术实现漏洞（或二者叠加）。 
 需特别澄清的是：OpenPGP 作为 IETF 制定的加密标准， 
 与基于命令行操作的 GnuPG（GPG）工具不可混为一谈。 
-诸多对 OpenPGP 的质疑实际指向 GnuPG 工具，而 Delta Chat 即时通讯应用从未采用该工具。 
-Delta Chat 实际使用的是 Rust 语言编写的 OpenPGP 实现库 <a href="https://github.com/rpgp/rpgp">rPGP</a>， 
+诸多对 OpenPGP 的质疑实际指向 GnuPG 工具，而 EpsilonChat 即时通讯应用从未采用该工具。 
+EpsilonChat 实际使用的是 Rust 语言编写的 OpenPGP 实现库 <a href="https://github.com/rpgp/rpgp">rPGP</a>， 
 该库以<a href="https://crates.io/crates/pgp">独立 “pgp” 组件包</a>形式提供， 
 且<a href="#security-audits">已通过 2019 和 2024 年两次安全审计</a>。</p>
 
@@ -1522,7 +1522,7 @@ Delta Chat 实际使用的是 Rust 语言编写的 OpenPGP 实现库 <a href="ht
 因此，这不是一个轻而易举的决定。 
 而且必须为用户带来切实的改进。</p>
 
-<p>Delta Chat 采用整体“可用安全性”方法，
+<p>EpsilonChat 采用整体“可用安全性”方法，
 并与广泛的活动家团体以及
 <a href="https://teamusec.de">TeamUSEC</a> 等知名研究人员合作
 ，以改进针对安全威胁的实际用户结果。
@@ -1534,17 +1534,17 @@ Delta Chat 实际使用的是 Rust 语言编写的 OpenPGP 实现库 <a href="ht
       <h3 id="delta-chat-是否容易受到-efail-攻击">
         
         
-          Delta Chat 是否容易受到 EFAIL 攻击？ <a href="#delta-chat-是否容易受到-efail-攻击" class="anchor"></a>
+          EpsilonChat 是否容易受到 EFAIL 攻击？ <a href="#delta-chat-是否容易受到-efail-攻击" class="anchor"></a>
         
         
       </h3>
 
-<p>不，<a href="https://delta.chat/en/2018-05-15-delta-chat-not-vulnerable-to-efail">Delta Chat 从未受到任何 EFAIL 攻击</a>
+<p>不，<a href="https://delta.chat/en/2018-05-15-delta-chat-not-vulnerable-to-efail">EpsilonChat 从未受到任何 EFAIL 攻击</a>
 因为所使用的 OpenPGP 实现了 <a href="https://github.com/rpgp/rpgp">rPGP</a>
 在加密消息时“修改检测代码”
 并且如果“修改检测代码”不正确则返回 <a href="https://docs.rs/pgp/latest/pgp/errors/enum.Error.html#variant.MdcError">错误</a>。</p>
 
-<p>Delta Chat 也从未容易受到“直接泄露”EFAIL 攻击，
+<p>EpsilonChat 也从未容易受到“直接泄露”EFAIL 攻击，
 因为它只解密 <code class="language-plaintext highlighter-rouge">multipart/encrypted</code> 消息，
 这些消息正好包含一个加密和签名的部分，
 如 Autocrypt Level 1 规范所定义。</p>
@@ -1562,26 +1562,26 @@ Delta Chat 实际使用的是 Rust 语言编写的 OpenPGP 实现库 <a href="ht
 但您和收件人的电子邮件提供商
 可以阅读、分析或修改您的邮件，包括任何附件。</p>
 
-<p>Delta Chat 默认使用严格的
+<p>EpsilonChat 默认使用严格的
 <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS 加密</a>，
 这可以保护你的设备和电子邮件提供商之间的连接安全。
-Delta Chat 的所有 TLS 处理都经过了独立的 <a href="#security-audits">安全审计</a>。
+EpsilonChat 的所有 TLS 处理都经过了独立的 <a href="#security-audits">安全审计</a>。
 此外，你的和接收者的电子邮件提供商之间的连接
 通常也会进行传输加密。
 如果所涉及的电子邮件服务器支持 <a href="https://datatracker.ietf.org/doc/html/rfc8461">MTA-STS</a>，
 则将在电子邮件提供商之间强制执行传输加密，
-在这种情况下，即使消息未进行端到端加密，Delta Chat 通信也永远不会以明文形式暴露给互联网。</p>
+在这种情况下，即使消息未进行端到端加密，EpsilonChat 通信也永远不会以明文形式暴露给互联网。</p>
     
       <h3 id="message-metadata">
         
         
-          Delta Chat 如何保护消息中的元数据？ <a href="#message-metadata" class="anchor"></a>
+          EpsilonChat 如何保护消息中的元数据？ <a href="#message-metadata" class="anchor"></a>
         
         
       </h3>
 
 <p>与其他大多数聊天工具不同、 
-Delta Chat 应用程序不会在服务器上存储任何有关联系人或群组的元数据，也不会以加密形式存储。 
+EpsilonChat 应用程序不会在服务器上存储任何有关联系人或群组的元数据，也不会以加密形式存储。 
 相反，所有群组元数据都经过端到端加密，仅存储在终端用户设备上。</p>
 
 <p>因此，服务器只能看到</p>
@@ -1605,7 +1605,7 @@ Delta Chat 应用程序不会在服务器上存储任何有关联系人或群组
 以及设备查封的威胁，
 我们建议使用 <a href="https://chatmail.at/relays">Chatmail 服务器</a>
 通过二维码扫描创建匿名临时配置文件。
-请注意，所有平台上的 Delta Chat 应用都支持多配置文件，
+请注意，所有平台上的 EpsilonChat 应用都支持多配置文件，
 因此你可以轻松地在你“主要”配置文件旁边使用特定于情况的配置文件，
 并且知道它们的所有数据以及所有元数据都将被删除。
 此外，如果设备被查封，则与使用临时配置文件的联系人
@@ -1625,7 +1625,7 @@ as well as sometimes your contact’s devices if you have a <a href="#calls">cal
 or use <a href="#webxdc">apps</a> together.</p>
 
 <p>IP Addresses are needed for connectivity and efficiency.
-Delta Chat neither persists nor exposes them.
+EpsilonChat neither persists nor exposes them.
 Note that IP Addresses
 are not like an address you give to a delivery service,
 but typically less precise, often defining city or region only.</p>
@@ -1635,7 +1635,7 @@ we recommend to use a VPN for the whole system.
 Per-app options leave gaps across your system.
 For example, tapping a link can expose IP Addresses to unknown parties, which is by far the larger risk.</p>
 
-<p>###Delta Chat 是否支持 “密封发件人”？{#sealedsender}</p>
+<p>###EpsilonChat 是否支持 “密封发件人”？{#sealedsender}</p>
 
 <p>不，还没有。</p>
 
@@ -1653,14 +1653,14 @@ For example, tapping a link can expose IP Addresses to unknown parties, which is
       <h3 id="pfs">
         
         
-          Delta Chat 是否支持完美前向保密？ <a href="#pfs" class="anchor"></a>
+          EpsilonChat 是否支持完美前向保密？ <a href="#pfs" class="anchor"></a>
         
         
       </h3>
 
 <p>目前还没有，但 <a href="https://autocrypt2.org">Autocrypt v2</a> 会提供。</p>
 
-<p>Delta Chat 如今不支持完美前向保密（PFS）。
+<p>EpsilonChat 如今不支持完美前向保密（PFS）。
 这意味着，如果你的私人解密密钥被泄露、
 并且有人收集了你之前的传输中信息、
 他们就能使用泄漏的解密密钥解密并读取这些信息。
@@ -1675,7 +1675,7 @@ For example, tapping a link can expose IP Addresses to unknown parties, which is
 
 <p>该方法在<a href="https://datatracker.ietf.org/doc/draft-autocrypt-openpgp-v2-cert/">Autocrypt v2 OpenPGP证书</a>草案中进行了详细说明。</p>
 
-<p>###Delta Chat 支持后量子加密吗？{#pqc}</p>
+<p>###EpsilonChat 支持后量子加密吗？{#pqc}</p>
 
 <p>目前还没有，但 <a href="https://autocrypt2.org">Autocrypt v2</a> 会提供。</p>
 
@@ -1683,7 +1683,7 @@ For example, tapping a link can expose IP Addresses to unknown parties, which is
 
 <p>它将带来后量子加密技术，以抵御量子计算机攻击。</p>
 
-<p>Delta Chat使用Rust OpenPGP库<a href="https://github.com/rpgp/rpgp">rPGP</a>，</p>
+<p>EpsilonChat使用Rust OpenPGP库<a href="https://github.com/rpgp/rpgp">rPGP</a>，</p>
 
 <p>该库支持最新的<a href="https://datatracker.ietf.org/doc/draft-ietf-openpgp-pqc/">IETF后量子加密OpenPGP草案</a>。</p>
 
@@ -1699,7 +1699,7 @@ For example, tapping a link can expose IP Addresses to unknown parties, which is
 
 <p>你可以在“加密”对话框中手动检查端到端加密状态
 （Android/iOS 上的用户配置文件或桌面上的用户聊天列表项上右键单击）。
-Delta Chat 在此处显示两个指纹。
+EpsilonChat 在此处显示两个指纹。
 如果相同的指纹出现在你自己的设备和你联系人的设备上，
 则连接是安全的。</p>
     
@@ -1713,7 +1713,7 @@ Delta Chat 在此处显示两个指纹。
 
 <p>不。</p>
 
-<p>Delta Chat 根据 Autocrypt 规范 1.1 生成安全 OpenPGP 密钥。
+<p>EpsilonChat 根据 Autocrypt 规范 1.1 生成安全 OpenPGP 密钥。
 我们不建议或提供用户进行手动密钥管理。
 我们希望确保安全审计能专注于少数几种经过验证的加密算法
 而不是 OpenPGP 允许的所有可能算法。
@@ -1723,26 +1723,26 @@ Delta Chat 在此处显示两个指纹。
       <h3 id="security-audits">
         
         
-          Delta Chat 是否已进行独立的安全漏洞审计？ <a href="#security-audits" class="anchor"></a>
+          EpsilonChat 是否已进行独立的安全漏洞审计？ <a href="#security-audits" class="anchor"></a>
         
         
       </h3>
 
 <p>确实如此，且已进行多次。
-Delta Chat 长期接受第三方独立机构的安全审计与漏洞分析，
+EpsilonChat 长期接受第三方独立机构的安全审计与漏洞分析，
 以下按时间倒序列出历年检测记录：</p>
 
 <ul>
   <li>
     <p>2024年12月，网络安全机构<a href="https://www.radicallyopensecurity.com/">Radically Open Security</a> 受NLNET委托，完成了对加密协议<a href="https://github.com/rpgp/docs/blob/main/audits/NGI%20Core%20rPGP%20penetration%20test%20report%202024%201.0.pdf">rPGP的专项审计</a>。
-作为即时通讯工具Delta Chat的核心加密引擎，rPGP采用<a href="https://openpgp.org">OpenPGP</a> 标准实现端到端加密。
+作为即时通讯工具EpsilonChat的核心加密引擎，rPGP采用<a href="https://openpgp.org">OpenPGP</a> 标准实现端到端加密。
 基于审计发现，研究团队同步公开了两份技术通告：</p>
   </li>
   <li><a href="https://github.com/rpgp/rpgp/security/advisories/GHSA-9rmp-2568-59rv">畸形数据触发系统崩溃漏洞</a>（编号CVE-2024-53856）</li>
   <li><a href="https://github.com/rpgp/rpgp/security/advisories/GHSA-4grw-m28r-q285">恶意消息潜在导致资源枯竭漏洞</a>（编号CVE-2024-53857）</li>
 </ul>
 
-<p>自 2024 年 12 月之后，各应用商店发布的 Delta Chat 版本均已修复上述安全公告提及的问题。
+<p>自 2024 年 12 月之后，各应用商店发布的 EpsilonChat 版本均已修复上述安全公告提及的问题。
 相关更新作为常规版本升级的一部分，现已全面覆盖所有 appstore 平台。</p>
 
 <ul>
@@ -1750,7 +1750,7 @@ Delta Chat 长期接受第三方独立机构的安全审计与漏洞分析，
     <p>2024 年 3 月，我们收到了苏黎世联邦理工学院应用密码学
 研究小组的深入安全性分析，并解决了所有提出的问题。
 有关更多详细信息，请参阅我们关于 <a href="https://delta.chat/en/2024-03-25-crypto-analysis-securejoin">加强保证的端到端加密</a> 的博客文章以及
-之后发表的 <a href="https://eprint.iacr.org/2024/918.pdf">Delta Chat 密码学分析</a>
+之后发表的 <a href="https://eprint.iacr.org/2024/918.pdf">EpsilonChat 密码学分析</a>
 研究论文。</p>
   </li>
   <li>
@@ -1760,20 +1760,20 @@ Delta Chat 长期接受第三方独立机构的安全审计与漏洞分析，
 请参阅 <a href="https://delta.chat/en/2023-05-22-webxdc-security">此处，了解有关 Web 中端到端安全性的完整背景故事</a>。</p>
   </li>
   <li>
-    <p>2023 年 3 月，<a href="https://cure53.de">Cure53</a> 分析了 Delta Chat 网络连接的传输加密和一个可重现的邮件服务器设置，如
+    <p>2023 年 3 月，<a href="https://cure53.de">Cure53</a> 分析了 EpsilonChat 网络连接的传输加密和一个可重现的邮件服务器设置，如
 <a href="https://delta.chat/serverguide">本网站</a> 推荐的那样。
 你可以在 <a href="https://delta.chat/en/2023-03-27-third-independent-security-audit">我们的博客</a> 上阅读有关审计的更多信息
 ，或在此处阅读 <a href="https://delta.chat/assets/blog/MER-01-report.pdf">完整报告</a>。</p>
   </li>
   <li>
-    <p>2020 年，<a href="https://includesecurity.com">Include Security</a> 分析了 Delta Chat 的 Rust <a href="https://github.com/deltachat/deltachat-core-rust/">核心</a>、
+    <p>2020 年，<a href="https://includesecurity.com">Include Security</a> 分析了 EpsilonChat 的 Rust <a href="https://github.com/deltachat/deltachat-core-rust/">核心</a>、
 <a href="https://github.com/async-email/async-imap">IMAP</a>、
 <a href="https://github.com/async-email/async-smtp">SMTP</a> 和
 <a href="https://github.com/async-email/async-native-tls">TLS</a> 库。
 它没有发现任何严重或高严重性问题。
 该报告提出了一些中等严重性的弱点 -
-它们本身不会对 Delta Chat 用户构成威胁，
-因为它们取决于 Delta Chat 使用的环境。
+它们本身不会对 EpsilonChat 用户构成威胁，
+因为它们取决于 EpsilonChat 使用的环境。
 出于可用性和兼容性原因，
 我们无法减轻所有这些弱点，
 并决定向受威胁的用户提供安全建议。
@@ -1786,7 +1786,7 @@ Chat 的 <a href="https://github.com/rpgp/rpgp">PGP</a> 和
 它没有发现任何严重问题，
 但发现了两个高严重性问题，我们随后修复了这些问题。
 它还揭示了一个中等严重性和一些不太严重的问题，
-但在 Delta Chat 实现中无法利用这些漏洞。
+但在 EpsilonChat 实现中无法利用这些漏洞。
 尽管如此，自审计结束以来，我们仍然修复了其中一些问题。
 你可以在 <a href="https://delta.chat/assets/blog/2019-first-security-review.pdf">此处阅读完整报告</a>。</p>
   </li>
@@ -1803,7 +1803,7 @@ Chat 的 <a href="https://github.com/rpgp/rpgp">PGP</a> 和
       <h3 id="delta-chat-需要哪些权限">
         
         
-          Delta Chat 需要哪些权限？ <a href="#delta-chat-需要哪些权限" class="anchor"></a>
+          EpsilonChat 需要哪些权限？ <a href="#delta-chat-需要哪些权限" class="anchor"></a>
         
         
       </h3>
@@ -1816,12 +1816,12 @@ Chat 的 <a href="https://github.com/rpgp/rpgp">PGP</a> 和
       <h3 id="我的朋友在哪里可以找到-delta-chat">
         
         
-          我的朋友在哪里可以找到 Delta Chat？ <a href="#我的朋友在哪里可以找到-delta-chat" class="anchor"></a>
+          我的朋友在哪里可以找到 EpsilonChat？ <a href="#我的朋友在哪里可以找到-delta-chat" class="anchor"></a>
         
         
       </h3>
 
-<p>Delta Chat 适用于所有主要平台和一些次要平台：</p>
+<p>EpsilonChat 适用于所有主要平台和一些次要平台：</p>
 
 <ul>
   <li>
@@ -1831,7 +1831,7 @@ Chat 的 <a href="https://github.com/rpgp/rpgp">PGP</a> 和
     <p>如果不可用，请使用 <strong>镜像</strong> <a href="https://deltachat.github.io/deltachat-pages">https://deltachat.github.io/deltachat-pages</a></p>
   </li>
   <li>
-    <p>打开下列<strong>应用商店之一，搜索 “Delta Chat”：</strong>
+    <p>打开下列<strong>应用商店之一，搜索 “EpsilonChat”：</strong>
 谷歌应用商店、F-Droid、华为应用商店、iOS 和 macOS 应用商店、微软应用商店</p>
   </li>
   <li>
@@ -1845,14 +1845,14 @@ Chat 的 <a href="https://github.com/rpgp/rpgp">PGP</a> 和
       <h3 id="delta-chat-的开发是如何被资助的">
         
         
-          Delta Chat 的开发是如何被资助的? <a href="#delta-chat-的开发是如何被资助的" class="anchor"></a>
+          EpsilonChat 的开发是如何被资助的? <a href="#delta-chat-的开发是如何被资助的" class="anchor"></a>
         
         
       </h3>
 
-<p>Delta Chat 没有接受风险投资，也没有负债累累，更没有承受产生巨额利润或将用户及其朋友和家人卖给广告商（或更糟）的压力。我们宁愿使用目前来自欧盟和美国的公共资金，来帮助我们努力建立一个基于自由开源社区开发的、去中心化的、多样化的聊天消息软件生态系统。</p>
+<p>EpsilonChat 没有接受风险投资，也没有负债累累，更没有承受产生巨额利润或将用户及其朋友和家人卖给广告商（或更糟）的压力。我们宁愿使用目前来自欧盟和美国的公共资金，来帮助我们努力建立一个基于自由开源社区开发的、去中心化的、多样化的聊天消息软件生态系统。</p>
 
-<p>具体而言，Delta Chat 的开发迄今为止已从以下来源获得资金，
+<p>具体而言，EpsilonChat 的开发迄今为止已从以下来源获得资金，
 按时间顺序排列：</p>
 
 <ul>
@@ -1888,13 +1888,13 @@ Chat 的 <a href="https://github.com/rpgp/rpgp">PGP</a> 和
     
   </li>
   <li>
-    <p>最后但并非最不重要的是，数位专家与热心人在没有收到或仅收到少量金钱的情况下为 Delta Chat 的开发做出了贡献。没有他们，Delta Chat 不会发展到、甚至无法接近目前的状况。</p>
+    <p>最后但并非最不重要的是，数位专家与热心人在没有收到或仅收到少量金钱的情况下为 EpsilonChat 的开发做出了贡献。没有他们，EpsilonChat 不会发展到、甚至无法接近目前的状况。</p>
   </li>
 </ul>
 
 <p>上面提到的钱款资助主要是由在弗赖堡（德国）的 merlinux GmbH 组织的，分发给了来自世界各地的十多位贡献者。</p>
 
-<p>请参阅 <a href="https://delta.chat/zh_CN/contribute">Delta Chat 捐款渠道</a>
+<p>请参阅 <a href="https://delta.chat/zh_CN/contribute">EpsilonChat 捐款渠道</a>
 以了解货币捐款和其他捐款的可能性。</p>
 
 

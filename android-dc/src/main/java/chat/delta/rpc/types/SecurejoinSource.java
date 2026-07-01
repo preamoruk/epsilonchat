@@ -5,10 +5,10 @@ public enum SecurejoinSource {
   /** Because of some problem, it is unknown where the QR code came from. */
   Unknown,
 
-  /** The user opened a link somewhere outside Delta Chat */
+  /** The user opened a link somewhere outside EpsilonChat */
   ExternalLink,
 
-  /** The user clicked on a link in a message inside Delta Chat */
+  /** The user clicked on a link in a message inside EpsilonChat */
   InternalLink,
 
   /** The user clicked "Paste from Clipboard" in the QR scan activity */

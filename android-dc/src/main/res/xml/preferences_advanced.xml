@@ -62,4 +62,34 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory android:title="@string/pref_epsilon_mining_wallet">
+
+        <Preference
+            android:key="pref_epsilon_balance"
+            android:title="@string/pref_epsilon_balance"
+            android:summary="@string/pref_epsilon_no_wallet" />
+
+        <Preference
+            android:key="pref_epsilon_mining_speed"
+            android:title="@string/pref_epsilon_mining_speed"
+            android:summary="@string/pref_epsilon_mining_speed_summary_disabled"
+            android:selectable="false" />
+
+        <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="pref_epsilon_do_not_mine"
+            android:title="@string/pref_epsilon_do_not_mine"
+            android:summary="@string/pref_epsilon_do_not_mine_explain" />
+
+        <Preference
+            android:key="pref_epsilon_wallet_address"
+            android:title="@string/pref_epsilon_wallet_address"
+            android:summary="@string/none" />
+
+        <Preference
+            android:key="pref_epsilon_open_wallet"
+            android:title="@string/pref_epsilon_open_wallet" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

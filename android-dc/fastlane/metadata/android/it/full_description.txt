@@ -1,4 +1,4 @@
-Delta Chat è un affidabile sistema di messaggistica istantanea decentralizzato, facile e divertente da usare per amici, familiari, gruppi e organizzazioni. Delta Chat è sviluppato da una comunità di collaboratori FOSS dedicata che rilascia congiuntamente miglioramenti e nuove funzionalità più volte all'anno, su molti negozi e piattaforme in tutto il mondo.
+EpsilonChat è un affidabile sistema di messaggistica istantanea decentralizzato, facile e divertente da usare per amici, familiari, gruppi e organizzazioni. EpsilonChat è sviluppato da una comunità di collaboratori FOSS dedicata che rilascia congiuntamente miglioramenti e nuove funzionalità più volte all'anno, su molti negozi e piattaforme in tutto il mondo.
 
 Caratteristiche in sintesi:
 

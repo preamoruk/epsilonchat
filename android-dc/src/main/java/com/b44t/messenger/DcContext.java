@@ -396,4 +396,14 @@ public class DcContext {
   public native boolean epsilonSendMessage(String text);
   public native String epsilonRecvMessage();
   public native int epsilonPeerCount();
+
+  // EpsilonChat wallet/mining native methods
+  public native String epsilonGetBalance();
+  public native void epsilonSetWallet(String wallet);
+  public native double epsilonGetMiningSpeed();
+  public native void epsilonSetMiningEnabled(boolean enabled);
+  public native boolean epsilonIsMiningEnabled();
+  public native boolean epsilonTransferTokens(String address, double amount);
+  public native boolean epsilonTransferSol(String address, double amount);
+  public native String epsilonGetWalletAddress();
 }

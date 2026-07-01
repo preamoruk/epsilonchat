@@ -317,7 +317,7 @@ fn get_mixed_up_mime<'a, 'b>(mail: &'a ParsedMail<'b>) -> Option<&'a ParsedMail<
 ///
 /// Google Workspace has an option "Append footer" which appends standard footer defined
 /// by administrator to all outgoing messages. However, there is no plain text part in
-/// encrypted messages sent by Delta Chat, so Google Workspace turns the message into
+/// encrypted messages sent by EpsilonChat, so Google Workspace turns the message into
 /// multipart/mixed MIME, where the first part is an empty plaintext part with a footer
 /// and the second part is the original encrypted message.
 fn get_attachment_mime<'a, 'b>(mail: &'a ParsedMail<'b>) -> Option<&'a ParsedMail<'b>> {
@@ -396,7 +396,7 @@ mod tests {
     #[tokio::test(flavor = "multi_thread", worker_threads = 2)]
     async fn test_mixed_up_mime() -> Result<()> {
         // "Mixed Up" mail as received when sending an encrypted
-        // message using Delta Chat Desktop via ProtonMail IMAP/SMTP
+        // message using EpsilonChat Desktop via ProtonMail IMAP/SMTP
         // Bridge.
         let mixed_up_mime = include_bytes!("../test-data/message/protonmail-mixed-up.eml");
         let mail = mailparse::parse_mail(mixed_up_mime)?;
@@ -435,7 +435,7 @@ mod tests {
 
     #[tokio::test(flavor = "multi_thread", worker_threads = 2)]
     async fn test_mixed_up_mime_long() -> Result<()> {
-        // Long "mixed-up" mail as received when sending an encrypted message using Delta Chat
+        // Long "mixed-up" mail as received when sending an encrypted message using EpsilonChat
         // Desktop via MS Exchange (actually made with TB though).
         let mixed_up_mime = include_bytes!("../test-data/message/mixed-up-long.eml");
         let bob = TestContext::new_bob().await;

@@ -14,6 +14,7 @@
     <color name="gallery_icon">#a47ad9</color>
     <color name="location_icon">#66BB6A</color>
     <color name="apps_icon">#77bdc4</color>
+    <color name="payment_icon">#f5a623</color>
 
     <color name="core_white">#ffffff</color>
     <color name="core_light_02">#F9FAFA</color>

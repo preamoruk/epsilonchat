@@ -270,7 +270,7 @@ fn migrate_key_contacts(
             verified_key_contacts.insert(original_id.try_into().context("Step 14")?, new_id);
 
             let verifier_id = if addr_cmp(&verifier, &addr) {
-                // Earlier versions of Delta Chat signalled a direct verification
+                // Earlier versions of EpsilonChat signalled a direct verification
                 // by putting the contact's own address into the verifier column
                 1 // 1=ContactId::SELF
             } else {

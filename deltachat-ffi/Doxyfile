@@ -44,7 +44,7 @@ DOXYFILE_ENCODING      = UTF-8
 
 ######################################################
 
-PROJECT_NAME           = "Delta Chat Core C Interface"
+PROJECT_NAME           = "EpsilonChat Core C Interface"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version

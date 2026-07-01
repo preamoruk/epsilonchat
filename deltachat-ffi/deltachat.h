@@ -32,8 +32,8 @@ typedef struct _dc_event_emitter dc_accounts_event_emitter_t;
 /**
  * @mainpage Getting started
  *
- * This document describes how to handle the Delta Chat core library.
- * For general information about Delta Chat itself,
+ * This document describes how to handle the EpsilonChat core library.
+ * For general information about EpsilonChat itself,
  * see <https://delta.chat> and <https://github.com/deltachat>.
  *
  * Let's start.
@@ -456,7 +456,7 @@ char*           dc_get_blobdir               (const dc_context_t* context);
  *                    Changes affect future messages only.
  * - `protect_autocrypt` = Enable Header Protection for Autocrypt header.
  *                    This is an experimental option not compatible to other MUAs
- *                    and older Delta Chat versions.
+ *                    and older EpsilonChat versions.
  *                    1 = enable.
  *                    0 = disable (default).
  * - `gossip_period` = How often to gossip Autocrypt keys in chats with multiple recipients, in
@@ -1962,9 +1962,9 @@ char*           dc_get_msg_info              (dc_context_t* context, uint32_t ms
 /**
  * Get uncut message, if available.
  *
- * Delta Chat tries to break the message in simple parts as plain text or images
+ * EpsilonChat tries to break the message in simple parts as plain text or images
  * that are retrieved using dc_msg_get_viewtype(), dc_msg_get_text(), dc_msg_get_file() and so on.
- * This works totally fine for Delta Chat to Delta Chat communication,
+ * This works totally fine for EpsilonChat to EpsilonChat communication,
  * however, when the counterpart uses another E-Mail-client, this has limits:
  *
  * - even if we do some good job on removing quotes,
@@ -2560,7 +2560,7 @@ void            dc_stop_ongoing_process      (dc_context_t* context);
  *   If so, pass the qr-code to dc_receive_backup().
  *
  * - DC_QR_BACKUP_TOO_NEW:
- *   show a hint to the user that this backup comes from a newer Delta Chat version
+ *   show a hint to the user that this backup comes from a newer EpsilonChat version
  *   and this device needs an update
  *
  * - DC_QR_PROXY with dc_lot_t::text1=address:
@@ -2624,7 +2624,7 @@ dc_lot_t*       dc_check_qr                  (dc_context_t* context, const char*
  * an out-of-band-verification can be joined using dc_join_securejoin()
  *
  * The returned text will also work as a normal https:-link,
- * so that the QR code is useful also without Delta Chat being installed
+ * so that the QR code is useful also without EpsilonChat being installed
  * or can be passed to contacts through other channels.
  *
  * @memberof dc_context_t
@@ -4703,7 +4703,7 @@ void            dc_msg_set_text               (dc_msg_t* msg, const char* text);
  * As for all other dc_msg_t setters,
  * this is only useful if the message is sent using dc_send_msg() later.
  *
- * Please note, that Delta Chat clients show the plain text set with
+ * Please note, that EpsilonChat clients show the plain text set with
  * dc_msg_set_text() at the first place;
  * the HTML part is not shown instead of this text.
  * However, for messages with HTML parts,
@@ -6716,7 +6716,7 @@ void dc_event_unref(dc_event_t* event);
 /**
  * Provider is not working.
  * This provider status is returned for providers
- * that are known to not work with Delta Chat.
+ * that are known to not work with EpsilonChat.
  * The UI should block logging in with this provider.
  *
  * More information about that is typically provided
@@ -6943,12 +6943,12 @@ void dc_event_unref(dc_event_t* event);
 /// Used as the name for the corresponding chat.
 #define DC_STR_SAVED_MESSAGES             69
 
-/// "Messages in this chat are generated locally by your Delta Chat app."
+/// "Messages in this chat are generated locally by your EpsilonChat app."
 ///
 /// Used as message text for the message added to a newly created device chat.
 #define DC_STR_DEVICE_MESSAGES_HINT       70
 
-/// "Welcome to Delta Chat! Delta Chat looks and feels like other popular messenger apps ..."
+/// "Welcome to EpsilonChat! EpsilonChat looks and feels like other popular messenger apps ..."
 ///
 /// Used as message text for the message added to the device chat after successful login.
 #define DC_STR_WELCOME_MESSAGE            71
@@ -6978,7 +6978,7 @@ void dc_event_unref(dc_event_t* event);
 /// - %1$s will be replaced by a date/time string as YY-mm-dd HH:MM:SS
 #define DC_STR_BAD_TIME_MSG_BODY          85
 
-/// "Your Delta Chat version might be outdated, check https://get.delta.chat for updates."
+/// "Your EpsilonChat version might be outdated, check https://get.delta.chat for updates."
 ///
 /// Used as device message if the used version is probably outdated.
 #define DC_STR_UPDATE_REMINDER_MSG_BODY   86
@@ -7016,10 +7016,10 @@ void dc_event_unref(dc_event_t* event);
 ///
 ///
 /// Used as message text of outgoing sync messages.
-/// The text is visible in non-dc-muas or in outdated Delta Chat versions,
+/// The text is visible in non-dc-muas or in outdated EpsilonChat versions,
 /// the default text therefore adds the following hint:
-/// "If you see this message in Delta Chat,
-/// please update your Delta Chat apps on all devices."
+/// "If you see this message in EpsilonChat,
+/// please update your EpsilonChat apps on all devices."
 #define DC_STR_SYNC_MSG_BODY              102
 
 /// "Incoming Messages"
@@ -7400,7 +7400,7 @@ void dc_event_unref(dc_event_t* event);
 /// Used as info message.
 #define DC_STR_SECUREJOIN_WAIT 190
 
-/// "❤️ Seems you're enjoying Delta Chat!"… (donation request device message)
+/// "❤️ Seems you're enjoying EpsilonChat!"… (donation request device message)
 #define DC_STR_DONATION_REQUEST 193
 
 /// "Declined call"
@@ -7447,7 +7447,7 @@ void dc_event_unref(dc_event_t* event);
 /// Used in status messages.
 #define DC_STR_CHANNEL_IMAGE_CHANGED 205
 
-/// "The attachment contains anonymous usage statistics, which help us improve Delta Chat. Thank you!"
+/// "The attachment contains anonymous usage statistics, which help us improve EpsilonChat. Thank you!"
 ///
 /// Used as the message body for statistics sent out.
 #define DC_STR_STATS_MSG_BODY 210

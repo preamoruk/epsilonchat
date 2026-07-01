@@ -1202,7 +1202,135 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
       case AttachmentTypeSelector.ADD_WEBXDC:
         AttachmentManager.selectWebxdc(this, PICK_WEBXDC);
         break;
+      case AttachmentTypeSelector.SEND_PAYMENT:
+        showSendPaymentDialog();
+        break;
     }
+  }
+
+  /**
+   * Shows a dialog allowing the user to send EPS or SOL tokens to the recipient of the current
+   * chat. The recipient address is derived from the chat's contacts (for 1:1 chats) or entered
+   * manually (for group chats). Uses the {@link DcContext} JNI bridge methods
+   * epsilonTransferTokens / epsilonTransferSol.
+   */
+  private void showSendPaymentDialog() {
+    DcContext dcContext = DcHelper.getContext(this);
+
+    // Check that a wallet is configured.
+    String walletAddress;
+    try {
+      walletAddress = dcContext.epsilonGetWalletAddress();
+    } catch (Exception e) {
+      Log.w(TAG, "epsilonGetWalletAddress() failed", e);
+      walletAddress = "";
+    }
+    if (walletAddress == null || walletAddress.isEmpty()) {
+      Toast.makeText(this, R.string.send_payment_no_wallet, Toast.LENGTH_LONG).show();
+      return;
+    }
+
+    // Determine the recipient address. For a 1:1 chat, use the non-self contact's addr.
+    String recipientAddress = "";
+    int[] contacts = dcContext.getChatContacts(chatId);
+    for (int contactId : contacts) {
+      if (contactId == DcContact.DC_CONTACT_ID_SELF) continue;
+      DcContact contact = dcContext.getContact(contactId);
+      if (contact != null && contact.getAddr() != null && !contact.getAddr().isEmpty()) {
+        recipientAddress = contact.getAddr();
+        break;
+      }
+    }
+
+    // Build the dialog view.
+    View view = LayoutInflater.from(this).inflate(R.layout.send_payment_dialog, null);
+    TextView recipientField = view.findViewById(R.id.payment_recipient);
+    TextView amountField = view.findViewById(R.id.payment_amount);
+
+    if (!recipientAddress.isEmpty()) {
+      recipientField.setText(recipientAddress);
+    } else {
+      // Group chat / no single recipient — let the user type one.
+      recipientField.setHint(R.string.send_payment_recipient);
+    }
+
+    final String finalRecipient = recipientAddress;
+    AlertDialog.Builder builder =
+        new AlertDialog.Builder(this)
+            .setTitle(
+                recipientAddress.isEmpty()
+                    ? getString(R.string.send_payment_title, getString(R.string.send_payment))
+                    : getString(R.string.send_payment_title, recipientAddress))
+            .setView(view)
+            .setNegativeButton(android.R.string.cancel, null)
+            .setPositiveButton(
+                R.string.send_payment_send_eps,
+                (dialog, which) -> sendPayment(finalRecipient, amountField, "eps"))
+            .setNeutralButton(
+                R.string.send_payment_send_sol,
+                (dialog, which) -> sendPayment(finalRecipient, amountField, "sol"));
+
+    builder.show();
+  }
+
+  /** Parses the amount, validates it, and calls the appropriate JNI transfer method. */
+  private void sendPayment(String defaultRecipient, TextView amountField, String token) {
+    DcContext dcContext = DcHelper.getContext(this);
+    String amountStr = amountField.getText().toString().trim();
+    double amount;
+    try {
+      amount = Double.parseDouble(amountStr);
+    } catch (NumberFormatException e) {
+      amount = -1;
+    }
+    if (amount <= 0) {
+      Toast.makeText(this, R.string.send_payment_invalid_amount, Toast.LENGTH_SHORT).show();
+      return;
+    }
+
+    // If no default recipient, read from the field.
+    String recipient = defaultRecipient;
+    if (recipient == null || recipient.isEmpty()) {
+      // The recipient field is in the same dialog view; re-read from amountField's parent.
+      View parent = (View) amountField.getParent();
+      TextView recipientField = parent.findViewById(R.id.payment_recipient);
+      if (recipientField != null) {
+        recipient = recipientField.getText().toString().trim();
+      }
+    }
+    if (recipient == null || recipient.isEmpty()) {
+      Toast.makeText(this, R.string.send_payment_invalid_amount, Toast.LENGTH_SHORT).show();
+      return;
+    }
+
+    final double finalAmount = amount;
+    final String finalRecipient = recipient;
+    final String finalToken = token;
+
+    Util.runOnBackground(
+        () -> {
+          boolean ok;
+          try {
+            if ("sol".equals(finalToken)) {
+              ok = dcContext.epsilonTransferSol(finalRecipient, finalAmount);
+            } else {
+              ok = dcContext.epsilonTransferTokens(finalRecipient, finalAmount);
+            }
+          } catch (Exception e) {
+            Log.w(TAG, "epsilonTransfer*() failed", e);
+            ok = false;
+          }
+          final boolean finalOk = ok;
+          runOnUiThread(
+              () ->
+                  Toast.makeText(
+                          this,
+                          finalOk
+                              ? R.string.send_payment_success
+                              : R.string.send_payment_failed,
+                          Toast.LENGTH_SHORT)
+                      .show());
+        });
   }
 
   private void startContactChooserActivity() {

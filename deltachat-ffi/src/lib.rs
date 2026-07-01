@@ -86,6 +86,47 @@ pub extern "C" fn dc_epsilon_peer_count() -> i32 {
 pub extern "C" fn dc_epsilon_free_string(ptr: *mut std::os::raw::c_char) {
     eps::epsilon_free_string(ptr)
 }
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_get_balance() -> *mut std::os::raw::c_char {
+    eps::epsilon_get_balance()
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_set_wallet(wallet: *const std::os::raw::c_char) {
+    eps::epsilon_set_wallet(wallet)
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_get_mining_speed() -> f64 {
+    eps::epsilon_get_mining_speed()
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_set_mining_enabled(enabled: i32) {
+    eps::epsilon_set_mining_enabled(enabled)
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_is_mining_enabled() -> i32 {
+    eps::epsilon_is_mining_enabled()
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_transfer_tokens(address: *const std::os::raw::c_char, amount: f64) -> i32 {
+    eps::epsilon_transfer_tokens(address, amount)
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_transfer_sol(address: *const std::os::raw::c_char, amount: f64) -> i32 {
+    eps::epsilon_transfer_sol(address, amount)
+}
+
+#[no_mangle]
+pub extern "C" fn dc_epsilon_get_wallet_address() -> *mut std::os::raw::c_char {
+    eps::epsilon_get_wallet_address()
+}
+
 use deltachat::chatlist::Chatlist;
 
 use self::string::*;

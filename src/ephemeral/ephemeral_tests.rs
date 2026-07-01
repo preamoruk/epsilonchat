@@ -692,9 +692,9 @@ async fn test_ephemeral_timer_references() -> Result<()> {
     // database anymore, so the timer should be applied unconditionally without rollback
     // protection.
     //
-    // Previously Delta Chat fallen back to using <first@example.com> in this case and
+    // Previously EpsilonChat fallen back to using <first@example.com> in this case and
     // compared received timer value to the timer value of the <first@example.com>. Because
-    // their timer values are the same ("disabled"), Delta Chat assumed that the timer was not
+    // their timer values are the same ("disabled"), EpsilonChat assumed that the timer was not
     // changed explicitly and the change should be ignored.
     //
     // The message also contains a quote of the first message to test that only References:

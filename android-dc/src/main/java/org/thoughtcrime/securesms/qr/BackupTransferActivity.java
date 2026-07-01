@@ -211,12 +211,12 @@ public class BackupTransferActivity extends BaseActionBarActivity {
       startActivity(new Intent(getApplicationContext(), ConversationListActivity.class));
     } else if (transferMode == TransferMode.SENDER_SHOW_QR) {
       // restart the activities that were removed when BackupTransferActivity was started at (**2)
-      // (we removed the activity backstack as otherwise a tap on the Delta Chat icon on the home
+      // (we removed the activity backstack as otherwise a tap on the EpsilonChat icon on the home
       // screen would
       // call onNewIntent() which cannot be aborted and will kill BackupTransferActivity.
       // if all activities are removed, onCreate() will be called and that can be aborted, so that
       // a tap in the home icon just opens BackupTransferActivity.
-      // (the user can leave Delta Chat during backup transfer :)
+      // (the user can leave EpsilonChat during backup transfer :)
       // a proper fix would maybe to not rely onNewIntent() at all - but that would require more
       // refactorings
       // and needs lots if testing in complicated areas (share ...))

@@ -1,7 +1,7 @@
-Delta Chat on hajutatud ja turvaline sõnumirakendus, mis tervikuna ja täielikult
+EpsilonChat on hajutatud ja turvaline sõnumirakendus, mis tervikuna ja täielikult
 ühildub olemasoleva e-posti taristuga.
 
-Seega Delta Chati abil saad kasutada tänapäevaset tuntud vestlusrakendustega kaasnevat
+Seega EpsilonChati abil saad kasutada tänapäevaset tuntud vestlusrakendustega kaasnevat
 lihtsust e-posti levi alusel.
 
 Ülevaade tähtsamatest omadustest:

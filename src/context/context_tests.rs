@@ -611,7 +611,7 @@ async fn test_cache_is_cleared_when_io_is_started() -> Result<()> {
         )
         .await?;
 
-    // Alice's Delta Chat doesn't know about it yet:
+    // Alice's EpsilonChat doesn't know about it yet:
     assert_eq!(alice.get_config(Config::Displayname).await?, None);
 
     // Starting IO will fail of course because no server settings are configured,

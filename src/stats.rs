@@ -1,5 +1,5 @@
-//! Delta Chat has an advanced option
-//! "Send statistics to the developers of Delta Chat".
+//! EpsilonChat has an advanced option
+//! "Send statistics to the developers of EpsilonChat".
 //! If this is enabled, a JSON file with some anonymous statistics
 //! will be sent to a bot once a week.
 
@@ -108,9 +108,9 @@ struct MessageStats {
 pub enum SecurejoinSource {
     /// Because of some problem, it is unknown where the QR code came from.
     Unknown = 0,
-    /// The user opened a link somewhere outside Delta Chat
+    /// The user opened a link somewhere outside EpsilonChat
     ExternalLink = 1,
-    /// The user clicked on a link in a message inside Delta Chat
+    /// The user clicked on a link in a message inside EpsilonChat
     InternalLink = 2,
     /// The user clicked "Paste from Clipboard" in the QR scan activity
     Clipboard = 3,
@@ -206,12 +206,12 @@ pub(crate) async fn pre_sending_config_change(
     Ok(())
 }
 
-/// Sends a message with statistics about the usage of Delta Chat,
+/// Sends a message with statistics about the usage of EpsilonChat,
 /// if the last time such a message was sent
 /// was more than a week ago.
 ///
 /// On the other end, a bot will receive the message and make it available
-/// to Delta Chat's developers.
+/// to EpsilonChat's developers.
 pub async fn maybe_send_stats(context: &Context) -> Result<Option<ChatId>> {
     if should_send_stats(context).await?
         && time_has_passed(context, Config::StatsLastSent, SENDING_INTERVAL_SECONDS).await?

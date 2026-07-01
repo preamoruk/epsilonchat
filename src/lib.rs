@@ -1,4 +1,4 @@
-//! # Delta Chat Core Library
+//! # EpsilonChat Core Library
 
 #![recursion_limit = "256"]
 #![forbid(unsafe_code)]

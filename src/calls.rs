@@ -765,7 +765,7 @@ pub(crate) fn create_fallback_ice_servers() -> Vec<UnresolvedIceServer> {
 /// <https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection/RTCPeerConnection#iceservers>
 ///
 /// All returned servers are resolved to their IP addresses.
-/// The primary point of DNS lookup is that Delta Chat Desktop
+/// The primary point of DNS lookup is that EpsilonChat Desktop
 /// relies on the servers being specified by IP,
 /// because it itself cannot utilize DNS. See
 /// <https://github.com/deltachat/deltachat-desktop/issues/5447>.

@@ -214,8 +214,8 @@ pub(crate) const DC_BACKGROUND_FETCH_QUOTA_CHECK_RATELIMIT: u64 = 12 * 60 * 60; 
 /// in the group membership consistency algo to reject outdated membership changes.
 pub(crate) const TIMESTAMP_SENT_TOLERANCE: i64 = 60;
 
-// To make text edits clearer for Non-Delta-MUA or old Delta Chats, edited text will be prefixed by EDITED_PREFIX.
-// Newer Delta Chats will remove the prefix as needed.
+// To make text edits clearer for Non-Delta-MUA or old EpsilonChats, edited text will be prefixed by EDITED_PREFIX.
+// Newer EpsilonChats will remove the prefix as needed.
 pub(crate) const EDITED_PREFIX: &str = "✏️";
 
 /// Period between `sql::housekeeping()` runs.

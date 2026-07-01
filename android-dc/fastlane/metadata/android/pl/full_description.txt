@@ -1,7 +1,7 @@
-Delta Chat to zdecentralizowany i bezpieczny komunikator, który jest całkowicie
+EpsilonChat to zdecentralizowany i bezpieczny komunikator, który jest całkowicie
 kompatybilny z istniejącą infrastrukturą poczty e-mail.
 
-Dzięki Delta Chat zyskujesz możliwość łatwego i wygodnego komunikowania się ze swoimi kontaktami
+Dzięki EpsilonChat zyskujesz możliwość łatwego i wygodnego komunikowania się ze swoimi kontaktami
 e-mail.
 
 Niektóre funkcje w skrócie:

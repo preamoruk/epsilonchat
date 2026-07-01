@@ -216,7 +216,7 @@ public class NotificationCenter {
   // - We include the delta-chat-notifications settings into the name of the channelId
   // - The chatId is included only, if there are separate sound- or vibration-settings for a chat
   // - This way, we have stable and few channelIds and the user
-  //   can edit the notifications in Delta Chat as well as in the system
+  //   can edit the notifications in EpsilonChat as well as in the system
 
   // channelIds: CH_MSG_* are used here, the other ones from outside (defined here to have some
   // overview)
@@ -716,7 +716,7 @@ public class NotificationCenter {
         }
       }
 
-      // Add buttons that allow some actions without opening Delta Chat.
+      // Add buttons that allow some actions without opening EpsilonChat.
       // If privacy options are enabled, the buttons are not added.
       if (privacy.isDisplayContact() && privacy.isDisplayMessage()) {
         try {
@@ -825,7 +825,7 @@ public class NotificationCenter {
                   .setSmallIcon(R.drawable.icon_notification)
                   .setColor(context.getResources().getColor(R.color.delta_primary, null))
                   .setCategory(NotificationCompat.CATEGORY_MESSAGE)
-                  .setContentTitle("Delta Chat")
+                  .setContentTitle("EpsilonChat")
                   .setContentText("New messages")
                   .setContentIntent(getOpenChatlistIntent(accountId));
           if (privacy.isDisplayContact() && !TextUtils.isEmpty(accountTag)) {

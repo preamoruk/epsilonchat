@@ -21,7 +21,7 @@ pub enum HeaderDef {
     /// Indicates the Message-ID of the message for which the MDN is being issued.
     OriginalMessageId,
 
-    /// Delta Chat extension for message IDs in combined MDNs
+    /// EpsilonChat extension for message IDs in combined MDNs
     AdditionalMessageIds,
 
     /// Outlook-SMTP-server replace the `Message-ID:`-header
@@ -39,7 +39,7 @@ pub enum HeaderDef {
     /// Mailing list ID defined in [RFC 2919](https://tools.ietf.org/html/rfc2919).
     ListId,
     ListPost,
-    /// Mailing list id, belonging to a broadcast channel created by Delta Chat
+    /// Mailing list id, belonging to a broadcast channel created by EpsilonChat
     ChatListId,
 
     /// List-Help header defined in [RFC 2369](https://datatracker.ietf.org/doc/html/rfc2369).

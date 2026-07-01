@@ -1675,7 +1675,7 @@ async fn check_alias_reply(from_dc: bool, chat_request: bool, group_request: boo
 
     // Claire, a customer, sends a support request
     // to the alias address <support@example.org>.
-    // If `chat_request` is true, Claire is using Delta Chat,
+    // If `chat_request` is true, Claire is using EpsilonChat,
     // otherwise Claire sends the request from a classic MUA.
     // The alias expands to the supporters Alice and Bob.
     let claire_request = if group_request {
@@ -1763,7 +1763,7 @@ async fn check_alias_reply(from_dc: bool, chat_request: bool, group_request: boo
     assert_eq!(msg.get_override_sender_name(), None);
 
     let reply = if from_dc {
-        // Bob, the other supporter, answers with Delta Chat.
+        // Bob, the other supporter, answers with EpsilonChat.
         format!(
             "To: support@example.org, claire@example.org\n\
           From: bob@example.net\n\
@@ -3340,7 +3340,7 @@ async fn test_outgoing_undecryptable() -> Result<()> {
     assert!(
         dev_msg
             .text
-            .starts_with("⚠️ It seems you are using Delta Chat on multiple devices that cannot decrypt each other's outgoing messages. To fix this, on the older device use \"Settings / Add Second Device\" and follow the instructions. (Error:")
+            .starts_with("⚠️ It seems you are using EpsilonChat on multiple devices that cannot decrypt each other's outgoing messages. To fix this, on the older device use \"Settings / Add Second Device\" and follow the instructions. (Error:")
     );
 
     let raw = include_bytes!("../../test-data/message/thunderbird_encrypted_signed.eml");

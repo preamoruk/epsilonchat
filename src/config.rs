@@ -421,11 +421,11 @@ pub enum Config {
     /// used for signatures, encryption to self and included in `Autocrypt` header.
     KeyId,
 
-    /// Send statistics to Delta Chat's developers.
+    /// Send statistics to EpsilonChat's developers.
     /// Can be exposed to the user as a setting.
     StatsSending,
 
-    /// Last time statistics were sent to Delta Chat's developers
+    /// Last time statistics were sent to EpsilonChat's developers
     StatsLastSent,
 
     /// Last time `update_message_stats()` was called

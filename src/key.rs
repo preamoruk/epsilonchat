@@ -40,11 +40,11 @@ pub trait DcKey: Serialize + Deserializable + Clone {
         }
 
         // Workaround for keys imported using
-        // Delta Chat core < 1.0.0.
-        // Old Delta Chat core had a bug
+        // EpsilonChat core < 1.0.0.
+        // Old EpsilonChat core had a bug
         // that resulted in treating CRC24 checksum
         // as part of the key when reading ASCII Armor.
-        // Some users that started using Delta Chat in 2019
+        // Some users that started using EpsilonChat in 2019
         // have such corrupted keys with garbage bytes at the end.
         //
         // Garbage is at least 3 bytes long
@@ -763,7 +763,7 @@ i8pcjGO+IZffvyZJVRWfVooBJmWWbPB1pueo3tx8w3+fcuzpxz+RLFKaPyqXO+dD
         }
     }
 
-    /// Tests workaround for Delta Chat core < 1.0.0
+    /// Tests workaround for EpsilonChat core < 1.0.0
     /// which parsed CRC24 at the end of ASCII Armor
     /// as the part of the key.
     /// Depending on the alignment and the number of

@@ -595,10 +595,10 @@ public class Rpc {
   /**
    * Like `secure_join()`, but allows to pass a source and a UI-path.
    * You only need this if your UI has an option to send statistics
-   * to Delta Chat's developers.
+   * to EpsilonChat's developers.
    * <p>
    * **source**: The source where the QR code came from.
-   * E.g. a link that was clicked inside or outside Delta Chat,
+   * E.g. a link that was clicked inside or outside EpsilonChat,
    * the "Paste from Clipboard" action,
    * the "Load QR code as image" action,
    * or a QR code scan.

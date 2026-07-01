@@ -76,7 +76,7 @@ pub(crate) enum ConfiguredCertificateChecks {
     ///
     /// Must not be saved by new versions.
     ///
-    /// Previous Delta Chat versions before core 1.133.0
+    /// Previous EpsilonChat versions before core 1.133.0
     /// stored this in `configured_imap_certificate_checks`
     /// if Automatic configuration
     /// was selected, configuration with strict TLS checks failed

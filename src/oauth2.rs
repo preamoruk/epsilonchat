@@ -352,7 +352,7 @@ mod tests {
 
     #[tokio::test(flavor = "multi_thread", worker_threads = 2)]
     async fn test_oauth_from_address() {
-        // Delta Chat does not have working Gmail client ID anymore.
+        // EpsilonChat does not have working Gmail client ID anymore.
         assert_eq!(Oauth2::from_address("hello@gmail.com"), None);
         assert_eq!(Oauth2::from_address("hello@googlemail.com"), None);
 

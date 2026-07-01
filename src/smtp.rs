@@ -261,7 +261,7 @@ pub(crate) async fn smtp_send(
                     // says "This code is only useful for permanent failures."
                     // in X.1.1, X.1.2 and X.1.3 descriptions.
                     //
-                    // Previous Delta Chat core versions
+                    // Previous EpsilonChat core versions
                     // from 1.51.0 to 1.151.1
                     // were treating such errors as permanent.
                     //

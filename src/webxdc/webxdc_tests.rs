@@ -1216,7 +1216,7 @@ async fn test_webxdc_min_api_too_large() -> Result<()> {
 
     let instance = t.get_last_msg().await;
     let html = instance.get_webxdc_blob(&t, "index.html").await?;
-    assert!(String::from_utf8_lossy(&html).contains("requires a newer Delta Chat version"));
+    assert!(String::from_utf8_lossy(&html).contains("requires a newer EpsilonChat version"));
 
     Ok(())
 }

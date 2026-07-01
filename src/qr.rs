@@ -161,7 +161,7 @@ pub enum Qr {
         auth_token: String,
     },
 
-    /// The QR code is a backup, but it is too new. The user has to update its Delta Chat.
+    /// The QR code is a backup, but it is too new. The user has to update its EpsilonChat.
     BackupTooNew {},
 
     /// Ask the user if they want to use the given proxy.

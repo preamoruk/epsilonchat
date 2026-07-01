@@ -1470,7 +1470,7 @@ Some quote.
 ";
     receive_imf(&t, raw, false).await?;
 
-    // Delta Chat generates In-Reply-To with a starting tab when Message-ID is too long.
+    // EpsilonChat generates In-Reply-To with a starting tab when Message-ID is too long.
     let raw = br"In-Reply-To:
 	<ABCDEFGH.1234567_AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA@mailjet.com>
 Date: Thu, 28 Jan 2021 00:26:57 +0000
@@ -1835,7 +1835,7 @@ Content-Type: text/plain; charset=utf-8
     assert_eq!(message.parts[0].msg, "/help");
 }
 
-/// Tests that Delta Chat takes the last header value
+/// Tests that EpsilonChat takes the last header value
 /// rather than the first one if multiple headers
 /// are present.
 ///
@@ -2153,7 +2153,7 @@ Third alternative.
     assert_eq!(message.parts[0].msg, "Third alternative.");
 }
 
-/// Tests that loading a bobstate from an old version of Delta Chat
+/// Tests that loading a bobstate from an old version of EpsilonChat
 /// (that doesn't have the is_v3 attribute)
 /// doesn't fail
 #[tokio::test(flavor = "multi_thread", worker_threads = 2)]

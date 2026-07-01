@@ -1,4 +1,4 @@
-# Delta Chat C Interface
+# EpsilonChat C Interface
 
 ## Installation
 

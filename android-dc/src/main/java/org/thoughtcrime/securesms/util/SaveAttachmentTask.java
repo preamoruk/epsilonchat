@@ -233,7 +233,7 @@ public class SaveAttachmentTask
   private String generateOutputFileName(@NonNull String contentType, long timestamp) {
     String extension = MediaUtil.getExtensionFromMimeType(contentType);
     SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd-HHmmss");
-    String base = "deltachat-" + dateFormatter.format(timestamp);
+    String base = "epsilonchat-" + dateFormatter.format(timestamp);
 
     if (extension == null) extension = "attach";
 

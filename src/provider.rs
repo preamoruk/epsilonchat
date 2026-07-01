@@ -13,14 +13,14 @@ use crate::provider::data::{PROVIDER_DATA, PROVIDER_IDS};
 #[derive(Debug, Display, Copy, Clone, PartialEq, Eq, FromPrimitive, ToPrimitive)]
 #[repr(u8)]
 pub enum Status {
-    /// Provider is known to be working with Delta Chat.
+    /// Provider is known to be working with EpsilonChat.
     Ok = 1,
 
-    /// Provider works with Delta Chat, but requires some preparation,
+    /// Provider works with EpsilonChat, but requires some preparation,
     /// such as changing the settings in the web interface.
     Preparation = 2,
 
-    /// Provider is known not to work with Delta Chat.
+    /// Provider is known not to work with EpsilonChat.
     Broken = 3,
 }
 

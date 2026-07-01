@@ -1193,7 +1193,7 @@ impl MimeFactory {
         } else if matches!(self.loaded, Loaded::Mdn { .. }) {
             // Never add outer multipart/mixed wrapper to MDN
             // as multipart/report Content-Type is used to recognize MDNs
-            // by Delta Chat receiver and Chatmail servers
+            // by EpsilonChat receiver and Chatmail servers
             // allowing them to be unencrypted and not contain Autocrypt header
             // without resetting Autocrypt encryption or triggering Chatmail filter
             // that normally only allows encrypted mails.
@@ -1666,7 +1666,7 @@ impl MimeFactory {
         let fwdhint = if afwd_email {
             Some(
                 "---------- Forwarded message ----------\r\n\
-                 From: Delta Chat\r\n\
+                 From: EpsilonChat\r\n\
                  \r\n"
                     .to_string(),
             )
@@ -1694,7 +1694,7 @@ impl MimeFactory {
         }
         if quoted_text.is_none() && final_text.starts_with('>') {
             // Insert empty line to avoid receiver treating user-sent quote as topquote inserted by
-            // Delta Chat.
+            // EpsilonChat.
             quoted_text = Some("\r\n".to_string());
         }
 

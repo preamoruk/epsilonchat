@@ -61,7 +61,7 @@ async fn check_verified_oneonone_chat_protection_not_broken(by_classical_email: 
         assert_eq!(contact.is_verified(&alice).await.unwrap(), true);
         assert_verified(&alice, &bob).await;
     } else {
-        tcm.section("Bob sets up another Delta Chat device");
+        tcm.section("Bob sets up another EpsilonChat device");
         let bob2 = tcm.unconfigured().await;
         bob2.set_name("bob2");
         bob2.configure_addr("bob@example.net").await;

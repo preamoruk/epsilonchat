@@ -125,7 +125,7 @@ pub(crate) fn truncate_by_lines(
             // In case of indexing/slicing error, we return an error
             // message as a preview and add HTML version. This should
             // never happen.
-            let error_text = "[Truncation of the message failed, this is a bug in the Delta Chat core. Please report it.\nYou can still open the full text to view the original message.]";
+            let error_text = "[Truncation of the message failed, this is a bug in the EpsilonChat core. Please report it.\nYou can still open the full text to view the original message.]";
             (error_text.to_string(), true)
         }
     } else {

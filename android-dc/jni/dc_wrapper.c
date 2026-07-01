@@ -2055,6 +2055,14 @@ extern int   dc_epsilon_send_message(const char* text);
 extern char* dc_epsilon_recv_message(void);
 extern int   dc_epsilon_peer_count(void);
 extern void  dc_epsilon_free_string(char* ptr);
+extern char* dc_epsilon_get_balance(void);
+extern void  dc_epsilon_set_wallet(const char* wallet);
+extern double dc_epsilon_get_mining_speed(void);
+extern void  dc_epsilon_set_mining_enabled(int enabled);
+extern int   dc_epsilon_is_mining_enabled(void);
+extern int   dc_epsilon_transfer_tokens(const char* address, double amount);
+extern int   dc_epsilon_transfer_sol(const char* address, double amount);
+extern char* dc_epsilon_get_wallet_address(void);
 
 JNIEXPORT jstring Java_com_b44t_messenger_DcContext_epsilonStartMesh(JNIEnv *env, jobject obj)
 {
@@ -2099,4 +2107,58 @@ JNIEXPORT jstring Java_com_b44t_messenger_DcContext_epsilonRecvMessage(JNIEnv *e
 JNIEXPORT jint Java_com_b44t_messenger_DcContext_epsilonPeerCount(JNIEnv *env, jobject obj)
 {
     return dc_epsilon_peer_count();
+}
+
+JNIEXPORT jstring Java_com_b44t_messenger_DcContext_epsilonGetBalance(JNIEnv *env, jobject obj)
+{
+    char* temp = dc_epsilon_get_balance();
+    jstring ret = JSTRING_NEW(temp);
+    if (temp) dc_epsilon_free_string(temp);
+    return ret;
+}
+
+JNIEXPORT void Java_com_b44t_messenger_DcContext_epsilonSetWallet(JNIEnv *env, jobject obj, jstring wallet)
+{
+    CHAR_REF(wallet);
+    dc_epsilon_set_wallet(walletPtr);
+    CHAR_UNREF(wallet);
+}
+
+JNIEXPORT jdouble Java_com_b44t_messenger_DcContext_epsilonGetMiningSpeed(JNIEnv *env, jobject obj)
+{
+    return dc_epsilon_get_mining_speed();
+}
+
+JNIEXPORT void Java_com_b44t_messenger_DcContext_epsilonSetMiningEnabled(JNIEnv *env, jobject obj, jint enabled)
+{
+    dc_epsilon_set_mining_enabled(enabled);
+}
+
+JNIEXPORT jboolean Java_com_b44t_messenger_DcContext_epsilonIsMiningEnabled(JNIEnv *env, jobject obj)
+{
+    return dc_epsilon_is_mining_enabled() ? JNI_TRUE : JNI_FALSE;
+}
+
+JNIEXPORT jboolean Java_com_b44t_messenger_DcContext_epsilonTransferTokens(JNIEnv *env, jobject obj, jstring address, jdouble amount)
+{
+    CHAR_REF(address);
+    int result = dc_epsilon_transfer_tokens(addressPtr, amount);
+    CHAR_UNREF(address);
+    return result ? JNI_TRUE : JNI_FALSE;
+}
+
+JNIEXPORT jboolean Java_com_b44t_messenger_DcContext_epsilonTransferSol(JNIEnv *env, jobject obj, jstring address, jdouble amount)
+{
+    CHAR_REF(address);
+    int result = dc_epsilon_transfer_sol(addressPtr, amount);
+    CHAR_UNREF(address);
+    return result ? JNI_TRUE : JNI_FALSE;
+}
+
+JNIEXPORT jstring Java_com_b44t_messenger_DcContext_epsilonGetWalletAddress(JNIEnv *env, jobject obj)
+{
+    char* temp = dc_epsilon_get_wallet_address();
+    jstring ret = JSTRING_NEW(temp);
+    if (temp) dc_epsilon_free_string(temp);
+    return ret;
 }

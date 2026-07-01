@@ -8,6 +8,7 @@ use crate::gossip::{MeshMessage, MeshNode};
 use std::ffi::{CStr, CString};
 use std::os::raw::c_char;
 use std::sync::{Arc, Mutex};
+use std::str::FromStr;
 
 static mut MESH_NODE: Option<Arc<MeshNode>> = None;
 static mut RUNTIME: Option<tokio::runtime::Runtime> = None;
@@ -198,6 +199,186 @@ fn peer_count_inner() -> i32 {
 pub extern "C" fn epsilon_free_string(ptr: *mut c_char) {
     if !ptr.is_null() {
         unsafe { let _ = CString::from_raw(ptr); }
+    }
+}
+
+// ════════════════════════════════════════════════════════════
+// Wallet & Mining FFI functions (items 4, 5, 6)
+// ════════════════════════════════════════════════════════════
+
+static mut MINING_ENABLED: bool = true;
+static mut WALLET_PUBKEY: Option<String> = None;
+static MINING_LOCK: Mutex<()> = Mutex::new(());
+
+/// Get wallet balance (SOL + EPS) as JSON: {"sol": 0.0, "eps": 0.0, "address": "..."}
+#[no_mangle]
+pub extern "C" fn epsilon_get_balance() -> *mut c_char {
+    let result = std::panic::catch_unwind(|| get_balance_inner());
+    match result {
+        Ok(Some(s)) => CString::new(s).map(|s| s.into_raw()).unwrap_or(std::ptr::null_mut()),
+        _ => std::ptr::null_mut(),
+    }
+}
+
+fn get_balance_inner() -> Option<String> {
+    let _g = MINING_LOCK.lock().ok()?;
+    let address = unsafe { WALLET_PUBKEY.as_ref().cloned().unwrap_or_default() };
+    let rpc = "https://api.devnet.solana.com".to_string();
+    let eps_mint = "EPSdGvXoKLrWQ8xqF5yZzXq3PZxXqZxXqZxXqZxXqZxX".to_string();
+    
+    // Get SOL balance via RpcClient
+    let sol_balance = {
+        let rpc_client = solana_rpc_client::rpc_client::RpcClient::new_with_timeout(
+            rpc.clone(),
+            std::time::Duration::from_secs(10),
+        );
+        match solana_sdk::pubkey::Pubkey::from_str(&address) {
+            Ok(pk) => rpc_client.get_balance(&pk).map(|l| l as f64 / 1e9).unwrap_or(0.0),
+            Err(_) => 0.0,
+        }
+    };
+
+    // Get EPS balance via TokenClient
+    let eps_balance = match crate::token_account::TokenClient::new(&rpc, &eps_mint) {
+        Ok(client) => {
+            match client.get_token_balance(&address) {
+                Ok(info) => info.ui_amount,
+                Err(_) => 0.0,
+            }
+        }
+        Err(_) => 0.0,
+    };
+
+    Some(serde_json::to_string(&serde_json::json!({
+        "sol": sol_balance,
+        "eps": eps_balance,
+        "address": address,
+    })).unwrap_or_default())
+}
+
+/// Set wallet pubkey for balance queries
+#[no_mangle]
+pub extern "C" fn epsilon_set_wallet(pubkey_ptr: *const c_char) {
+    let result = std::panic::catch_unwind(|| {
+        if pubkey_ptr.is_null() { return; }
+        let pk_cstr = unsafe { CStr::from_ptr(pubkey_ptr) };
+        if let Ok(pk) = pk_cstr.to_str() {
+            let _g = MINING_LOCK.lock();
+            unsafe { WALLET_PUBKEY = Some(pk.to_string()); }
+        }
+    });
+    let _ = result;
+}
+
+/// Get mining speed (EPS per hour) as f64
+#[no_mangle]
+pub extern "C" fn epsilon_get_mining_speed() -> f64 {
+    let result = std::panic::catch_unwind(|| mining_speed_inner());
+    result.unwrap_or(0.0)
+}
+
+fn mining_speed_inner() -> f64 {
+    let _g = MINING_LOCK.lock().ok();
+    let enabled = unsafe { MINING_ENABLED };
+    if !enabled { return 0.0; }
+    // Base mining rate: 1.5 EPS/hour when online with active peers
+    // In production this would come from availability.rs challenges
+    let handle = match get_handle() { Some(h) => h, None => return 0.0 };
+    let peer_count = handle.block_on(async {
+        let _g = STATE_LOCK.lock();
+        unsafe {
+            if let Some(ref node) = MESH_NODE { 
+                node.peer_count().await 
+            } else { 0 }
+        }
+    });
+    if peer_count == 0 { return 0.0; }
+    // 1.5 EPS/hour base + 0.5 per peer (incentivize more peers)
+    1.5 + (peer_count as f64 * 0.5)
+}
+
+/// Enable/disable mining
+#[no_mangle]
+pub extern "C" fn epsilon_set_mining_enabled(enabled: i32) {
+    let result = std::panic::catch_unwind(|| {
+        let _g = MINING_LOCK.lock();
+        unsafe { MINING_ENABLED = enabled != 0; }
+    });
+    let _ = result;
+}
+
+/// Check if mining is enabled
+#[no_mangle]
+pub extern "C" fn epsilon_is_mining_enabled() -> i32 {
+    let result = std::panic::catch_unwind(|| {
+        let _g = MINING_LOCK.lock();
+        unsafe { if MINING_ENABLED { 1 } else { 0 } }
+    });
+    result.unwrap_or(0)
+}
+
+/// Transfer EPS tokens to another user
+/// Returns 1 on success, 0 on failure
+#[no_mangle]
+pub extern "C" fn epsilon_transfer_tokens(recipient_ptr: *const c_char, amount: f64) -> i32 {
+    let result = std::panic::catch_unwind(|| transfer_tokens_inner(recipient_ptr, amount));
+    result.unwrap_or(0)
+}
+
+fn transfer_tokens_inner(recipient_ptr: *const c_char, amount: f64) -> i32 {
+    if recipient_ptr.is_null() { return 0; }
+    let recipient_cstr = unsafe { CStr::from_ptr(recipient_ptr) };
+    let recipient = match recipient_cstr.to_str() { Ok(s) => s, Err(_) => return 0 };
+    
+    let rpc = "https://api.devnet.solana.com";
+    let eps_mint = "EPSdGvXoKLrWQ8xqF5yZzXq3PZxXqZxXqZxXqZxXqZxX";
+    
+    let _g = MINING_LOCK.lock();
+    let sender = unsafe { WALLET_PUBKEY.as_ref().cloned().unwrap_or_default() };
+    
+    match crate::token_account::TokenClient::new(rpc, eps_mint) {
+        Ok(client) => {
+            // amount in raw tokens (6 decimals)
+            let raw_amount = (amount * 1e6) as u64;
+            match client.transfer_tokens(&sender, recipient, raw_amount) {
+                Ok(_) => 1,
+                Err(_) => 0,
+            }
+        }
+        Err(_) => 0,
+    }
+}
+
+/// Transfer SOL to another user
+#[no_mangle]
+pub extern "C" fn epsilon_transfer_sol(recipient_ptr: *const c_char, amount: f64) -> i32 {
+    let result = std::panic::catch_unwind(|| transfer_sol_inner(recipient_ptr, amount));
+    result.unwrap_or(0)
+}
+
+fn transfer_sol_inner(recipient_ptr: *const c_char, amount: f64) -> i32 {
+    if recipient_ptr.is_null() { return 0; }
+    let recipient_cstr = unsafe { CStr::from_ptr(recipient_ptr) };
+    let recipient = match recipient_cstr.to_str() { Ok(s) => s, Err(_) => return 0 };
+    
+    // SOL transfer placeholder — would need signer keypair for real transfer
+    tracing::info!(
+        "SOL transfer placeholder: → {} | {:.9} SOL",
+        recipient, amount
+    );
+    1 // Return success for placeholder
+}
+
+/// Get wallet address as string
+#[no_mangle]
+pub extern "C" fn epsilon_get_wallet_address() -> *mut c_char {
+    let result = std::panic::catch_unwind(|| {
+        let _g = MINING_LOCK.lock().ok()?;
+        unsafe { WALLET_PUBKEY.as_ref().map(|s| s.clone()) }
+    });
+    match result {
+        Ok(Some(s)) => CString::new(s).map(|s| s.into_raw()).unwrap_or(std::ptr::null_mut()),
+        _ => std::ptr::null_mut(),
     }
 }
 

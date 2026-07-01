@@ -29,7 +29,7 @@ impl From<anyhow::Error> for Error {
 
 impl ImapSession {
     /// Issues a CLOSE command if selected folder needs expunge,
-    /// i.e. if Delta Chat marked a message there as deleted previously.
+    /// i.e. if EpsilonChat marked a message there as deleted previously.
     ///
     /// CLOSE is considerably faster than an EXPUNGE
     /// because no EXPUNGE responses are sent, see

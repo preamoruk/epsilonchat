@@ -14,7 +14,7 @@ use crate::net::session::SessionStream;
 /// - In-Reply-To and References to check if message is a reply to chat message.
 /// - Chat-Version to check if a message is a chat message
 /// - Autocrypt-Setup-Message to check if a message is an autocrypt setup message,
-///   not necessarily sent by Delta Chat.
+///   not necessarily sent by EpsilonChat.
 /// - Chat-Is-Post-Message to skip it in background fetch or when it is > `DownloadLimit`.
 const PREFETCH_FLAGS: &str = "(UID RFC822.SIZE BODY.PEEK[HEADER.FIELDS (\
                               MESSAGE-ID \

@@ -1,6 +1,6 @@
 //! Location handling.
 //!
-//! Delta Chat handles two kind of locations.
+//! EpsilonChat handles two kind of locations.
 //!
 //! There are two kinds of locations:
 //! - Independent locations, also known as Points of Interest (POI).

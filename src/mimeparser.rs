@@ -671,7 +671,7 @@ impl MimeMessage {
                 parser.parse_mime_recursive(context, mail, false).await?;
             }
             Err(err) => {
-                let txt = "[This message cannot be decrypted.\n\n• It might already help to simply reply to this message and ask the sender to send the message again.\n\n• If you just re-installed Delta Chat then it is best if you re-setup Delta Chat now and choose \"Add as second device\" or import a backup.]";
+                let txt = "[This message cannot be decrypted.\n\n• It might already help to simply reply to this message and ask the sender to send the message again.\n\n• If you just re-installed EpsilonChat then it is best if you re-setup EpsilonChat now and choose \"Add as second device\" or import a backup.]";
 
                 let part = Part {
                     typ: Viewtype::Text,
@@ -794,7 +794,7 @@ impl MimeMessage {
 
     /// Squashes mutitpart chat messages with attachment into single-part messages.
     ///
-    /// Delta Chat sends attachments, such as images, in two-part messages, with the first message
+    /// EpsilonChat sends attachments, such as images, in two-part messages, with the first message
     /// containing a description. If such a message is detected, text from the first part can be
     /// moved to the second part, and the first part dropped.
     fn squash_attachment_parts(&mut self) {
@@ -996,7 +996,7 @@ impl MimeMessage {
                 }
             }
         } else {
-            // Avatar sent in attachment, as previous versions of Delta Chat did.
+            // Avatar sent in attachment, as previous versions of EpsilonChat did.
 
             let mut i = 0;
             while let Some(part) = self.parts.get_mut(i) {
@@ -2349,7 +2349,7 @@ fn get_attachment_filename(
         && let Some(name) = ct.params.get("filename*").map(|s| s.to_string())
     {
         // be graceful and just use the original name.
-        // some MUA, including Delta Chat up to core1.50,
+        // some MUA, including EpsilonChat up to core1.50,
         // use `filename*` mistakenly for simple encoded-words without following rfc2231
         warn!(context, "apostrophed encoding invalid: {}", name);
         desired_filename = Some(name);
@@ -2529,7 +2529,7 @@ async fn handle_ndn(
         return Ok(());
     }
 
-    // The NDN might be for a message-id that had attachments and was sent from a non-Delta Chat client.
+    // The NDN might be for a message-id that had attachments and was sent from a non-EpsilonChat client.
     // In this case we need to mark multiple "msgids" as failed that all refer to the same message-id.
     let msg_ids = context
         .sql

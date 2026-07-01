@@ -18,7 +18,7 @@ import org.thoughtcrime.securesms.util.Prefs;
 import org.thoughtcrime.securesms.util.ViewUtil;
 
 /**
- * Mesh-based onboarding activity that replaces Delta Chat's email/IMAP/SMTP login flow.
+ * Mesh-based onboarding activity that replaces EpsilonChat's email/IMAP/SMTP login flow.
  *
  * <p>Uses real Iroh P2P mesh via JNI:
  * - "Show My Invite" starts the Iroh endpoint and displays a real invite string

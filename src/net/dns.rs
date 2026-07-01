@@ -1,6 +1,6 @@
 //! DNS resolution and cache.
 //!
-//! DNS cache in Delta Chat has two layers:
+//! DNS cache in EpsilonChat has two layers:
 //! in-memory cache and persistent `dns_cache` SQL table.
 //!
 //! In-memory cache is using a "stale-while-revalidate" strategy.
@@ -25,7 +25,7 @@
 //! (`CACHE_TTL` constant) to avoid having
 //! old non-working IP addresses in the cache indefinitely.
 //!
-//! When Delta Chat needs an IP address for the host,
+//! When EpsilonChat needs an IP address for the host,
 //! it queries in-memory cache for the next result
 //! and merges the list of IP addresses
 //! with the list of IP addresses from persistent cache.
