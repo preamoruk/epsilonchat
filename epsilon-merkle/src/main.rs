@@ -9,6 +9,7 @@ pub mod mesh_indexer;
 pub mod proof_provider;
 pub mod proof_requester;
 pub mod gossip;
+pub mod web_ui;
 
 use clap::{Parser, Subcommand};
 
@@ -56,6 +57,13 @@ enum Command {
         /// Invite link (iroh://...)
         link: String,
     },
+
+    /// Launch web UI (opens HTTP server with interactive dashboard)
+    Web {
+        /// Port for web UI (default: 8848)
+        #[arg(long, default_value = "8848")]
+        port: u16,
+    },
 }
 
 #[tokio::main]
@@ -81,6 +89,9 @@ async fn main() -> anyhow::Result<()> {
         }
         Command::Connect { link } => {
             crate::gossip::connect_via_invite(&link).await
+        }
+        Command::Web { port } => {
+            crate::web_ui::run_web_ui(port).await
         }
     }
 }

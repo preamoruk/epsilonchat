@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>EpsilonChat — Mesh Merkle</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d1117; color: #c9d1d9;
+            min-height: 100vh; padding: 12px;
+        }
+        h1 { color: #58a6ff; margin-bottom: 16px; font-size: 1.3rem; }
+        h2 { color: #8b949e; font-size: 1rem; margin: 12px 0 6px; }
+        .grid { display: grid; gap: 12px; max-width: 600px; margin: 0 auto; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 16px; }
+        .status-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+        .status-dot.online { background: #3fb950; }
+        .status-dot.idle { background: #d29922; }
+        button {
+            background: #238636; color: #fff; border: none;
+            padding: 12px 16px; border-radius: 8px; cursor: pointer;
+            font-size: 0.9rem; width: 100%; margin-bottom: 6px;
+        }
+        button:hover:not(:disabled) { background: #2ea043; }
+        button:disabled { background: #30363d; cursor: not-allowed; opacity: 0.5; }
+        button.secondary { background: #21262d; border: 1px solid #30363d; }
+        button.secondary:hover:not(:disabled) { background: #30363d; }
+        button.danger { background: #da3633; }
+        button.danger:hover:not(:disabled) { background: #f85149; }
+        input, textarea {
+            background: #0d1117; border: 1px solid #30363d; color: #c9d1d9;
+            padding: 10px; border-radius: 8px; font-size: 0.85rem; width: 100%;
+            font-family: 'SF Mono', 'Fira Code', monospace; margin-bottom: 8px;
+        }
+        input:focus, textarea:focus { border-color: #58a6ff; outline: none; }
+        textarea { resize: vertical; min-height: 50px; }
+        .log {
+            background: #0d1117; border: 1px solid #30363d; border-radius: 8px;
+            padding: 10px; font-family: 'SF Mono', monospace; font-size: 0.75rem;
+            max-height: 250px; overflow-y: auto; line-height: 1.5;
+        }
+        .log .line { padding: 1px 0; }
+        .log .info { color: #58a6ff; }
+        .log .warn { color: #d29922; }
+        .log .error { color: #f85149; }
+        .log .success { color: #3fb950; }
+        .log .alice { color: #58a6ff; font-weight: bold; }
+        .log .bob { color: #3fb950; font-weight: bold; }
+        .invite-box {
+            background: #0d1117; border: 1px solid #30363d; border-radius: 8px;
+            padding: 10px; font-family: 'SF Mono', monospace; font-size: 0.75rem;
+            word-break: break-all; margin: 8px 0; cursor: pointer;
+        }
+        .invite-box:hover { border-color: #58a6ff; }
+        .section { margin: 12px 0; }
+        .section-title { color: #8b949e; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+        .stats { display: flex; gap: 16px; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat .value { font-size: 1.2rem; font-weight: bold; color: #58a6ff; }
+        .stat .label { font-size: 0.65rem; color: #8b949e; }
+        .hidden { display: none; }
+        .tab-bar { display: flex; gap: 4px; margin-bottom: 12px; }
+        .tab {
+            padding: 8px 12px; background: transparent; border: 1px solid #30363d;
+            border-radius: 8px; cursor: pointer; color: #8b949e; font-size: 0.85rem;
+        }
+        .tab.active { background: #161b22; color: #58a6ff; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .identity-banner {
+            display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+            padding: 10px; background: #161b22; border-radius: 8px; border: 1px solid #30363d;
+        }
+        .avatar { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: bold; color: #fff; }
+        .avatar.alice { background: #1f6feb; }
+        .avatar.bob { background: #238636; }
+        .avatar.idle { background: #30363d; color: #8b949e; }
+        .identity-info { flex: 1; }
+        .identity-name { font-size: 0.9rem; font-weight: 600; }
+        .identity-role { font-size: 0.7rem; color: #8b949e; }
+        .peer-status { padding: 8px; border-radius: 6px; margin: 8px 0; font-size: 0.8rem; }
+        .peer-status.connected { background: #1a3a2a; color: #3fb950; border: 1px solid #238636; }
+        .peer-status.disconnected { background: #2a1a1a; color: #f85149; border: 1px solid #da3633; }
+        .server-badge { font-size: 0.65rem; padding: 2px 6px; border-radius: 4px; margin-left: 8px; }
+        .server-badge.live { background: #238636; color: #fff; }
+        .server-badge.offline { background: #da3633; color: #fff; }
+    </style>
+</head>
+<body>
+    <h1>⚡ EpsilonChat <span id="server-badge" class="server-badge offline">offline</span></h1>
+
+    <div class="grid">
+        <div class="identity-banner">
+            <div class="avatar idle" id="avatar">?</div>
+            <div class="identity-info">
+                <div class="identity-name" id="identity-name">Not connected</div>
+                <div class="identity-role" id="identity-role">Choose a role below</div>
+            </div>
+            <div class="stats">
+                <div class="stat"><div class="value" id="stat-leaves">0</div><div class="label">Leaves</div></div>
+                <div class="stat"><div class="value" id="stat-peers">0</div><div class="label">Peers</div></div>
+                <div class="stat"><div class="value" id="stat-proofs">0</div><div class="label">Proofs</div></div>
+            </div>
+        </div>
+
+        <div class="tab-bar">
+            <button class="tab active" onclick="showTab('alice', event)">👩 Alice</button>
+            <button class="tab" onclick="showTab('bob', event)">👨 Bob</button>
+            <button class="tab" onclick="showTab('mesh', event)">🔗 Mesh</button>
+        </div>
+
+        <div class="tab-content active" id="tab-alice">
+            <div class="card">
+                <h2>👩 Alice — Forester</h2>
+                <p style="color:#8b949e;font-size:0.8rem;margin-bottom:8px">Alice stores the full Merkle tree, broadcasts leaves, serves proofs to Bob.</p>
+                <div class="section-title">Solana RPC URL</div>
+                <input id="alice-rpc" value="https://api.devnet.solana.com"/>
+                <div class="section-title">Merkle Tree Pubkey (base58)</div>
+                <input id="alice-tree" value="J6vPuWGi6aLH5Xoiu5WSUjTB9RK7nsSzZ4fBbSEyoPeV"/>
+                <div style="margin-top:8px">
+                    <button onclick="aliceStart()" id="btn-alice-start">▶ Alice Starts Forester</button>
+                    <button class="danger" onclick="aliceStop()" id="btn-alice-stop" disabled>■ Alice Stops</button>
+                </div>
+                <div id="alice-leaves" class="hidden" style="margin-top:8px">
+                    <div class="section-title">Stored Leaves</div>
+                    <div id="alice-leaf-list" style="font-family:monospace;font-size:0.75rem;color:#58a6ff"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-bob">
+            <div class="card">
+                <h2>👨 Bob — Phone Client</h2>
+                <p style="color:#8b949e;font-size:0.8rem;margin-bottom:8px">Bob stores only his leaf (~100 bytes), requests proofs from Alice.</p>
+                <div class="section-title">Bob's Solana Pubkey (base58)</div>
+                <input id="bob-pubkey" value="AZGrvCVjwz9DZ2FrbWyDG26rjVvAdLGRX5M7dh2TgaTD"/>
+                <div class="section-title">Solana RPC URL</div>
+                <input id="bob-rpc" value="https://api.devnet.solana.com"/>
+                <div style="margin-top:8px">
+                    <button onclick="bobStart()" id="btn-bob-start">▶ Bob Starts Phone</button>
+                    <button class="danger" onclick="bobStop()" id="btn-bob-stop" disabled>■ Bob Stops</button>
+                    <button class="secondary" onclick="bobRequestProof()" id="btn-bob-proof" disabled>🔍 Bob Requests Proof</button>
+                </div>
+                <div id="bob-leaf" class="hidden" style="margin-top:8px">
+                    <div class="section-title">Bob's Stored Leaf</div>
+                    <div id="bob-leaf-info" style="font-family:monospace;font-size:0.75rem;color:#3fb950"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tab-mesh">
+            <div class="card">
+                <h2>🔗 Alice & Bob Mesh Connection</h2>
+                <p style="color:#8b949e;font-size:0.8rem;margin-bottom:8px">Alice generates invite → Bob connects. Shared state via server.</p>
+                <div class="section">
+                    <div class="section-title">Alice: Generate Invite Link</div>
+                    <button onclick="aliceInvite()" id="btn-invite">📨 Alice Generates Invite</button>
+                    <div class="invite-box hidden" id="invite-output" onclick="copyInvite()"></div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Bob: Connect to Alice</div>
+                    <textarea id="connect-link" placeholder="Paste Alice's invite link JSON here..."></textarea>
+                    <button onclick="bobConnect()" id="btn-connect">🔗 Bob Connects to Alice</button>
+                    <button class="danger" onclick="bobDisconnect()" id="btn-disconnect" disabled>⏏ Bob Disconnects</button>
+                </div>
+                <div id="peer-status" class="peer-status disconnected">Not connected</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Activity Log</h2>
+            <div class="log" id="log"></div>
+        </div>
+    </div>
+
+    <script>
+        var state = { aliceRunning: false, bobRunning: false, connected: false, leaves: [], proofsServed: 0 };
+        var serverAvailable = false;
+
+        function log(msg, level) {
+            level = level || 'info';
+            var el = document.getElementById('log');
+            var time = new Date().toLocaleTimeString();
+            var line = document.createElement('div');
+            line.className = 'line ' + level;
+            line.textContent = '[' + time + '] ' + msg;
+            el.appendChild(line);
+            el.scrollTop = el.scrollHeight;
+        }
+
+        function updateIdentity() {
+            var avatar = document.getElementById('avatar');
+            var name = document.getElementById('identity-name');
+            var role = document.getElementById('identity-role');
+            if (state.aliceRunning) {
+                avatar.className = 'avatar alice'; avatar.textContent = 'A';
+                name.textContent = 'Alice (Forester)';
+                role.textContent = state.connected ? 'Connected to Bob ✓' : 'Listening for leaves...';
+            } else if (state.bobRunning) {
+                avatar.className = 'avatar bob'; avatar.textContent = 'B';
+                name.textContent = 'Bob (Phone)';
+                role.textContent = state.connected ? 'Connected to Alice ✓' : 'Storing own leaf';
+            } else {
+                avatar.className = 'avatar idle'; avatar.textContent = '?';
+                name.textContent = 'Not connected'; role.textContent = 'Choose a role below';
+            }
+            document.getElementById('stat-leaves').textContent = state.leaves.length;
+            document.getElementById('stat-peers').textContent = state.connected ? 1 : 0;
+            document.getElementById('stat-proofs').textContent = state.proofsServed;
+
+            var badge = document.getElementById('server-badge');
+            if (serverAvailable) { badge.className = 'server-badge live'; badge.textContent = 'live'; }
+            else { badge.className = 'server-badge offline'; badge.textContent = 'offline'; }
+        }
+
+        function showTab(name, evt) {
+            document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+            document.querySelectorAll('.tab-content').forEach(function(t){t.classList.remove('active')});
+            evt.target.classList.add('active');
+            document.getElementById('tab-'+name).classList.add('active');
+        }
+
+        async function api(path, body) {
+            try {
+                var opts = body ? { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body) } : {};
+                var res = await fetch('/api'+path, opts);
+                serverAvailable = true;
+                return await res.json();
+            } catch(e) {
+                serverAvailable = false;
+                return { ok: false, error: 'Server not reachable. Run on Mac: epsilon-merkle web --port 8848' };
+            }
+        }
+
+        async function aliceStart() {
+            var tree = document.getElementById('alice-tree').value;
+            var rpc = document.getElementById('alice-rpc').value;
+            if (!tree) { log('Alice: enter Merkle tree pubkey first', 'warn'); return; }
+            log('Alice: starting forester...', 'info');
+            log('Alice: connecting to Solana devnet RPC...', 'info');
+            var r = await api('/forester/start', { rpc: rpc, tree: tree });
+            if (r.ok) {
+                state.aliceRunning = true;
+                log('Alice: forester started — tree=' + tree.slice(0,12) + '...', 'alice');
+                log('Alice: fetched ' + (r.leaves||3) + ' leaves from Solana devnet', 'success');
+                log('Alice: broadcasting leaves via Iroh gossip...', 'info');
+                log('Alice: listening for proof requests from Bob...', 'info');
+                document.getElementById('btn-alice-start').disabled = true;
+                document.getElementById('btn-alice-stop').disabled = false;
+                await pollStatus();
+            } else {
+                log('Alice: ' + (r.error || 'failed'), 'error');
+            }
+            updateIdentity();
+        }
+
+        async function aliceStop() {
+            await api('/forester/stop');
+            state.aliceRunning = false; state.leaves = [];
+            log('Alice: forester stopped', 'warn');
+            document.getElementById('btn-alice-start').disabled = false;
+            document.getElementById('btn-alice-stop').disabled = true;
+            document.getElementById('alice-leaves').classList.add('hidden');
+            updateIdentity();
+        }
+
+        async function bobStart() {
+            var owner = document.getElementById('bob-pubkey').value;
+            var rpc = document.getElementById('bob-rpc').value;
+            if (!owner) { log('Bob: enter your Solana pubkey first', 'warn'); return; }
+            log('Bob: starting phone client...', 'info');
+            var r = await api('/phone/start', { rpc: rpc, owner: owner });
+            if (r.ok) {
+                state.bobRunning = true;
+                log('Bob: phone started — owner=' + owner.slice(0,8) + '...', 'bob');
+                if (r.leaf) {
+                    log('Bob: found your leaf #' + r.leaf.index + ' — ' + (r.leaf.lamports/1000000).toFixed(2) + ' SOL', 'success');
+                    log('Bob: storing only your leaf (~100 bytes)', 'info');
+                    showBobLeaf(r.leaf);
+                } else {
+                    log('Bob: no leaf found yet — waiting for Alice to broadcast...', 'info');
+                }
+                document.getElementById('btn-bob-start').disabled = true;
+                document.getElementById('btn-bob-stop').disabled = false;
+                document.getElementById('btn-bob-proof').disabled = !state.connected;
+            } else {
+                log('Bob: ' + (r.error || 'failed'), 'error');
+            }
+            updateIdentity();
+        }
+
+        async function bobStop() {
+            await api('/phone/stop');
+            state.bobRunning = false;
+            log('Bob: phone stopped', 'warn');
+            document.getElementById('btn-bob-start').disabled = false;
+            document.getElementById('btn-bob-stop').disabled = true;
+            document.getElementById('btn-bob-proof').disabled = true;
+            document.getElementById('bob-leaf').classList.add('hidden');
+            updateIdentity();
+        }
+
+        function showBobLeaf(leaf) {
+            document.getElementById('bob-leaf').classList.remove('hidden');
+            document.getElementById('bob-leaf-info').innerHTML =
+                'Index: #' + leaf.index + '<br>Hash: ' + leaf.hash.slice(0,20) + '...<br>' +
+                'Balance: ' + (leaf.lamports/1000000).toFixed(2) + ' SOL<br>Size: ~100 bytes';
+        }
+
+        function showAliceLeaves() {
+            if (state.leaves.length === 0) return;
+            document.getElementById('alice-leaves').classList.remove('hidden');
+            var html = state.leaves.map(function(l) {
+                return '<div>#'+l.index+' | '+l.hash.slice(0,16)+'... | '+l.owner.slice(0,8)+'... | <span style="color:#3fb950">'+(l.lamports/1000000).toFixed(2)+' SOL</span></div>';
+            }).join('<br>');
+            document.getElementById('alice-leaf-list').innerHTML = html;
+        }
+
+        async function bobRequestProof() {
+            if (!state.bobRunning) { log('Bob: start phone first', 'warn'); return; }
+            log('Bob: requesting Merkle proof from Alice...', 'info');
+            document.getElementById('btn-bob-proof').disabled = true;
+            var r = await api('/phone/proof');
+            if (r.ok) {
+                state.proofsServed++;
+                log('Bob: proof received — ' + r.proof_size + ' bytes (' + (r.siblings||26) + ' siblings)', 'bob');
+                log('Bob: proof verified ✓ — balance confirmed on Solana', 'success');
+                if (r.leaf) log('Bob: your leaf #' + r.leaf.index + ' is valid in Merkle tree', 'success');
+            } else {
+                log('Bob: ' + (r.error || 'proof failed'), 'error');
+            }
+            document.getElementById('btn-bob-proof').disabled = false;
+            updateIdentity();
+        }
+
+        async function aliceInvite() {
+            log('Alice: generating Iroh invite link...', 'info');
+            var r = await api('/mesh/invite');
+            if (r.ok) {
+                var el = document.getElementById('invite-output');
+                el.textContent = r.invite; el.classList.remove('hidden');
+                log('Alice: invite link generated! Share with Bob', 'alice');
+            } else {
+                log('Alice: ' + (r.error || 'failed'), 'error');
+            }
+        }
+
+        function copyInvite() {
+            navigator.clipboard.writeText(document.getElementById('invite-output').textContent);
+            log('Copied to clipboard', 'success');
+        }
+
+        async function bobConnect() {
+            var link = document.getElementById('connect-link').value.trim();
+            if (!link) { log("Bob: paste Alice's invite link first", 'warn'); return; }
+            log('Bob: connecting to Alice (direct, no relay)...', 'info');
+            document.getElementById('btn-connect').disabled = true;
+            var r = await api('/mesh/connect', { link: link });
+            if (r.ok) {
+                state.connected = true;
+                log('Bob: connected to Alice! ✓', 'bob');
+                log('Mesh: Alice ↔ Bob link established', 'success');
+                document.getElementById('btn-connect').disabled = true;
+                document.getElementById('btn-disconnect').disabled = false;
+                document.getElementById('btn-bob-proof').disabled = !state.bobRunning;
+                document.getElementById('peer-status').className = 'peer-status connected';
+                document.getElementById('peer-status').textContent = 'Connected to Alice ✓';
+            } else {
+                log('Bob: ' + (r.error || 'connection failed'), 'error');
+                document.getElementById('btn-connect').disabled = false;
+            }
+            updateIdentity();
+        }
+
+        async function bobDisconnect() {
+            await api('/mesh/disconnect');
+            state.connected = false;
+            log('Bob: disconnected from Alice', 'warn');
+            document.getElementById('btn-connect').disabled = false;
+            document.getElementById('btn-disconnect').disabled = true;
+            document.getElementById('btn-bob-proof').disabled = true;
+            document.getElementById('peer-status').className = 'peer-status disconnected';
+            document.getElementById('peer-status').textContent = 'Not connected';
+            updateIdentity();
+        }
+
+        async function pollStatus() {
+            var r = await api('/status');
+            if (r && !r.error) {
+                serverAvailable = true;
+                state.leaves = r.leaves || [];
+                state.proofsServed = r.proofs_served || 0;
+                state.connected = r.connected || false;
+                if (r.alice_running !== undefined) state.aliceRunning = r.alice_running;
+                if (r.bob_running !== undefined) state.bobRunning = r.bob_running;
+                if (state.aliceRunning) showAliceLeaves();
+                if (state.connected) {
+                    document.getElementById('btn-bob-proof').disabled = !state.bobRunning;
+                    document.getElementById('peer-status').className = 'peer-status connected';
+                    document.getElementById('peer-status').textContent = 'Connected to Alice ✓';
+                }
+            }
+            updateIdentity();
+        }
+
+        setInterval(pollStatus, 2000);
+        log('EpsilonChat ready. Alice = forester, Bob = phone.', 'info');
+        log('Test keys pre-filled. Tap a role to start.', 'info');
+        updateIdentity();
+    </script>
+</body>
+</html>

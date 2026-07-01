@@ -34,3 +34,6 @@ clap = { version = "4", features = ["derive"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 data-encoding = "2"
+axum = "0.7"
+tower-http = { version = "0.6", features = ["fs", "cors"] }
+rust-embed = { version = "8", features = ["axum"] }
