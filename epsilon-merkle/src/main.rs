@@ -10,6 +10,11 @@ pub mod proof_provider;
 pub mod proof_requester;
 pub mod gossip;
 pub mod web_ui;
+pub mod relay_mining;
+pub mod relay_settlement;
+pub mod solana_zk;
+pub mod vrf_sortition;
+pub mod validator;
 
 use clap::{Parser, Subcommand};
 

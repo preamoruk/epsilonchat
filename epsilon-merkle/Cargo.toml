@@ -16,6 +16,7 @@ iroh-gossip = "0.101"
 # Solana RPC
 solana-sdk = "2.1"
 solana-rpc-client = "2.1"
+solana-transaction-status = "2.1"
 
 # Serialization
 serde = { version = "1", features = ["derive"] }
