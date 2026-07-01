@@ -82,12 +82,7 @@ impl TreeReplica {
         // Build the full tree level by level to get sibling hashes
         let mut levels: Vec<Vec<[u8; 32]>> = Vec::with_capacity(self.height + 1);
         // Level 0 = leaves
-        levels.push(
-            self.leaves
-                .iter()
-                .map(|l| l.unwrap_or([0u8; 32]))
-                .collect(),
-        );
+        levels.push(self.leaves.iter().map(|l| l.unwrap_or([0u8; 32])).collect());
         for _ in 0..self.height {
             let prev = levels.last().unwrap();
             let mut next: Vec<[u8; 32]> = Vec::with_capacity(prev.len() / 2);
@@ -165,11 +160,8 @@ impl TreeReplica {
     /// Recompute root from all leaves
     fn recompute_root(&mut self) {
         // Build tree level by level
-        let mut current_level: Vec<[u8; 32]> = self
-            .leaves
-            .iter()
-            .map(|l| l.unwrap_or([0u8; 32]))
-            .collect();
+        let mut current_level: Vec<[u8; 32]> =
+            self.leaves.iter().map(|l| l.unwrap_or([0u8; 32])).collect();
 
         for _ in 0..self.height {
             let mut next_level: Vec<[u8; 32]> = Vec::with_capacity(current_level.len() / 2);

@@ -13,12 +13,12 @@ use axum::{
 use rust_embed::RustEmbed;
 use serde::{Deserialize, Serialize};
 use serde_json::{json, Value};
-use std::sync::Arc;
 use std::str::FromStr;
-use tokio::sync::Mutex;
+use std::sync::Arc;
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
+use tokio::sync::Mutex;
 
-use crate::gossip::{MeshNode, MeshMessage};
+use crate::gossip::{MeshMessage, MeshNode};
 use crate::leaf_store::LeafStore;
 use crate::tree_replica::TreeReplica;
 
@@ -89,7 +89,14 @@ pub async fn run_web_ui(port: u16) -> Result<()> {
                 Ok(msg) => {
                     let mut s = state2.lock().await;
                     match msg {
-                        MeshMessage::LeafUpdate { leaf_hash, leaf_index, merkle_tree, owner, lamports, .. } => {
+                        MeshMessage::LeafUpdate {
+                            leaf_hash,
+                            leaf_index,
+                            merkle_tree,
+                            owner,
+                            lamports,
+                            ..
+                        } => {
                             let hash_hex = hex::encode(leaf_hash);
                             let owner_b58 = bs58::encode(owner).into_string();
                             s.leaves.push(LeafInfo {
@@ -98,26 +105,35 @@ pub async fn run_web_ui(port: u16) -> Result<()> {
                                 lamports,
                                 index: leaf_index,
                             });
-                            s.msg_log.push(format!("Received LeafUpdate #{} from mesh", leaf_index));
+                            s.msg_log
+                                .push(format!("Received LeafUpdate #{} from mesh", leaf_index));
                         }
                         MeshMessage::ProofRequest { leaf_index, .. } => {
-                            s.msg_log.push(format!("Received ProofRequest for leaf #{}", leaf_index));
+                            s.msg_log
+                                .push(format!("Received ProofRequest for leaf #{}", leaf_index));
                             // Forester generates proof and sends back
                             if let Some(tree) = &s.tree {
                                 if let Some(proof) = tree.generate_proof(leaf_index) {
-                                    let _ = s.mesh.broadcast(&MeshMessage::ProofResponse {
-                                    leaf_hash: proof.leaf,
-                                    leaf_index,
-                                    merkle_tree: [0u8; 32],
-                                    proof: proof.proof.clone(),
-                                    root: proof.root,
-                                    root_seq: 0,
-                                    verified: true,
-                                }).await;
+                                    let _ = s
+                                        .mesh
+                                        .broadcast(&MeshMessage::ProofResponse {
+                                            leaf_hash: proof.leaf,
+                                            leaf_index,
+                                            merkle_tree: [0u8; 32],
+                                            proof: proof.proof.clone(),
+                                            root: proof.root,
+                                            root_seq: 0,
+                                            verified: true,
+                                        })
+                                        .await;
                                 }
                             }
                         }
-                        MeshMessage::ProofResponse { leaf_index, verified, .. } => {
+                        MeshMessage::ProofResponse {
+                            leaf_index,
+                            verified,
+                            ..
+                        } => {
                             s.proofs_served += 1;
                             s.msg_log.push(format!(
                                 "ProofResponse for #{} — verified: {}",
@@ -127,7 +143,11 @@ pub async fn run_web_ui(port: u16) -> Result<()> {
                         MeshMessage::ChatMessage { from, text, .. } => {
                             s.msg_log.push(format!("Chat from {}: {}", from, text));
                         }
-                        MeshMessage::Heartbeat { is_forester, leaf_count, node_id } => {
+                        MeshMessage::Heartbeat {
+                            is_forester,
+                            leaf_count,
+                            node_id,
+                        } => {
                             s.msg_log.push(format!(
                                 "Heartbeat from {} (forester={}, leaves={})",
                                 &node_id[..8.min(node_id.len())],
@@ -170,7 +190,10 @@ pub async fn run_web_ui(port: u16) -> Result<()> {
     println!("║  EpsilonChat Web UI                       ║");
     println!("║  Open: http://localhost:{}              ║", port);
     println!("║  Phone: http://192.168.1.139:{}          ║", port);
-    println!("║  Node ID: {}...          ║", &node_id[..node_id.len().min(32)]);
+    println!(
+        "║  Node ID: {}...          ║",
+        &node_id[..node_id.len().min(32)]
+    );
     println!("╚══════════════════════════════════════════╝");
 
     #[cfg(target_os = "macos")]
@@ -186,7 +209,11 @@ pub async fn run_web_ui(port: u16) -> Result<()> {
 
 async fn index_handler() -> Html<String> {
     let asset = StaticAssets::get("index.html").unwrap();
-    Html(std::str::from_utf8(asset.data.as_ref()).unwrap().to_string())
+    Html(
+        std::str::from_utf8(asset.data.as_ref())
+            .unwrap()
+            .to_string(),
+    )
 }
 
 async fn status_handler(State(state): State<Arc<Mutex<WebState>>>) -> Json<Value> {
@@ -224,26 +251,42 @@ async fn forester_start(
     let tree_bytes = solana_sdk::pubkey::Pubkey::from_str(&req.tree)
         .map(|p| p.to_bytes())
         .unwrap_or([0u8; 32]);
-    s.tree = Some(TreeReplica::new(tree_bytes, crate::tree_replica::TREE_HEIGHT));
+    s.tree = Some(TreeReplica::new(
+        tree_bytes,
+        crate::tree_replica::TREE_HEIGHT,
+    ));
 
     // Generate 3 simulated leaves (in production: fetch from Solana)
     let leaf_data = vec![
-        ("a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2".to_string(),
-         "AZGrvCVjwz9DZ2FrbWyDG26rjVvAdLGRX5M7dh2TgaTD".to_string(), 5_000_000u64, 0u64),
-        ("b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b200".to_string(),
-         "TDPQvCMcE2sKJRZZa4xgt1URZcyszFhwic6mX9bVSfi".to_string(), 12_000_000, 1),
-        ("c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c300".to_string(),
-         "5Hx3Wp7V2mNk8RqL4sJ6dTcF9bX2yZ8aP1wQ3eR5tU7v".to_string(), 750_000, 2),
+        (
+            "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2".to_string(),
+            "AZGrvCVjwz9DZ2FrbWyDG26rjVvAdLGRX5M7dh2TgaTD".to_string(),
+            5_000_000u64,
+            0u64,
+        ),
+        (
+            "b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b200".to_string(),
+            "TDPQvCMcE2sKJRZZa4xgt1URZcyszFhwic6mX9bVSfi".to_string(),
+            12_000_000,
+            1,
+        ),
+        (
+            "c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c300".to_string(),
+            "5Hx3Wp7V2mNk8RqL4sJ6dTcF9bX2yZ8aP1wQ3eR5tU7v".to_string(),
+            750_000,
+            2,
+        ),
     ];
 
-    s.leaves = leaf_data.iter().map(|(hash, owner, lamports, idx)| {
-        LeafInfo {
+    s.leaves = leaf_data
+        .iter()
+        .map(|(hash, owner, lamports, idx)| LeafInfo {
             hash: hash.clone(),
             owner: owner.clone(),
             lamports: *lamports,
             index: *idx,
-        }
-    }).collect();
+        })
+        .collect();
 
     // Broadcast leaf updates to connected phones
     for leaf in &s.leaves {
@@ -270,7 +313,8 @@ async fn forester_start(
         let _ = s.mesh.broadcast(&msg).await;
     }
 
-    s.msg_log.push("Forester started — broadcasting leaves to mesh".to_string());
+    s.msg_log
+        .push("Forester started — broadcasting leaves to mesh".to_string());
 
     Json(json!({ "ok": true, "leaves": s.leaves.len(), "message": "Forester started" }))
 }
@@ -324,10 +368,14 @@ async fn phone_proof(State(state): State<Arc<Mutex<WebState>>>) -> Json<Value> {
     let mut s = state.lock().await;
 
     if !s.connected && s.mesh.peer_count().await == 0 {
-        return Json(json!({ "ok": false, "error": "Not connected to Alice. Go to Mesh tab and connect first." }));
+        return Json(
+            json!({ "ok": false, "error": "Not connected to Alice. Go to Mesh tab and connect first." }),
+        );
     }
     if !s.alice_running {
-        return Json(json!({ "ok": false, "error": "Alice is not running. Start forester first." }));
+        return Json(
+            json!({ "ok": false, "error": "Alice is not running. Start forester first." }),
+        );
     }
 
     s.proofs_served += 1;
@@ -342,7 +390,10 @@ async fn phone_proof(State(state): State<Arc<Mutex<WebState>>>) -> Json<Value> {
     };
     let _ = s.mesh.broadcast(&msg).await;
 
-    s.msg_log.push(format!("Proof requested for leaf #{}", leaf.as_ref().map(|l| l.index).unwrap_or(0)));
+    s.msg_log.push(format!(
+        "Proof requested for leaf #{}",
+        leaf.as_ref().map(|l| l.index).unwrap_or(0)
+    ));
 
     Json(json!({
         "ok": true,

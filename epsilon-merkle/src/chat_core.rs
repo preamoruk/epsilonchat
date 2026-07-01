@@ -100,7 +100,13 @@ impl ChatMessageData {
 
     /// Construct an unsigned message (signature empty). The caller is expected
     /// to sign `hash()` afterwards.
-    fn build(from: String, to: String, text: String, timestamp: u64, reply_to: Option<String>) -> Self {
+    fn build(
+        from: String,
+        to: String,
+        text: String,
+        timestamp: u64,
+        reply_to: Option<String>,
+    ) -> Self {
         let hash = message_hash(&from, &to, &text, timestamp);
         Self {
             id: hex32(&hash),
@@ -159,7 +165,13 @@ impl ChatStore {
         signing_key: &SigningKey,
     ) -> ChatMessageData {
         let timestamp = now_unix();
-        let mut msg = ChatMessageData::build(from.to_string(), to.to_string(), text.to_string(), timestamp, reply_to);
+        let mut msg = ChatMessageData::build(
+            from.to_string(),
+            to.to_string(),
+            text.to_string(),
+            timestamp,
+            reply_to,
+        );
         let hash = msg.hash();
         let sig = signing_key.sign(&hash);
         msg.signature = sig.to_bytes().to_vec();
@@ -261,8 +273,8 @@ impl ChatStore {
     pub fn save_to_disk(&self) -> Result<()> {
         let dir = PathBuf::from(&self.data_dir);
         std::fs::create_dir_all(&dir).ok();
-        let json = serde_json::to_vec_pretty(&self.messages)
-            .context("failed to serialize messages")?;
+        let json =
+            serde_json::to_vec_pretty(&self.messages).context("failed to serialize messages")?;
         let path = dir.join("messages.json");
         std::fs::write(&path, json).with_context(|| format!("writing {}", path.display()))?;
         Ok(())
@@ -272,8 +284,8 @@ impl ChatStore {
     pub fn load_from_disk(&mut self) -> Result<()> {
         let path = PathBuf::from(&self.data_dir).join("messages.json");
         let data = std::fs::read(&path).with_context(|| format!("reading {}", path.display()))?;
-        let msgs: Vec<ChatMessageData> = serde_json::from_slice(&data)
-            .context("failed to deserialize messages")?;
+        let msgs: Vec<ChatMessageData> =
+            serde_json::from_slice(&data).context("failed to deserialize messages")?;
         self.messages = msgs;
         Ok(())
     }
@@ -528,7 +540,9 @@ impl ChatManager {
         if text.is_empty() {
             anyhow::bail!("message text is empty");
         }
-        Ok(self.messages.send_message(&self.node_id, to, text, None, &self.signing_key))
+        Ok(self
+            .messages
+            .send_message(&self.node_id, to, text, None, &self.signing_key))
     }
 
     /// Send a message to a group. The `to` field is set to `group:<group_id>`.
@@ -543,7 +557,9 @@ impl ChatManager {
             anyhow::bail!("unknown group: {}", group_id);
         }
         let to = format!("group:{}", group_id);
-        Ok(self.messages.send_message(&self.node_id, &to, text, None, &self.signing_key))
+        Ok(self
+            .messages
+            .send_message(&self.node_id, &to, text, None, &self.signing_key))
     }
 
     /// Receive a message from the mesh. Returns `true` if it was new.
@@ -582,7 +598,11 @@ mod tests {
     }
 
     fn make_manager(seed: u8) -> ChatManager {
-        ChatManager::new("./.epsilon/test-chat", format!("node-{}", seed), test_key(seed))
+        ChatManager::new(
+            "./.epsilon/test-chat",
+            format!("node-{}", seed),
+            test_key(seed),
+        )
     }
 
     // 1. send + receive round-trip ------------------------------------------------
@@ -624,7 +644,10 @@ mod tests {
         let mut alice = make_manager(1);
         let msg = alice.send("bob", "signed message").unwrap();
         let pubkey = alice.public_key();
-        assert!(ChatStore::verify_message(&msg, &pubkey), "signature must verify");
+        assert!(
+            ChatStore::verify_message(&msg, &pubkey),
+            "signature must verify"
+        );
     }
 
     // 4. verification fails with wrong key ---------------------------------------
@@ -699,7 +722,11 @@ mod tests {
         assert!(unread > 0, "should have unread messages");
 
         bob.messages.mark_read("alice");
-        assert_eq!(bob.messages.get_unread_count("alice"), 0, "should be read after mark_read");
+        assert_eq!(
+            bob.messages.get_unread_count("alice"),
+            0,
+            "should be read after mark_read"
+        );
     }
 
     // 8. soft delete --------------------------------------------------------------
@@ -712,7 +739,12 @@ mod tests {
         let deleted = alice.messages.delete_message(&msg.id);
         assert!(deleted, "delete should find the message");
 
-        let stored = alice.messages.messages.iter().find(|m| m.id == msg.id).unwrap();
+        let stored = alice
+            .messages
+            .messages
+            .iter()
+            .find(|m| m.id == msg.id)
+            .unwrap();
         assert!(stored.deleted, "message should be flagged deleted");
     }
 
@@ -753,14 +785,21 @@ mod tests {
         // Replace existing.
         let c2 = store.add_contact("node-x", "Alice 2", pk);
         assert_eq!(c2.name, "Alice 2");
-        assert_eq!(store.list_contacts().len(), 1, "replace should not duplicate");
+        assert_eq!(
+            store.list_contacts().len(),
+            1,
+            "replace should not duplicate"
+        );
 
         store.update_online_status("node-x", true);
         assert!(store.get_contact("node-x").unwrap().online);
 
         assert!(store.remove_contact("node-x"));
         assert!(store.get_contact("node-x").is_none());
-        assert!(!store.remove_contact("node-x"), "removing again should return false");
+        assert!(
+            !store.remove_contact("node-x"),
+            "removing again should return false"
+        );
     }
 
     // 11. group creation + membership --------------------------------------------
@@ -780,7 +819,10 @@ mod tests {
 
         // Add member.
         assert!(store.add_member(&g.id, "dave"));
-        assert!(!store.add_member(&g.id, "dave"), "duplicate add returns false");
+        assert!(
+            !store.add_member(&g.id, "dave"),
+            "duplicate add returns false"
+        );
         let g2 = store.get_group(&g.id).unwrap();
         assert!(g2.members.contains(&"dave".into()));
 
@@ -799,7 +841,9 @@ mod tests {
     #[test]
     fn test_group_send_and_history() {
         let mut alice = make_manager(1);
-        let g = alice.groups.create_group("team", vec!["bob".into()], "node-1");
+        let g = alice
+            .groups
+            .create_group("team", vec!["bob".into()], "node-1");
 
         let m = alice.send_group(&g.id, "hi team").unwrap();
         assert_eq!(m.to, format!("group:{}", g.id));

@@ -8,12 +8,12 @@
 //! - Heartbeat: peer presence announcements
 
 use anyhow::{Context, Result};
-use iroh::Endpoint;
 use iroh::endpoint::presets::N0;
 use iroh::endpoint::RelayMode;
+use iroh::Endpoint;
 use serde::{Deserialize, Serialize};
 use std::sync::Arc;
-use tokio::sync::{Mutex, broadcast};
+use tokio::sync::{broadcast, Mutex};
 
 /// ALPN protocol identifier for epsilon mesh
 pub const EPSILON_ALPN: &[u8] = b"epsilon/mesh/1";
@@ -102,7 +102,11 @@ impl MeshNode {
         let node_id = endpoint.id().to_string();
         let (msg_tx, _msg_rx) = broadcast::channel::<MeshMessage>(256);
 
-        tracing::info!("Mesh node created: id={}, forester={}", node_id, is_forester);
+        tracing::info!(
+            "Mesh node created: id={}, forester={}",
+            node_id,
+            is_forester
+        );
 
         Ok(Self {
             endpoint,
@@ -131,8 +135,8 @@ impl MeshNode {
 
     /// Connect to a peer via invite link
     pub async fn connect(&self, link: &str) -> Result<String> {
-        let addr: iroh_base::EndpointAddr = serde_json::from_str(link)
-            .context("Invalid invite link format")?;
+        let addr: iroh_base::EndpointAddr =
+            serde_json::from_str(link).context("Invalid invite link format")?;
 
         tracing::info!("Connecting to peer...");
         let conn = self.endpoint.connect(addr, EPSILON_ALPN).await?;
@@ -238,7 +242,12 @@ impl MeshNode {
 
     /// Get connected peer IDs
     pub async fn peer_ids(&self) -> Vec<String> {
-        self.peers.lock().await.iter().map(|p| p.node_id.clone()).collect()
+        self.peers
+            .lock()
+            .await
+            .iter()
+            .map(|p| p.node_id.clone())
+            .collect()
     }
 
     /// Subscribe to incoming messages
@@ -262,7 +271,11 @@ async fn receive_loop(
                     Ok(data) => {
                         if !data.is_empty() {
                             if let Some(msg) = MeshMessage::decode(&data) {
-                                tracing::debug!("Received message from {}: {:?}", remote_id, std::mem::discriminant(&msg));
+                                tracing::debug!(
+                                    "Received message from {}: {:?}",
+                                    remote_id,
+                                    std::mem::discriminant(&msg)
+                                );
                                 let _ = msg_tx.send(msg);
                             }
                         }
@@ -330,7 +343,8 @@ pub async fn create_endpoint(_data_dir: &str) -> Result<Endpoint> {
         .alpns(vec![EPSILON_ALPN.to_vec()])
         .relay_mode(RelayMode::Disabled)
         .clear_address_lookup()
-        .bind().await?;
+        .bind()
+        .await?;
     tracing::info!("Iroh endpoint created: id={}", endpoint.id());
     Ok(endpoint)
 }

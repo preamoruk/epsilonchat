@@ -3,21 +3,22 @@
 //! Replaces centralized Photon Indexer with P2P mesh distribution
 //! of Merkle tree leaves via Iroh gossip + DHT.
 
+pub mod android_bridge;
+pub mod anti_farm;
+pub mod availability;
+pub mod chat_core;
+pub mod gossip;
 pub mod leaf_store;
-pub mod tree_replica;
 pub mod mesh_indexer;
+pub mod payment;
 pub mod proof_provider;
 pub mod proof_requester;
-pub mod gossip;
-pub mod web_ui;
-pub mod relay_mining;
-pub mod relay_settlement;
 pub mod solana_zk;
-pub mod vrf_sortition;
-pub mod validator;
-pub mod chat_core;
 pub mod token_account;
-pub mod android_bridge;
+pub mod tree_replica;
+pub mod validator;
+pub mod vrf_sortition;
+pub mod web_ui;
 
 use clap::{Parser, Subcommand};
 
@@ -92,14 +93,8 @@ async fn main() -> anyhow::Result<()> {
         Command::Phone { owner, data_dir } => {
             crate::proof_requester::run_phone(&cli.rpc, &owner, &data_dir).await
         }
-        Command::Invite => {
-            crate::gossip::generate_invite().await
-        }
-        Command::Connect { link } => {
-            crate::gossip::connect_via_invite(&link).await
-        }
-        Command::Web { port } => {
-            crate::web_ui::run_web_ui(port).await
-        }
+        Command::Invite => crate::gossip::generate_invite().await,
+        Command::Connect { link } => crate::gossip::connect_via_invite(&link).await,
+        Command::Web { port } => crate::web_ui::run_web_ui(port).await,
     }
 }

@@ -46,7 +46,9 @@ impl ProofRequester {
         // Phone verifies proof locally
 
         // Prototype: not connected to forester yet
-        tracing::warn!("Proof request: would query forester via Iroh (not implemented in prototype)");
+        tracing::warn!(
+            "Proof request: would query forester via Iroh (not implemented in prototype)"
+        );
         None
     }
 

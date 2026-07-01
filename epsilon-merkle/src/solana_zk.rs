@@ -40,8 +40,8 @@ impl SolanaZkClient {
     /// Create a new Solana ZK client
     pub fn new(rpc_url: &str, tree_pubkey_str: &str) -> Result<Self> {
         let rpc = RpcClient::new_with_timeout(rpc_url.to_string(), Duration::from_secs(30));
-        let tree_pubkey = Pubkey::from_str(tree_pubkey_str)
-            .context("Invalid Merkle tree pubkey")?;
+        let tree_pubkey =
+            Pubkey::from_str(tree_pubkey_str).context("Invalid Merkle tree pubkey")?;
         Ok(Self { rpc, tree_pubkey })
     }
 
@@ -53,7 +53,10 @@ impl SolanaZkClient {
         let signatures = match self.rpc.get_signatures_for_address(&self.tree_pubkey) {
             Ok(sigs) => sigs,
             Err(e) => {
-                tracing::warn!("Failed to fetch signatures (tree may not exist on devnet): {}", e);
+                tracing::warn!(
+                    "Failed to fetch signatures (tree may not exist on devnet): {}",
+                    e
+                );
                 return Ok(Vec::new());
             }
         };
@@ -73,7 +76,10 @@ impl SolanaZkClient {
             };
 
             // Fetch transaction with full metadata
-            let tx = match self.rpc.get_transaction(&signature, solana_transaction_status::UiTransactionEncoding::JsonParsed) {
+            let tx = match self.rpc.get_transaction(
+                &signature,
+                solana_transaction_status::UiTransactionEncoding::JsonParsed,
+            ) {
                 Ok(tx) => tx,
                 Err(e) => {
                     tracing::debug!("Failed to fetch transaction {}: {}", sig_str, e);
@@ -119,7 +125,8 @@ impl SolanaZkClient {
 
     /// Fetch the current Merkle tree root from the on-chain account
     pub fn fetch_tree_root(&self) -> Result<[u8; 32]> {
-        let account = self.rpc
+        let account = self
+            .rpc
             .get_account(&self.tree_pubkey)
             .context("Failed to fetch tree account (may not exist on devnet)")?;
 
@@ -148,7 +155,7 @@ impl SolanaZkClient {
     /// In production: constructs a compressed transaction via Light Protocol
     /// and submits it to Solana. Returns the leaf hash.
     pub fn submit_leaf(&self, owner: &Pubkey, lamports: u64) -> Result<[u8; 32]> {
-        use sha2::{Sha256, Digest};
+        use sha2::{Digest, Sha256};
 
         // Create a deterministic leaf hash from owner + lamports
         let mut hasher = Sha256::new();
@@ -187,7 +194,7 @@ impl SolanaZkClient {
         // Local verification: recompute root from leaf + proof path
         let mut current = leaf_hash;
         for sibling in &proof {
-            use sha2::{Sha256, Digest};
+            use sha2::{Digest, Sha256};
             let mut hasher = Sha256::new();
             // Sort to ensure deterministic ordering (Merkle convention)
             if current < *sibling {
@@ -304,7 +311,7 @@ mod tests {
     #[test]
     fn test_submit_leaf_deterministic() {
         // Can't create SolanaZkClient without network, but we can test the hash logic
-        use sha2::{Sha256, Digest};
+        use sha2::{Digest, Sha256};
         let owner = Pubkey::new_unique();
         let lamports = 5000000u64;
 
@@ -339,7 +346,10 @@ mod tests {
         let proof = tree.generate_proof(0).expect("Should generate proof");
 
         // Verify using TreeReplica's own verify_proof (uses index-based left/right)
-        assert!(TreeReplica::verify_proof(&proof), "Proof should be valid via TreeReplica");
+        assert!(
+            TreeReplica::verify_proof(&proof),
+            "Proof should be valid via TreeReplica"
+        );
     }
 
     #[test]
@@ -355,12 +365,15 @@ mod tests {
 
         // Tamper with leaf hash
         proof.leaf = [0x33; 32];
-        assert!(!TreeReplica::verify_proof(&proof), "Tampered proof should be invalid");
+        assert!(
+            !TreeReplica::verify_proof(&proof),
+            "Tampered proof should be invalid"
+        );
     }
 
     /// Helper: verify a Merkle proof locally
     fn verify_proof_locally(leaf_hash: [u8; 32], proof: &[[u8; 32]], root: [u8; 32]) -> bool {
-        use sha2::{Sha256, Digest};
+        use sha2::{Digest, Sha256};
         let mut current = leaf_hash;
         for sibling in proof {
             let mut hasher = Sha256::new();

@@ -17,7 +17,6 @@ type LeafMap = HashMap<[u8; 32], LeafEntry>;
 type OwnerMap = HashMap<[u8; 32], Vec<[u8; 32]>>;
 type RootMap = HashMap<[u8; 32], ([u8; 32], u64)>;
 
-
 /// A Merkle tree leaf as stored in the mesh.
 /// This is the data that gets gossip-broadcast between peers.
 #[derive(Clone, Debug, Serialize, Deserialize, borsh::BorshSerialize, borsh::BorshDeserialize)]

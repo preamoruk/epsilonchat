@@ -29,13 +29,8 @@ pub struct MeshIndexer {
 
 impl MeshIndexer {
     pub fn new(rpc_url: &str, tree_pubkey: &str, store: LeafStore) -> Result<Self> {
-        let rpc = RpcClient::new_with_timeout(
-            rpc_url.to_string(),
-            Duration::from_secs(30),
-        );
-        let tree_pubkey: Pubkey = tree_pubkey
-            .parse()
-            .context("Invalid Merkle tree pubkey")?;
+        let rpc = RpcClient::new_with_timeout(rpc_url.to_string(), Duration::from_secs(30));
+        let tree_pubkey: Pubkey = tree_pubkey.parse().context("Invalid Merkle tree pubkey")?;
         let tree_bytes = tree_pubkey.to_bytes();
 
         let tree = TreeReplica::new(tree_bytes, crate::tree_replica::TREE_HEIGHT);
@@ -155,9 +150,7 @@ pub async fn run_forester(rpc_url: &str, tree_pubkey: &str, data_dir: &str) -> R
     let mut indexer = MeshIndexer::new(rpc_url, tree_pubkey, store)?;
 
     // Start indexer in background
-    let indexer_handle = tokio::spawn(async move {
-        indexer.run().await
-    });
+    let indexer_handle = tokio::spawn(async move { indexer.run().await });
 
     // Start Iroh endpoint for serving proofs
     let endpoint = crate::gossip::create_endpoint(data_dir).await?;

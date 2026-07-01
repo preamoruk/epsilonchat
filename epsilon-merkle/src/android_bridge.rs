@@ -44,7 +44,10 @@ pub extern "system" fn jni_start_mesh(_env: JNIEnv, _class: jclass) -> jstring {
     // On Android: would create MeshNode and return node ID
     // For now, return a stub
     let id = String::from("android-stub-node-id");
-    unsafe { NODE_ID = Some(id.clone()); INITIALIZED = true; }
+    unsafe {
+        NODE_ID = Some(id.clone());
+        INITIALIZED = true;
+    }
     // In real impl: use env.NewStringUTF to create jstring from id
     std::ptr::null_mut()
 }
@@ -53,7 +56,10 @@ pub extern "system" fn jni_start_mesh(_env: JNIEnv, _class: jclass) -> jstring {
 #[no_mangle]
 pub extern "system" fn jni_start_mesh(_env: JNIEnv, _class: jclass) -> jstring {
     let id = String::from("native-stub-node-id");
-    unsafe { NODE_ID = Some(id); INITIALIZED = true; }
+    unsafe {
+        NODE_ID = Some(id);
+        INITIALIZED = true;
+    }
     std::ptr::null_mut()
 }
 
@@ -72,11 +78,7 @@ pub extern "system" fn jni_send_message(
 
 /// Get token balance (returns JSON string)
 #[no_mangle]
-pub extern "system" fn jni_get_balance(
-    _env: JNIEnv,
-    _class: jclass,
-    _wallet: jstring,
-) -> jstring {
+pub extern "system" fn jni_get_balance(_env: JNIEnv, _class: jclass, _wallet: jstring) -> jstring {
     // On Android: would call TokenClient::get_token_balance and return JSON
     // For now, return null (placeholder)
     std::ptr::null_mut()
@@ -84,21 +86,14 @@ pub extern "system" fn jni_get_balance(
 
 /// Generate an Iroh invite link
 #[no_mangle]
-pub extern "system" fn jni_generate_invite(
-    _env: JNIEnv,
-    _class: jclass,
-) -> jstring {
+pub extern "system" fn jni_generate_invite(_env: JNIEnv, _class: jclass) -> jstring {
     // On Android: would call MeshNode::invite_link()
     std::ptr::null_mut()
 }
 
 /// Connect to a peer via invite link
 #[no_mangle]
-pub extern "system" fn jni_connect(
-    _env: JNIEnv,
-    _class: jclass,
-    _link: jstring,
-) -> jboolean {
+pub extern "system" fn jni_connect(_env: JNIEnv, _class: jclass, _link: jstring) -> jboolean {
     // On Android: would call MeshNode::connect(link)
     JNI_TRUE
 }

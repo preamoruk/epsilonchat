@@ -50,10 +50,7 @@ pub enum RootCheckResult {
     /// The broadcasted root matches the on-chain root.
     Valid,
     /// The roots differ.
-    Invalid {
-        expected: [u8; 32],
-        got: [u8; 32],
-    },
+    Invalid { expected: [u8; 32], got: [u8; 32] },
 }
 
 /// A signed fraud proof proving the forester broadcast an incorrect root.

@@ -36,8 +36,7 @@ pub struct TokenClient {
 impl TokenClient {
     pub fn new(rpc_url: &str, mint_pubkey_str: &str) -> Result<Self> {
         let rpc = RpcClient::new_with_timeout(rpc_url.to_string(), Duration::from_secs(30));
-        let mint_pubkey = Pubkey::from_str(mint_pubkey_str)
-            .context("Invalid mint pubkey")?;
+        let mint_pubkey = Pubkey::from_str(mint_pubkey_str).context("Invalid mint pubkey")?;
         Ok(Self { rpc, mint_pubkey })
     }
 
@@ -48,21 +47,21 @@ impl TokenClient {
         Pubkey::find_program_address(
             &[wallet.as_ref(), token_program.as_ref(), mint.as_ref()],
             &ata_program,
-        ).0
+        )
+        .0
     }
 
     /// Get token balance for a wallet
     pub fn get_token_balance(&self, wallet_pubkey: &str) -> Result<TokenAccountInfo> {
-        let wallet = Pubkey::from_str(wallet_pubkey)
-            .context("Invalid wallet pubkey")?;
+        let wallet = Pubkey::from_str(wallet_pubkey).context("Invalid wallet pubkey")?;
         let ata = Self::compute_ata(&wallet, &self.mint_pubkey);
 
-        let balance = self.rpc
+        let balance = self
+            .rpc
             .get_token_account_balance(&ata)
             .context("Failed to get token balance (account may not exist)")?;
 
-        let amount: u64 = balance.amount.parse()
-            .unwrap_or(0);
+        let amount: u64 = balance.amount.parse().unwrap_or(0);
         let decimals = balance.decimals;
         let ui_amount = balance.ui_amount.unwrap_or(0.0);
 
@@ -78,10 +77,12 @@ impl TokenClient {
 
     /// Create a token account (returns ATA address — on-chain creation is a placeholder)
     pub fn create_token_account(&self, wallet_pubkey: &str) -> Result<String> {
-        let wallet = Pubkey::from_str(wallet_pubkey)
-            .context("Invalid wallet pubkey")?;
+        let wallet = Pubkey::from_str(wallet_pubkey).context("Invalid wallet pubkey")?;
         let ata = Self::compute_ata(&wallet, &self.mint_pubkey);
-        tracing::info!("Token account address: {} (on-chain creation placeholder)", ata);
+        tracing::info!(
+            "Token account address: {} (on-chain creation placeholder)",
+            ata
+        );
         Ok(ata.to_string())
     }
 
@@ -89,10 +90,16 @@ impl TokenClient {
     pub fn transfer_tokens(&self, from: &str, to: &str, amount: u64) -> Result<String> {
         tracing::info!(
             "Transfer placeholder: {} → {} | {} raw ({:.6} EPS)",
-            from, to, amount,
+            from,
+            to,
+            amount,
             amount as f64 / 10f64.powi(EPSILON_TOKEN_DECIMALS as i32)
         );
-        Ok(format!("placeholder_tx_{}_{}", &from[..8.min(from.len())], amount))
+        Ok(format!(
+            "placeholder_tx_{}_{}",
+            &from[..8.min(from.len())],
+            amount
+        ))
     }
 
     /// Claim mining rewards (placeholder — verifies proof, sweeps to SPL)
@@ -129,15 +136,26 @@ impl TokenClient {
 
     /// Mint tokens (placeholder)
     pub fn mint_tokens(&self, to_wallet: &str, amount: u64) -> Result<String> {
-        tracing::info!("Mint placeholder: {} → {} raw ({:.6} EPS)", to_wallet, amount,
-            amount as f64 / 10f64.powi(EPSILON_TOKEN_DECIMALS as i32));
-        Ok(format!("mint_{}_{}", &to_wallet[..8.min(to_wallet.len())], amount))
+        tracing::info!(
+            "Mint placeholder: {} → {} raw ({:.6} EPS)",
+            to_wallet,
+            amount,
+            amount as f64 / 10f64.powi(EPSILON_TOKEN_DECIMALS as i32)
+        );
+        Ok(format!(
+            "mint_{}_{}",
+            &to_wallet[..8.min(to_wallet.len())],
+            amount
+        ))
     }
 
     /// Faucet request (placeholder)
     pub fn faucet_request(&self, wallet_pubkey: &str) -> Result<String> {
         tracing::info!("Faucet request: {}", wallet_pubkey);
-        Ok(format!("faucet_{}", &wallet_pubkey[..8.min(wallet_pubkey.len())]))
+        Ok(format!(
+            "faucet_{}",
+            &wallet_pubkey[..8.min(wallet_pubkey.len())]
+        ))
     }
 
     /// Convert raw amount to UI amount
