@@ -5,36 +5,43 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
+    <!-- Epsilon (ε) symbol — bold calligraphic style with ball terminal -->
+    <!-- Based on Shutterstock ID 1714073116 reference -->
+
     <group
         android:scaleX="0.62"
         android:scaleY="0.62"
         android:translateX="20.5"
         android:translateY="20.5">
 
-        <!-- Epsilon (ε) monochrome version -->
+        <!-- Upper C-curve opening right, ending with ball terminal at bar level -->
         <path
             android:pathData="M 76 48 C 76 26, 58 16, 38 16 C 18 16, 10 28, 10 40 L 52 40 C 52 36, 56 34, 60 34 C 66 34, 70 38, 70 44 C 70 46, 72 48, 76 48 Z"
-            android:fillColor="#ffffff"
+            android:fillColor="#1a1a1a"
             android:strokeColor="#00000000" />
 
+        <!-- Ball terminal (circle at end of upper curve) -->
         <path
             android:pathData="M 70 48 m -8 0 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0"
-            android:fillColor="#ffffff"
+            android:fillColor="#1a1a1a"
             android:strokeColor="#00000000" />
 
+        <!-- Horizontal bar connecting upper and lower curves -->
         <path
             android:pathData="M 10 44 L 60 44 L 60 52 L 10 52 Z"
-            android:fillColor="#ffffff"
+            android:fillColor="#1a1a1a"
             android:strokeColor="#00000000" />
 
+        <!-- Lower C-curve opening right, ending with blunt diagonal cut -->
         <path
             android:pathData="M 10 48 C 10 68, 16 82, 34 88 C 50 93, 64 90, 68 82 L 68 74 C 62 82, 50 85, 40 82 C 28 78, 22 66, 22 50 L 22 48 Z"
-            android:fillColor="#ffffff"
+            android:fillColor="#1a1a1a"
             android:strokeColor="#00000000" />
 
+        <!-- Blunt diagonal cut at end of lower curve -->
         <path
             android:pathData="M 66 76 L 72 84 L 66 86 L 62 78 Z"
-            android:fillColor="#ffffff"
+            android:fillColor="#1a1a1a"
             android:strokeColor="#00000000" />
 
     </group>
