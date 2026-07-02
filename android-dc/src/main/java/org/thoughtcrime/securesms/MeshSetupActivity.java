@@ -123,6 +123,27 @@ public class MeshSetupActivity extends BaseActionBarActivity {
             myInviteText.setVisibility(View.VISIBLE);
             statusText.setText("Share this invite with the other person (SMS, Telegram, etc.)");
             connectBtn.setVisibility(View.VISIBLE);
+
+            // Add copy button
+            Button copyBtn = new Button(MeshSetupActivity.this);
+            copyBtn.setText("Copy Invite");
+            copyBtn.setOnClickListener(v2 -> {
+              android.content.ClipboardManager clipboard = (android.content.ClipboardManager) getSystemService(android.content.Context.CLIPBOARD_SERVICE);
+              android.content.ClipData clip = android.content.ClipData.newPlainText("EpsilonChat Invite", invite);
+              clipboard.setPrimaryClip(clip);
+              Toast.makeText(MeshSetupActivity.this, "Invite copied to clipboard!", Toast.LENGTH_SHORT).show();
+            });
+            // Insert copy button after invite text
+            LinearLayout layout = (LinearLayout) myInviteText.getParent();
+            int inviteIndex = layout.indexOfChild(myInviteText);
+            if (layout.findViewById(R.id.btn_copy_invite) == null) {
+              copyBtn.setId(R.id.btn_copy_invite);
+              LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                  LinearLayout.LayoutParams.MATCH_PARENT,
+                  LinearLayout.LayoutParams.WRAP_CONTENT);
+              lp.setMargins(0, 16, 0, 16);
+              layout.addView(copyBtn, inviteIndex + 1, lp);
+            }
           } else {
             statusText.setText("Mesh started but invite generation failed.");
           }
@@ -179,8 +200,8 @@ public class MeshSetupActivity extends BaseActionBarActivity {
       Toast.makeText(this, "Please enter an invite code.", Toast.LENGTH_SHORT).show();
       return;
     }
-    if (!invite.startsWith("epsilon://") && !invite.startsWith("{")) {
-      Toast.makeText(this, "Invalid invite format. Expected epsilon://...", Toast.LENGTH_LONG).show();
+    if (!invite.startsWith("EPS:") && !invite.startsWith("epsilon://") && !invite.startsWith("{")) {
+      Toast.makeText(this, "Invalid invite format. Expected EPS:... or epsilon://...", Toast.LENGTH_LONG).show();
       return;
     }
 

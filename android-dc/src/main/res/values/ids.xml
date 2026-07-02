@@ -27,4 +27,7 @@
     <item
         name="tag_window_insets_margin_bottom"
         type="id" />
+    <item
+        name="btn_copy_invite"
+        type="id" />
 </resources>

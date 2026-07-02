@@ -87,7 +87,9 @@ fn get_invite_inner() -> Option<String> {
                 let node_id = node.id().to_string();
                 let addr = node.addr();
                 let addr_json = serde_json::to_string(&addr).unwrap_or_default();
-                Some(format!("epsilon://{}?addrs={}", node_id, urlencoding_encode(&addr_json)))
+                // Compact format: EPS:<base64 of JSON> — much shorter than URL-encoded
+                let b64 = base64_encode(&addr_json);
+                Some(format!("EPS:{}", b64))
             } else {
                 None
             }
@@ -113,7 +115,9 @@ fn connect_peer_inner(invite_ptr: *const c_char) -> Option<String> {
     let invite_cstr = unsafe { CStr::from_ptr(invite_ptr) };
     let invite = match invite_cstr.to_str() { Ok(s) => s, Err(_) => return Some("error:invalid utf8".to_string()) };
 
-    let addr_json = if let Some(rest) = invite.strip_prefix("epsilon://") {
+    let addr_json = if let Some(b64) = invite.strip_prefix("EPS:") {
+        base64_decode(b64)
+    } else if let Some(rest) = invite.strip_prefix("epsilon://") {
         if let Some(qmark) = rest.find("?addrs=") {
             urlencoding_decode(&rest[qmark + 7..])
         } else { return Some("error:no addrs in invite".to_string()); }
@@ -413,6 +417,64 @@ fn urlencoding_decode(s: &str) -> String {
             result.push(bytes[i]);
             i += 1;
         }
+    }
+    String::from_utf8(result).unwrap_or_default()
+}
+
+fn base64_encode(input: &str) -> String {
+    const TABLE: &[u8; 64] = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    let data = input.as_bytes();
+    let mut result = String::with_capacity((data.len() + 2) / 3 * 4);
+    let mut i = 0;
+    while i < data.len() {
+        let b0 = data[i] as u32;
+        let b1 = if i + 1 < data.len() { data[i + 1] as u32 } else { 0 };
+        let b2 = if i + 2 < data.len() { data[i + 2] as u32 } else { 0 };
+        let triple = (b0 << 16) | (b1 << 8) | b2;
+        result.push(TABLE[((triple >> 18) & 63) as usize] as char);
+        result.push(TABLE[((triple >> 12) & 63) as usize] as char);
+        if i + 1 < data.len() {
+            result.push(TABLE[((triple >> 6) & 63) as usize] as char);
+        } else {
+            result.push('=');
+        }
+        if i + 2 < data.len() {
+            result.push(TABLE[(triple & 63) as usize] as char);
+        } else {
+            result.push('=');
+        }
+        i += 3;
+    }
+    result
+}
+
+fn base64_decode(input: &str) -> String {
+    let input = input.trim();
+    let mut lookup = [255u8; 256];
+    for (i, c) in b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".iter().enumerate() {
+        lookup[*c as usize] = i as u8;
+    }
+    let mut result = Vec::with_capacity(input.len() * 3 / 4);
+    let bytes = input.as_bytes();
+    let mut i = 0;
+    while i + 3 < bytes.len() {
+        let mut vals = [0u8; 4];
+        let mut padding = 0;
+        for j in 0..4 {
+            let c = bytes[i + j];
+            if c == b'=' {
+                vals[j] = 0;
+                padding += 1;
+            } else {
+                vals[j] = lookup[c as usize];
+                if vals[j] == 255 { vals[j] = 0; }
+            }
+        }
+        let triple = ((vals[0] as u32) << 18) | ((vals[1] as u32) << 12) | ((vals[2] as u32) << 6) | (vals[3] as u32);
+        result.push((triple >> 16) as u8);
+        if padding < 2 { result.push((triple >> 8) as u8); }
+        if padding < 1 { result.push(triple as u8); }
+        i += 4;
     }
     String::from_utf8(result).unwrap_or_default()
 }
