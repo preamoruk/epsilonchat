@@ -196,11 +196,11 @@ public class MeshSetupActivity extends BaseActionBarActivity {
     new Thread(() -> {
       try {
         com.b44t.messenger.DcContext dcContext = DcHelper.getContext(this);
-        boolean success = dcContext.epsilonConnectPeer(invite);
+        String result = dcContext.epsilonConnectPeer(invite);
 
         runOnUiThread(() -> {
           connectBtn.setEnabled(true);
-          if (success) {
+          if (result != null && result.startsWith("ok:")) {
             statusText.setText("Connected! Peer count: " + dcContext.epsilonPeerCount());
             Prefs.setBooleanPreference(this, PREF_INVITE_CONNECTED, true);
 
@@ -209,6 +209,9 @@ public class MeshSetupActivity extends BaseActionBarActivity {
             intent.putExtra(ConversationListActivity.FROM_WELCOME, true);
             startActivity(intent);
             finish();
+          } else if (result != null && result.startsWith("error:")) {
+            String errorMsg = result.substring(6);
+            statusText.setText("Connection failed: " + errorMsg);
           } else {
             statusText.setText("Connection failed. Check the invite code.");
           }

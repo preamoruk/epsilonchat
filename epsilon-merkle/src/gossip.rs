@@ -146,7 +146,17 @@ impl MeshNode {
             serde_json::from_str(link).context("Invalid invite link format")?;
 
         tracing::info!("Connecting to peer...");
-        let conn = self.endpoint.connect(addr, EPSILON_ALPN).await?;
+
+        // Try to connect with a 15-second timeout
+        let conn = match tokio::time::timeout(
+            std::time::Duration::from_secs(15),
+            self.endpoint.connect(addr, EPSILON_ALPN),
+        ).await {
+            Ok(Ok(conn)) => conn,
+            Ok(Err(e)) => return Err(anyhow::anyhow!("Connect failed: {}", e)),
+            Err(_) => return Err(anyhow::anyhow!("Connect timed out after 15s — peer may be unreachable or behind firewall")),
+        };
+
         let remote_id = conn.remote_id().to_string();
         tracing::info!("Connected to: {}", remote_id);
 

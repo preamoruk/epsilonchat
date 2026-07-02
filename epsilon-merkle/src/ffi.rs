@@ -96,36 +96,44 @@ fn get_invite_inner() -> Option<String> {
     invite
 }
 
+/// Connect to a peer via invite link. Returns null on failure, error string on success.
+/// Actually returns: null on failure, "ok:<peer_id>" on success, "error:<msg>" on timeout/failure
 #[no_mangle]
-pub extern "C" fn epsilon_connect_peer(invite_ptr: *const c_char) -> i32 {
+pub extern "C" fn epsilon_connect_peer(invite_ptr: *const c_char) -> *mut c_char {
     let result = std::panic::catch_unwind(|| connect_peer_inner(invite_ptr));
-    result.unwrap_or(0)
+    match result {
+        Ok(Some(s)) => CString::new(s).map(|s| s.into_raw()).unwrap_or(std::ptr::null_mut()),
+        _ => std::ptr::null_mut(),
+    }
 }
 
-fn connect_peer_inner(invite_ptr: *const c_char) -> i32 {
-    if invite_ptr.is_null() { return 0; }
+fn connect_peer_inner(invite_ptr: *const c_char) -> Option<String> {
+    if invite_ptr.is_null() { return Some("error:null invite".to_string()); }
 
     let invite_cstr = unsafe { CStr::from_ptr(invite_ptr) };
-    let invite = match invite_cstr.to_str() { Ok(s) => s, Err(_) => return 0 };
+    let invite = match invite_cstr.to_str() { Ok(s) => s, Err(_) => return Some("error:invalid utf8".to_string()) };
 
     let addr_json = if let Some(rest) = invite.strip_prefix("epsilon://") {
         if let Some(qmark) = rest.find("?addrs=") {
             urlencoding_decode(&rest[qmark + 7..])
-        } else { return 0; }
+        } else { return Some("error:no addrs in invite".to_string()); }
     } else {
         invite.to_string()
     };
 
-    let handle = match get_handle() { Some(h) => h, None => return 0 };
+    let handle = get_handle()?;
     // Do NOT hold STATE_LOCK during async connect — would deadlock
-    let ok = handle.block_on(async {
+    let result = handle.block_on(async {
         unsafe {
             if let Some(ref node) = MESH_NODE {
-                node.connect(&addr_json).await.is_ok()
-            } else { false }
+                match node.connect(&addr_json).await {
+                    Ok(peer_id) => Some(format!("ok:{}", peer_id)),
+                    Err(e) => Some(format!("error:{}", e)),
+                }
+            } else { Some("error:mesh not started".to_string()) }
         }
     });
-    if ok { 1 } else { 0 }
+    result
 }
 
 #[no_mangle]

@@ -63,7 +63,7 @@ pub extern "C" fn dc_epsilon_get_invite() -> *mut std::os::raw::c_char {
 }
 
 #[no_mangle]
-pub extern "C" fn dc_epsilon_connect_peer(invite: *const std::os::raw::c_char) -> i32 {
+pub extern "C" fn dc_epsilon_connect_peer(invite: *const std::os::raw::c_char) -> *mut std::os::raw::c_char {
     eps::epsilon_connect_peer(invite)
 }
 

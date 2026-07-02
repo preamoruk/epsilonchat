@@ -2050,7 +2050,7 @@ JNIEXPORT jstring Java_com_b44t_messenger_DcJsonrpcInstance_getNextResponse(JNIE
 /* Declarations for the epsilon FFI functions (defined in deltachat-core, wrapped by deltachat-ffi) */
 extern char* dc_epsilon_start_mesh(void);
 extern char* dc_epsilon_get_invite(void);
-extern int   dc_epsilon_connect_peer(const char* invite);
+extern char* dc_epsilon_connect_peer(const char* invite);
 extern int   dc_epsilon_send_message(const char* text);
 extern char* dc_epsilon_recv_message(void);
 extern int   dc_epsilon_peer_count(void);
@@ -2080,12 +2080,15 @@ JNIEXPORT jstring Java_com_b44t_messenger_DcContext_epsilonGetInvite(JNIEnv *env
     return ret;
 }
 
-JNIEXPORT jboolean Java_com_b44t_messenger_DcContext_epsilonConnectPeer(JNIEnv *env, jobject obj, jstring invite)
+JNIEXPORT jstring Java_com_b44t_messenger_DcContext_epsilonConnectPeer(JNIEnv *env, jobject obj, jstring invite)
 {
     CHAR_REF(invite);
-    int result = dc_epsilon_connect_peer(invitePtr);
+    char* temp = dc_epsilon_connect_peer(invitePtr);
     CHAR_UNREF(invite);
-    return result ? JNI_TRUE : JNI_FALSE;
+    if (temp == NULL) return NULL;
+    jstring ret = JSTRING_NEW(temp);
+    dc_epsilon_free_string(temp);
+    return ret;
 }
 
 JNIEXPORT jboolean Java_com_b44t_messenger_DcContext_epsilonSendMessage(JNIEnv *env, jobject obj, jstring text)
